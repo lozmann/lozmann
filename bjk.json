@@ -1,0 +1,315 @@
+{
+ "updated": "2026-11-17",
+ "source": "Fotomaç, Sporx",
+ "fixtures": [
+  {
+   "date": "2026-11-22",
+   "time": "16:00",
+   "home": "Konyaspor",
+   "away": "Beşiktaş",
+   "comp": "Süper Lig",
+   "week": 12
+  },
+  {
+   "date": "2026-11-26",
+   "time": "20:45",
+   "home": "Beşiktaş",
+   "away": "Hapoel Beer Sheva",
+   "comp": "Avrupa Ligi"
+  },
+  {
+   "date": "2026-11-30",
+   "time": "21:00",
+   "home": "Beşiktaş",
+   "away": "Galatasaray",
+   "comp": "Süper Lig",
+   "week": 13
+  },
+  {
+   "date": "2026-12-06",
+   "time": "16:00",
+   "home": "Beşiktaş",
+   "away": "Samsunspor",
+   "comp": "Süper Lig",
+   "week": 14
+  },
+  {
+   "date": "2026-12-10",
+   "time": "23:00",
+   "home": "Bayer Leverkusen",
+   "away": "Beşiktaş",
+   "comp": "Avrupa Ligi"
+  },
+  {
+   "date": "2026-12-14",
+   "time": "20:00",
+   "home": "Gaziantep FK",
+   "away": "Beşiktaş",
+   "comp": "Süper Lig",
+   "week": 15
+  },
+  {
+   "date": "2026-12-20",
+   "time": "19:00",
+   "home": "Beşiktaş",
+   "away": "Çaykur Rizespor",
+   "comp": "Süper Lig",
+   "week": 16
+  }
+ ],
+ "results": [
+  {
+   "date": "2026-11-08",
+   "home": "Beşiktaş",
+   "away": "Gençlerbirliği",
+   "hs": 3,
+   "as": 0
+  },
+  {
+   "date": "2026-11-01",
+   "home": "Kasımpaşa",
+   "away": "Beşiktaş",
+   "hs": 2,
+   "as": 2
+  },
+  {
+   "date": "2026-10-26",
+   "home": "Beşiktaş",
+   "away": "Başakşehir",
+   "hs": 2,
+   "as": 0
+  },
+  {
+   "date": "2026-10-19",
+   "home": "Trabzonspor",
+   "away": "Beşiktaş",
+   "hs": 2,
+   "as": 0
+  },
+  {
+   "date": "2026-10-11",
+   "home": "Beşiktaş",
+   "away": "Kocaelispor",
+   "hs": 2,
+   "as": 1
+  }
+ ],
+ "table": [
+  {
+   "r": 1,
+   "t": "Galatasaray",
+   "o": 11,
+   "g": 9,
+   "b": 1,
+   "m": 1,
+   "a": 27,
+   "y": 15,
+   "av": 12,
+   "p": 28
+  },
+  {
+   "r": 2,
+   "t": "Trabzonspor",
+   "o": 11,
+   "g": 8,
+   "b": 1,
+   "m": 2,
+   "a": 26,
+   "y": 8,
+   "av": 18,
+   "p": 25
+  },
+  {
+   "r": 3,
+   "t": "Amedspor",
+   "o": 11,
+   "g": 7,
+   "b": 2,
+   "m": 2,
+   "a": 28,
+   "y": 15,
+   "av": 13,
+   "p": 23
+  },
+  {
+   "r": 4,
+   "t": "Beşiktaş",
+   "o": 11,
+   "g": 7,
+   "b": 1,
+   "m": 3,
+   "a": 23,
+   "y": 12,
+   "av": 11,
+   "p": 22
+  },
+  {
+   "r": 5,
+   "t": "Kasımpaşa",
+   "o": 11,
+   "g": 5,
+   "b": 5,
+   "m": 1,
+   "a": 17,
+   "y": 11,
+   "av": 6,
+   "p": 20
+  },
+  {
+   "r": 6,
+   "t": "Fenerbahçe",
+   "o": 11,
+   "g": 6,
+   "b": 1,
+   "m": 4,
+   "a": 29,
+   "y": 10,
+   "av": 19,
+   "p": 19
+  },
+  {
+   "r": 7,
+   "t": "Kocaelispor",
+   "o": 11,
+   "g": 6,
+   "b": 1,
+   "m": 4,
+   "a": 13,
+   "y": 9,
+   "av": 4,
+   "p": 19
+  },
+  {
+   "r": 8,
+   "t": "Başakşehir",
+   "o": 11,
+   "g": 5,
+   "b": 2,
+   "m": 4,
+   "a": 19,
+   "y": 17,
+   "av": 2,
+   "p": 17
+  },
+  {
+   "r": 9,
+   "t": "Çorum FK",
+   "o": 11,
+   "g": 5,
+   "b": 1,
+   "m": 5,
+   "a": 21,
+   "y": 21,
+   "av": 0,
+   "p": 16
+  },
+  {
+   "r": 10,
+   "t": "Göztepe",
+   "o": 11,
+   "g": 4,
+   "b": 3,
+   "m": 4,
+   "a": 22,
+   "y": 19,
+   "av": 3,
+   "p": 15
+  },
+  {
+   "r": 11,
+   "t": "Çaykur Rizespor",
+   "o": 11,
+   "g": 4,
+   "b": 2,
+   "m": 5,
+   "a": 13,
+   "y": 16,
+   "av": -3,
+   "p": 14
+  },
+  {
+   "r": 12,
+   "t": "Erzurumspor FK",
+   "o": 11,
+   "g": 4,
+   "b": 2,
+   "m": 5,
+   "a": 10,
+   "y": 17,
+   "av": -7,
+   "p": 14
+  },
+  {
+   "r": 13,
+   "t": "Alanyaspor",
+   "o": 11,
+   "g": 3,
+   "b": 3,
+   "m": 5,
+   "a": 9,
+   "y": 18,
+   "av": -9,
+   "p": 12
+  },
+  {
+   "r": 14,
+   "t": "Gençlerbirliği",
+   "o": 11,
+   "g": 3,
+   "b": 2,
+   "m": 6,
+   "a": 12,
+   "y": 21,
+   "av": -9,
+   "p": 11
+  },
+  {
+   "r": 15,
+   "t": "Konyaspor",
+   "o": 11,
+   "g": 2,
+   "b": 2,
+   "m": 7,
+   "a": 6,
+   "y": 14,
+   "av": -8,
+   "p": 8
+  },
+  {
+   "r": 16,
+   "t": "Gaziantep FK",
+   "o": 11,
+   "g": 2,
+   "b": 2,
+   "m": 7,
+   "a": 9,
+   "y": 19,
+   "av": -10,
+   "p": 8
+  },
+  {
+   "r": 17,
+   "t": "Samsunspor",
+   "o": 11,
+   "g": 2,
+   "b": 1,
+   "m": 8,
+   "a": 11,
+   "y": 26,
+   "av": -15,
+   "p": 7
+  },
+  {
+   "r": 18,
+   "t": "Eyüpspor",
+   "o": 11,
+   "g": 1,
+   "b": 0,
+   "m": 10,
+   "a": 3,
+   "y": 30,
+   "av": -27,
+   "p": 3
+  }
+ ]
+}

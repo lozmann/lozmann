@@ -1,0 +1,66 @@
+name: Build IPA
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["bjk.json", "README.md"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: brew install xcodegen
+
+      - name: Generate project
+        run: |
+          cp bjk.json Lozman/bjk.json
+          xcodegen generate
+
+      - name: Build
+        run: |
+          set +e
+          xcodebuild -project Lozman.xcodeproj -scheme Lozman -configuration Release \
+            -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath build \
+            CURRENT_PROJECT_VERSION=${{ github.run_number }} \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            build > build.log 2>&1
+          status=$?
+          grep -E "error:|\*\* BUILD" build.log | head -60
+          exit $status
+
+      - name: Package IPA
+        run: |
+          mkdir Payload
+          cp -R build/Build/Products/Release-iphoneos/Lozman.app Payload/
+          zip -qry Lozman.ipa Payload
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0.${{ github.run_number }}
+          name: Lozman 1.0 (${{ github.run_number }})
+          files: Lozman.ipa
+          make_latest: true
+
+      - name: Publish build log
+        if: always()
+        run: |
+          mkdir -p /tmp/log
+          if [ -f build.log ]; then
+            grep -E "error:" build.log > /tmp/log/errors.txt || true
+            tail -n 300 build.log > /tmp/log/build-tail.txt
+          else
+            echo "no build log" > /tmp/log/errors.txt
+          fi
+          echo "${{ job.status }} run ${{ github.run_number }} ${{ github.sha }}" > /tmp/log/status.txt
+          cd /tmp/log
+          git init -q && git checkout -q -b ci-log && git add .
+          git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -qm "log ${{ github.run_number }}"
+          git push -qf "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" ci-log
