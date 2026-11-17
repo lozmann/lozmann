@@ -695,9 +695,14 @@ final class SlitherScene: SKScene {
         }
         heavyHaptic.impactOccurred(intensity: 1)
         UINotificationFeedbackGenerator().notificationOccurred(.error)
-        cam.run(.sequence((0..<8).map { i in
-            .moveBy(x: CGFloat.random(in: -14...14) * CGFloat(8 - i) / 8, y: CGFloat.random(in: -14...14) * CGFloat(8 - i) / 8, duration: 0.03)
-        }))
+        var shake: [SKAction] = []
+        for i in 0..<8 {
+            let strength: CGFloat = CGFloat(8 - i) / 8
+            let dx: CGFloat = CGFloat.random(in: -14...14) * strength
+            let dy: CGFloat = CGFloat.random(in: -14...14) * strength
+            shake.append(SKAction.moveBy(x: dx, y: dy, duration: 0.03))
+        }
+        cam.run(SKAction.sequence(shake))
         player = nil
         hud.phase = .dead
     }
