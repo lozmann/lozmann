@@ -1,0 +1,1885 @@
+[
+{
+"en": "accident",
+"tr": "kaza",
+"level": "A2",
+"clue": "Something bad that happens by chance, like a car crash.",
+"ex": "She had an accident on her way to work."
+},
+{
+"en": "address",
+"tr": "adres",
+"level": "A2",
+"clue": "The number and street where you live.",
+"ex": "Can you write your address here?"
+},
+{
+"en": "afraid",
+"tr": "korkmuş",
+"level": "A2",
+"clue": "Feeling fear.",
+"ex": "Don't be afraid of the dog."
+},
+{
+"en": "alone",
+"tr": "yalnız",
+"level": "A2",
+"clue": "Without other people.",
+"ex": "He lives alone in a small flat."
+},
+{
+"en": "angry",
+"tr": "kızgın",
+"level": "A2",
+"clue": "Feeling very annoyed.",
+"ex": "My boss was angry because I was late."
+},
+{
+"en": "area",
+"tr": "bölge, alan",
+"level": "A2",
+"clue": "A part of a city or a country.",
+"ex": "This area is very quiet at night."
+},
+{
+"en": "arrive",
+"tr": "varmak",
+"level": "A2",
+"clue": "To reach a place.",
+"ex": "We arrived at the hotel at midnight."
+},
+{
+"en": "autumn",
+"tr": "sonbahar",
+"level": "A2",
+"clue": "The season after summer.",
+"ex": "Leaves fall from the trees in autumn."
+},
+{
+"en": "awful",
+"tr": "berbat",
+"level": "A2",
+"clue": "Very bad.",
+"ex": "The weather was awful yesterday."
+},
+{
+"en": "believe",
+"tr": "inanmak",
+"level": "A2",
+"clue": "To think that something is true.",
+"ex": "I can't believe it's already Friday."
+},
+{
+"en": "bill",
+"tr": "fatura, hesap",
+"level": "A2",
+"clue": "A paper that shows how much you must pay.",
+"ex": "Can we have the bill, please?"
+},
+{
+"en": "borrow",
+"tr": "ödünç almak",
+"level": "A2",
+"clue": "To take something and give it back later.",
+"ex": "Can I borrow your pen?"
+},
+{
+"en": "boring",
+"tr": "sıkıcı",
+"level": "A2",
+"clue": "Not interesting.",
+"ex": "The film was so boring that I fell asleep."
+},
+{
+"en": "bridge",
+"tr": "köprü",
+"level": "A2",
+"clue": "You walk or drive over it to cross a river.",
+"ex": "They built a new bridge over the river."
+},
+{
+"en": "bright",
+"tr": "parlak, aydınlık",
+"level": "A2",
+"clue": "Full of light.",
+"ex": "The room is bright and sunny."
+},
+{
+"en": "build",
+"tr": "inşa etmek",
+"level": "A2",
+"clue": "To make a house or a building.",
+"ex": "They are building a new hospital."
+},
+{
+"en": "busy",
+"tr": "meşgul",
+"level": "A2",
+"clue": "Having a lot of things to do.",
+"ex": "I'm very busy this week."
+},
+{
+"en": "careful",
+"tr": "dikkatli",
+"level": "A2",
+"clue": "Giving attention so that nothing goes wrong.",
+"ex": "Be careful when you drive in the rain."
+},
+{
+"en": "carry",
+"tr": "taşımak",
+"level": "A2",
+"clue": "To hold something while you move.",
+"ex": "Can you help me carry these boxes?"
+},
+{
+"en": "catch",
+"tr": "yakalamak",
+"level": "A2",
+"clue": "To take hold of something that is moving.",
+"ex": "I ran, but I didn't catch the bus."
+},
+{
+"en": "cheap",
+"tr": "ucuz",
+"level": "A2",
+"clue": "Not costing much money.",
+"ex": "This phone is cheap but good."
+},
+{
+"en": "choose",
+"tr": "seçmek",
+"level": "A2",
+"clue": "To decide which one you want.",
+"ex": "You can choose any seat."
+},
+{
+"en": "clever",
+"tr": "zeki",
+"level": "A2",
+"clue": "Quick at learning and understanding.",
+"ex": "She is a very clever student."
+},
+{
+"en": "climb",
+"tr": "tırmanmak",
+"level": "A2",
+"clue": "To go up something using your hands and feet.",
+"ex": "We climbed the hill to see the view."
+},
+{
+"en": "collect",
+"tr": "toplamak, biriktirmek",
+"level": "A2",
+"clue": "To bring things together.",
+"ex": "He collects old coins."
+},
+{
+"en": "comfortable",
+"tr": "rahat",
+"level": "A2",
+"clue": "Making you feel relaxed, with no pain.",
+"ex": "This chair is very comfortable."
+},
+{
+"en": "company",
+"tr": "şirket",
+"level": "A2",
+"clue": "A business that makes or sells things.",
+"ex": "She works for a big company."
+},
+{
+"en": "compare",
+"tr": "karşılaştırmak",
+"level": "A2",
+"clue": "To look at how things are the same or different.",
+"ex": "Compare the prices before you buy."
+},
+{
+"en": "competition",
+"tr": "yarışma",
+"level": "A2",
+"clue": "An event where people try to win.",
+"ex": "He won first prize in the competition."
+},
+{
+"en": "complete",
+"tr": "tamamlamak",
+"level": "A2",
+"clue": "To finish something.",
+"ex": "Please complete the form."
+},
+{
+"en": "cost",
+"tr": "mal olmak, tutmak",
+"level": "A2",
+"clue": "To have a price.",
+"ex": "How much does this jacket cost?"
+},
+{
+"en": "crowded",
+"tr": "kalabalık",
+"level": "A2",
+"clue": "Full of people.",
+"ex": "The metro is always crowded in the morning."
+},
+{
+"en": "culture",
+"tr": "kültür",
+"level": "A2",
+"clue": "The customs, art and way of life of a group of people.",
+"ex": "I love learning about Thai culture."
+},
+{
+"en": "dangerous",
+"tr": "tehlikeli",
+"level": "A2",
+"clue": "Something that can hurt you.",
+"ex": "It's dangerous to swim here."
+},
+{
+"en": "decide",
+"tr": "karar vermek",
+"level": "A2",
+"clue": "To make a choice after thinking.",
+"ex": "I decided to learn English."
+},
+{
+"en": "delicious",
+"tr": "lezzetli",
+"level": "A2",
+"clue": "Tasting very good.",
+"ex": "This soup is delicious."
+},
+{
+"en": "describe",
+"tr": "anlatmak, tarif etmek",
+"level": "A2",
+"clue": "To say what someone or something is like.",
+"ex": "Can you describe the man you saw?"
+},
+{
+"en": "difference",
+"tr": "fark",
+"level": "A2",
+"clue": "The way two things are not the same.",
+"ex": "What's the difference between these two?"
+},
+{
+"en": "difficult",
+"tr": "zor",
+"level": "A2",
+"clue": "Not easy.",
+"ex": "The exam was difficult."
+},
+{
+"en": "dirty",
+"tr": "kirli",
+"level": "A2",
+"clue": "Not clean.",
+"ex": "Your shoes are dirty."
+},
+{
+"en": "discover",
+"tr": "keşfetmek",
+"level": "A2",
+"clue": "To find something for the first time.",
+"ex": "We discovered a nice café near the office."
+},
+{
+"en": "dream",
+"tr": "rüya, hayal",
+"level": "A2",
+"clue": "Pictures and stories in your mind when you sleep.",
+"ex": "I had a strange dream last night."
+},
+{
+"en": "during",
+"tr": "sırasında",
+"level": "A2",
+"clue": "While something is happening.",
+"ex": "Please don't talk during the meeting."
+},
+{
+"en": "early",
+"tr": "erken",
+"level": "A2",
+"clue": "Before the usual or planned time.",
+"ex": "I get up early on weekdays."
+},
+{
+"en": "earn",
+"tr": "(para) kazanmak",
+"level": "A2",
+"clue": "To get money for the work you do.",
+"ex": "She earns a good salary."
+},
+{
+"en": "empty",
+"tr": "boş",
+"level": "A2",
+"clue": "With nothing inside.",
+"ex": "The fridge is empty."
+},
+{
+"en": "enjoy",
+"tr": "keyif almak",
+"level": "A2",
+"clue": "To like doing something.",
+"ex": "I really enjoyed the trip."
+},
+{
+"en": "enough",
+"tr": "yeterli",
+"level": "A2",
+"clue": "As much as you need.",
+"ex": "Do we have enough time?"
+},
+{
+"en": "exactly",
+"tr": "tam olarak",
+"level": "A2",
+"clue": "Completely correct.",
+"ex": "It's exactly three o'clock."
+},
+{
+"en": "excited",
+"tr": "heyecanlı",
+"level": "A2",
+"clue": "Very happy about something that will happen.",
+"ex": "I'm excited about the holiday."
+},
+{
+"en": "expensive",
+"tr": "pahalı",
+"level": "A2",
+"clue": "Costing a lot of money.",
+"ex": "Hotels in the city centre are expensive."
+},
+{
+"en": "explain",
+"tr": "açıklamak",
+"level": "A2",
+"clue": "To make something clear so someone understands.",
+"ex": "Can you explain this word?"
+},
+{
+"en": "fail",
+"tr": "başarısız olmak, kalmak",
+"level": "A2",
+"clue": "To not succeed.",
+"ex": "He failed his driving test."
+},
+{
+"en": "famous",
+"tr": "ünlü",
+"level": "A2",
+"clue": "Known by many people.",
+"ex": "Istanbul is famous for its history."
+},
+{
+"en": "fill",
+"tr": "doldurmak",
+"level": "A2",
+"clue": "To make something full.",
+"ex": "Please fill this bottle with water."
+},
+{
+"en": "finally",
+"tr": "sonunda",
+"level": "A2",
+"clue": "After a long time.",
+"ex": "The bus finally arrived."
+},
+{
+"en": "forget",
+"tr": "unutmak",
+"level": "A2",
+"clue": "To not remember something.",
+"ex": "Don't forget your keys."
+},
+{
+"en": "free",
+"tr": "ücretsiz, boş",
+"level": "A2",
+"clue": "Costing nothing, or not busy.",
+"ex": "The museum is free on Sundays."
+},
+{
+"en": "friendly",
+"tr": "arkadaş canlısı",
+"level": "A2",
+"clue": "Nice and kind to other people.",
+"ex": "The people here are very friendly."
+},
+{
+"en": "future",
+"tr": "gelecek",
+"level": "A2",
+"clue": "The time that will come after now.",
+"ex": "What are your plans for the future?"
+},
+{
+"en": "glad",
+"tr": "memnun",
+"level": "A2",
+"clue": "Happy about something.",
+"ex": "I'm glad you came."
+},
+{
+"en": "grow",
+"tr": "büyümek, yetiştirmek",
+"level": "A2",
+"clue": "To become bigger, or to make plants get bigger.",
+"ex": "My grandmother grows tomatoes."
+},
+{
+"en": "guess",
+"tr": "tahmin etmek",
+"level": "A2",
+"clue": "To give an answer when you are not sure.",
+"ex": "Guess how old she is."
+},
+{
+"en": "healthy",
+"tr": "sağlıklı",
+"level": "A2",
+"clue": "Good for your body, or not ill.",
+"ex": "Eat healthy food and sleep well."
+},
+{
+"en": "heavy",
+"tr": "ağır",
+"level": "A2",
+"clue": "Weighing a lot.",
+"ex": "This bag is too heavy."
+},
+{
+"en": "hide",
+"tr": "saklamak, saklanmak",
+"level": "A2",
+"clue": "To put something where no one can see it.",
+"ex": "The cat hid under the bed."
+},
+{
+"en": "hope",
+"tr": "umut etmek",
+"level": "A2",
+"clue": "To want something to happen.",
+"ex": "I hope it doesn't rain tomorrow."
+},
+{
+"en": "hurry",
+"tr": "acele etmek",
+"level": "A2",
+"clue": "To move or do something quickly.",
+"ex": "Hurry up, we're late!"
+},
+{
+"en": "hurt",
+"tr": "acımak, incitmek",
+"level": "A2",
+"clue": "To feel or cause pain.",
+"ex": "My back hurts."
+},
+{
+"en": "information",
+"tr": "bilgi",
+"level": "A2",
+"clue": "Facts about something.",
+"ex": "For more information, call this number."
+},
+{
+"en": "interested",
+"tr": "ilgili, meraklı",
+"level": "A2",
+"clue": "Wanting to know more about something.",
+"ex": "I'm interested in history."
+},
+{
+"en": "invite",
+"tr": "davet etmek",
+"level": "A2",
+"clue": "To ask someone to come to an event.",
+"ex": "They invited me to their wedding."
+},
+{
+"en": "journey",
+"tr": "yolculuk",
+"level": "A2",
+"clue": "Travelling from one place to another.",
+"ex": "The journey takes four hours."
+},
+{
+"en": "kind",
+"tr": "nazik",
+"level": "A2",
+"clue": "Nice and helpful to others.",
+"ex": "It's very kind of you to help."
+},
+{
+"en": "late",
+"tr": "geç",
+"level": "A2",
+"clue": "After the usual or planned time.",
+"ex": "Sorry I'm late."
+},
+{
+"en": "lazy",
+"tr": "tembel",
+"level": "A2",
+"clue": "Not wanting to work.",
+"ex": "I feel lazy on Sunday mornings."
+},
+{
+"en": "lend",
+"tr": "ödünç vermek",
+"level": "A2",
+"clue": "To give something to someone for a short time.",
+"ex": "Can you lend me some money?"
+},
+{
+"en": "lose",
+"tr": "kaybetmek",
+"level": "A2",
+"clue": "To not find something, or to not win.",
+"ex": "I lost my phone yesterday."
+},
+{
+"en": "loud",
+"tr": "yüksek sesli",
+"level": "A2",
+"clue": "Making a lot of noise.",
+"ex": "The music is too loud."
+},
+{
+"en": "luggage",
+"tr": "bagaj, valiz",
+"level": "A2",
+"clue": "The bags you take on a trip.",
+"ex": "Don't leave your luggage alone."
+},
+{
+"en": "mean",
+"tr": "anlamına gelmek",
+"level": "A2",
+"clue": "To have a meaning.",
+"ex": "What does this word mean?"
+},
+{
+"en": "medicine",
+"tr": "ilaç",
+"level": "A2",
+"clue": "Something you take when you are ill.",
+"ex": "Take this medicine twice a day."
+},
+{
+"en": "mistake",
+"tr": "hata",
+"level": "A2",
+"clue": "Something that is wrong.",
+"ex": "Everyone makes mistakes."
+},
+{
+"en": "neighbour",
+"tr": "komşu",
+"level": "A2",
+"clue": "A person who lives next to you.",
+"ex": "Our neighbours are very kind."
+},
+{
+"en": "nervous",
+"tr": "gergin",
+"level": "A2",
+"clue": "Worried and a little afraid.",
+"ex": "I always get nervous before exams."
+},
+{
+"en": "noisy",
+"tr": "gürültülü",
+"level": "A2",
+"clue": "Making a lot of loud sounds.",
+"ex": "The street is noisy at night."
+},
+{
+"en": "offer",
+"tr": "teklif etmek, ikram etmek",
+"level": "A2",
+"clue": "To ask if someone wants something.",
+"ex": "He offered me a cup of tea."
+},
+{
+"en": "order",
+"tr": "sipariş vermek",
+"level": "A2",
+"clue": "To ask for food or goods.",
+"ex": "Let's order a pizza."
+},
+{
+"en": "own",
+"tr": "kendi, sahip olmak",
+"level": "A2",
+"clue": "Belonging to you.",
+"ex": "I want my own room."
+},
+{
+"en": "pack",
+"tr": "(bavul) hazırlamak",
+"level": "A2",
+"clue": "To put things in a bag for a trip.",
+"ex": "Did you pack your passport?"
+},
+{
+"en": "pass",
+"tr": "geçmek",
+"level": "A2",
+"clue": "To succeed in an exam, or to go past something.",
+"ex": "I passed the test!"
+},
+{
+"en": "pay",
+"tr": "ödemek",
+"level": "A2",
+"clue": "To give money for something.",
+"ex": "Can I pay by card?"
+},
+{
+"en": "perhaps",
+"tr": "belki",
+"level": "A2",
+"clue": "Maybe.",
+"ex": "Perhaps we can meet tomorrow."
+},
+{
+"en": "polite",
+"tr": "kibar",
+"level": "A2",
+"clue": "Speaking and acting in a nice, respectful way.",
+"ex": "Always be polite to customers."
+},
+{
+"en": "popular",
+"tr": "sevilen, popüler",
+"level": "A2",
+"clue": "Liked by many people.",
+"ex": "This café is very popular."
+},
+{
+"en": "possible",
+"tr": "mümkün",
+"level": "A2",
+"clue": "Able to happen or be done.",
+"ex": "Is it possible to change the date?"
+},
+{
+"en": "prefer",
+"tr": "tercih etmek",
+"level": "A2",
+"clue": "To like one thing more than another.",
+"ex": "I prefer tea to coffee."
+},
+{
+"en": "present",
+"tr": "hediye",
+"level": "A2",
+"clue": "A gift.",
+"ex": "I bought a present for my mother."
+},
+{
+"en": "prize",
+"tr": "ödül",
+"level": "A2",
+"clue": "Something you get when you win.",
+"ex": "She won a prize."
+},
+{
+"en": "quiet",
+"tr": "sessiz",
+"level": "A2",
+"clue": "Making very little noise.",
+"ex": "The library is very quiet."
+},
+{
+"en": "quickly",
+"tr": "hızlıca",
+"level": "A2",
+"clue": "At a fast speed.",
+"ex": "He finished his work quickly."
+},
+{
+"en": "ready",
+"tr": "hazır",
+"level": "A2",
+"clue": "Prepared.",
+"ex": "Dinner is ready!"
+},
+{
+"en": "receive",
+"tr": "almak (gelen bir şeyi)",
+"level": "A2",
+"clue": "To get something that someone sends you.",
+"ex": "Did you receive my email?"
+},
+{
+"en": "remember",
+"tr": "hatırlamak",
+"level": "A2",
+"clue": "To keep something in your mind.",
+"ex": "I can't remember his name."
+},
+{
+"en": "rent",
+"tr": "kira, kiralamak",
+"level": "A2",
+"clue": "Money you pay to live in a place.",
+"ex": "The rent is due on the first day of the month."
+},
+{
+"en": "repair",
+"tr": "tamir etmek",
+"level": "A2",
+"clue": "To fix something that is broken.",
+"ex": "They repaired my car."
+},
+{
+"en": "rest",
+"tr": "dinlenmek",
+"level": "A2",
+"clue": "To relax after work.",
+"ex": "You should rest after the trip."
+},
+{
+"en": "return",
+"tr": "geri dönmek",
+"level": "A2",
+"clue": "To come or go back.",
+"ex": "When will you return from Thailand?"
+},
+{
+"en": "rich",
+"tr": "zengin",
+"level": "A2",
+"clue": "Having a lot of money.",
+"ex": "He became rich after selling his company."
+},
+{
+"en": "safe",
+"tr": "güvenli",
+"level": "A2",
+"clue": "Not in danger.",
+"ex": "Keep your passport in a safe place."
+},
+{
+"en": "save",
+"tr": "biriktirmek, kurtarmak",
+"level": "A2",
+"clue": "To keep money for later, or to help someone in danger.",
+"ex": "I'm saving money for a new phone."
+},
+{
+"en": "share",
+"tr": "paylaşmak",
+"level": "A2",
+"clue": "To use or have something with other people.",
+"ex": "Let's share the cake."
+},
+{
+"en": "shy",
+"tr": "utangaç",
+"level": "A2",
+"clue": "Nervous with people you don't know.",
+"ex": "He's shy and doesn't talk much."
+},
+{
+"en": "sick",
+"tr": "hasta",
+"level": "A2",
+"clue": "Ill.",
+"ex": "I feel sick today."
+},
+{
+"en": "similar",
+"tr": "benzer",
+"level": "A2",
+"clue": "Almost the same.",
+"ex": "Our phones are very similar."
+},
+{
+"en": "smell",
+"tr": "kokmak, koklamak",
+"level": "A2",
+"clue": "To notice something with your nose.",
+"ex": "The bread smells great."
+},
+{
+"en": "spend",
+"tr": "harcamak",
+"level": "A2",
+"clue": "To use money or time.",
+"ex": "How much time do you spend on your phone?"
+},
+{
+"en": "strange",
+"tr": "garip",
+"level": "A2",
+"clue": "Unusual or surprising.",
+"ex": "I heard a strange noise."
+},
+{
+"en": "strong",
+"tr": "güçlü",
+"level": "A2",
+"clue": "Having a lot of power.",
+"ex": "He's very strong."
+},
+{
+"en": "suddenly",
+"tr": "aniden",
+"level": "A2",
+"clue": "Very quickly and without warning.",
+"ex": "Suddenly the lights went out."
+},
+{
+"en": "sure",
+"tr": "emin",
+"level": "A2",
+"clue": "Certain.",
+"ex": "Are you sure?"
+},
+{
+"en": "surprised",
+"tr": "şaşırmış",
+"level": "A2",
+"clue": "Feeling that something is unexpected.",
+"ex": "I was surprised to see him there."
+},
+{
+"en": "teach",
+"tr": "öğretmek",
+"level": "A2",
+"clue": "To help someone learn.",
+"ex": "Can you teach me to swim?"
+},
+{
+"en": "thirsty",
+"tr": "susamış",
+"level": "A2",
+"clue": "Wanting to drink.",
+"ex": "I'm thirsty. Is there any water?"
+},
+{
+"en": "throw",
+"tr": "atmak, fırlatmak",
+"level": "A2",
+"clue": "To send something through the air with your hand.",
+"ex": "Throw the ball to me!"
+},
+{
+"en": "tidy",
+"tr": "düzenli, toplu",
+"level": "A2",
+"clue": "Neat, with everything in its place.",
+"ex": "Keep your room tidy."
+},
+{
+"en": "tired",
+"tr": "yorgun",
+"level": "A2",
+"clue": "Needing rest or sleep.",
+"ex": "I'm tired after work."
+},
+{
+"en": "together",
+"tr": "birlikte",
+"level": "A2",
+"clue": "With each other.",
+"ex": "Let's work together."
+},
+{
+"en": "trip",
+"tr": "gezi",
+"level": "A2",
+"clue": "A short journey.",
+"ex": "We had a great trip to Cappadocia."
+},
+{
+"en": "true",
+"tr": "doğru, gerçek",
+"level": "A2",
+"clue": "Correct or real.",
+"ex": "Is it true that you're moving?"
+},
+{
+"en": "understand",
+"tr": "anlamak",
+"level": "A2",
+"clue": "To know the meaning of something.",
+"ex": "I don't understand this sentence."
+},
+{
+"en": "unfortunately",
+"tr": "maalesef",
+"level": "A2",
+"clue": "Sadly.",
+"ex": "Unfortunately, the shop is closed."
+},
+{
+"en": "usually",
+"tr": "genellikle",
+"level": "A2",
+"clue": "Most of the time.",
+"ex": "I usually walk to work."
+},
+{
+"en": "visit",
+"tr": "ziyaret etmek",
+"level": "A2",
+"clue": "To go to see a person or a place.",
+"ex": "I visit my parents every weekend."
+},
+{
+"en": "wait",
+"tr": "beklemek",
+"level": "A2",
+"clue": "To stay somewhere until something happens.",
+"ex": "Please wait here."
+},
+{
+"en": "wallet",
+"tr": "cüzdan",
+"level": "A2",
+"clue": "A small case for your money and cards.",
+"ex": "I left my wallet at home."
+},
+{
+"en": "warm",
+"tr": "ılık, sıcak",
+"level": "A2",
+"clue": "A little hot.",
+"ex": "It's warm today."
+},
+{
+"en": "waste",
+"tr": "israf etmek",
+"level": "A2",
+"clue": "To use something badly or without need.",
+"ex": "Don't waste water."
+},
+{
+"en": "wear",
+"tr": "giymek",
+"level": "A2",
+"clue": "To have clothes on your body.",
+"ex": "I wear a uniform at work."
+},
+{
+"en": "weather",
+"tr": "hava durumu",
+"level": "A2",
+"clue": "Rain, sun, wind and temperature.",
+"ex": "What's the weather like today?"
+},
+{
+"en": "win",
+"tr": "kazanmak",
+"level": "A2",
+"clue": "To be first in a game or a competition.",
+"ex": "Beşiktaş won the match!"
+},
+{
+"en": "worried",
+"tr": "endişeli",
+"level": "A2",
+"clue": "Thinking a lot about a problem.",
+"ex": "I'm worried about the exam."
+},
+{
+"en": "wrong",
+"tr": "yanlış",
+"level": "A2",
+"clue": "Not correct.",
+"ex": "Sorry, wrong number."
+},
+{
+"en": "achieve",
+"tr": "başarmak",
+"level": "B1",
+"clue": "To succeed in doing something after working hard.",
+"ex": "She achieved her goal."
+},
+{
+"en": "admit",
+"tr": "itiraf etmek, kabul etmek",
+"level": "B1",
+"clue": "To agree that something bad is true.",
+"ex": "He admitted that he was wrong."
+},
+{
+"en": "advice",
+"tr": "tavsiye",
+"level": "B1",
+"clue": "An opinion about what someone should do.",
+"ex": "Can you give me some advice?"
+},
+{
+"en": "afford",
+"tr": "parası yetmek",
+"level": "B1",
+"clue": "To have enough money to buy something.",
+"ex": "I can't afford a new car."
+},
+{
+"en": "agree",
+"tr": "katılmak, aynı fikirde olmak",
+"level": "B1",
+"clue": "To have the same opinion as someone.",
+"ex": "I agree with you."
+},
+{
+"en": "aim",
+"tr": "amaç",
+"level": "B1",
+"clue": "What you try to do.",
+"ex": "Our aim is to finish by Friday."
+},
+{
+"en": "allow",
+"tr": "izin vermek",
+"level": "B1",
+"clue": "To let someone do something.",
+"ex": "Phones are not allowed in the exam."
+},
+{
+"en": "amazing",
+"tr": "muhteşem",
+"level": "B1",
+"clue": "Very surprising and very good.",
+"ex": "The view was amazing."
+},
+{
+"en": "announce",
+"tr": "duyurmak",
+"level": "B1",
+"clue": "To tell everyone something officially.",
+"ex": "They announced the results today."
+},
+{
+"en": "apologise",
+"tr": "özür dilemek",
+"level": "B1",
+"clue": "To say sorry.",
+"ex": "I apologise for the delay."
+},
+{
+"en": "appointment",
+"tr": "randevu",
+"level": "B1",
+"clue": "A planned time to meet someone, like a doctor.",
+"ex": "I have a doctor's appointment at three."
+},
+{
+"en": "arrange",
+"tr": "ayarlamak, düzenlemek",
+"level": "B1",
+"clue": "To plan or organise something.",
+"ex": "Can you arrange a meeting for Monday?"
+},
+{
+"en": "attend",
+"tr": "katılmak (toplantıya, derse)",
+"level": "B1",
+"clue": "To go to an event, a class or a meeting.",
+"ex": "All staff must attend the training."
+},
+{
+"en": "available",
+"tr": "müsait, mevcut",
+"level": "B1",
+"clue": "Free to meet, or ready to use.",
+"ex": "Are you available on Thursday?"
+},
+{
+"en": "avoid",
+"tr": "kaçınmak",
+"level": "B1",
+"clue": "To stay away from something.",
+"ex": "Avoid the city centre during rush hour."
+},
+{
+"en": "aware",
+"tr": "farkında",
+"level": "B1",
+"clue": "Knowing that something exists or is happening.",
+"ex": "Are you aware of the risks?"
+},
+{
+"en": "behaviour",
+"tr": "davranış",
+"level": "B1",
+"clue": "The way a person acts.",
+"ex": "His behaviour was very polite."
+},
+{
+"en": "benefit",
+"tr": "fayda",
+"level": "B1",
+"clue": "A good effect.",
+"ex": "Exercise has many benefits."
+},
+{
+"en": "calm",
+"tr": "sakin",
+"level": "B1",
+"clue": "Not worried, angry or excited.",
+"ex": "Stay calm and listen."
+},
+{
+"en": "challenge",
+"tr": "zorluk, meydan okuma",
+"level": "B1",
+"clue": "Something difficult that tests your ability.",
+"ex": "Learning English is a challenge, but it's fun."
+},
+{
+"en": "claim",
+"tr": "iddia etmek",
+"level": "B1",
+"clue": "To say that something is true.",
+"ex": "He claims he saw the accident."
+},
+{
+"en": "colleague",
+"tr": "iş arkadaşı",
+"level": "B1",
+"clue": "A person you work with.",
+"ex": "My colleagues helped me a lot."
+},
+{
+"en": "complain",
+"tr": "şikayet etmek",
+"level": "B1",
+"clue": "To say that you are not happy about something.",
+"ex": "Customers complained about the noise."
+},
+{
+"en": "condition",
+"tr": "durum, koşul",
+"level": "B1",
+"clue": "The state that something is in.",
+"ex": "The road is in bad condition."
+},
+{
+"en": "confident",
+"tr": "kendinden emin",
+"level": "B1",
+"clue": "Sure about yourself and your abilities.",
+"ex": "She felt confident before the interview."
+},
+{
+"en": "confirm",
+"tr": "onaylamak",
+"level": "B1",
+"clue": "To say that something is true or will happen.",
+"ex": "Please confirm your booking."
+},
+{
+"en": "connect",
+"tr": "bağlamak, bağlanmak",
+"level": "B1",
+"clue": "To join two things together.",
+"ex": "Connect your phone to the Wi-Fi."
+},
+{
+"en": "consider",
+"tr": "düşünmek, göz önünde bulundurmak",
+"level": "B1",
+"clue": "To think carefully about something.",
+"ex": "We're considering moving to a bigger flat."
+},
+{
+"en": "contact",
+"tr": "iletişime geçmek",
+"level": "B1",
+"clue": "To call or write to someone.",
+"ex": "Contact me if you need help."
+},
+{
+"en": "contain",
+"tr": "içermek",
+"level": "B1",
+"clue": "To have something inside.",
+"ex": "This box contains medical supplies."
+},
+{
+"en": "convince",
+"tr": "ikna etmek",
+"level": "B1",
+"clue": "To make someone believe or do something.",
+"ex": "She convinced me to join the team."
+},
+{
+"en": "damage",
+"tr": "hasar",
+"level": "B1",
+"clue": "Harm that makes something broken or less useful.",
+"ex": "The storm caused a lot of damage."
+},
+{
+"en": "deadline",
+"tr": "son teslim tarihi",
+"level": "B1",
+"clue": "The last day or time to finish something.",
+"ex": "The deadline for the report is Friday."
+},
+{
+"en": "delay",
+"tr": "gecikme",
+"level": "B1",
+"clue": "When something happens later than planned.",
+"ex": "There's a two-hour delay."
+},
+{
+"en": "deliver",
+"tr": "teslim etmek",
+"level": "B1",
+"clue": "To take something to a person or a place.",
+"ex": "They delivered the package this morning."
+},
+{
+"en": "demand",
+"tr": "talep etmek",
+"level": "B1",
+"clue": "To ask for something very strongly.",
+"ex": "The workers demanded higher pay."
+},
+{
+"en": "develop",
+"tr": "geliştirmek, gelişmek",
+"level": "B1",
+"clue": "To grow, or to make something better.",
+"ex": "We need to develop new skills."
+},
+{
+"en": "disappointed",
+"tr": "hayal kırıklığına uğramış",
+"level": "B1",
+"clue": "Sad because something was not as good as you hoped.",
+"ex": "I was disappointed with the result."
+},
+{
+"en": "earthquake",
+"tr": "deprem",
+"level": "B1",
+"clue": "When the ground shakes strongly.",
+"ex": "The earthquake damaged many buildings."
+},
+{
+"en": "efficient",
+"tr": "verimli",
+"level": "B1",
+"clue": "Working well, without wasting time or energy.",
+"ex": "This system is fast and efficient."
+},
+{
+"en": "effort",
+"tr": "çaba",
+"level": "B1",
+"clue": "Hard work to do something.",
+"ex": "Thanks for your effort."
+},
+{
+"en": "emergency",
+"tr": "acil durum",
+"level": "B1",
+"clue": "A dangerous situation where you must act quickly.",
+"ex": "In an emergency, call 112."
+},
+{
+"en": "encourage",
+"tr": "cesaretlendirmek",
+"level": "B1",
+"clue": "To give support so someone does something.",
+"ex": "My teacher encouraged me to keep going."
+},
+{
+"en": "environment",
+"tr": "çevre",
+"level": "B1",
+"clue": "The air, water and land around us.",
+"ex": "We must protect the environment."
+},
+{
+"en": "equipment",
+"tr": "ekipman",
+"level": "B1",
+"clue": "The tools you need for a job or an activity.",
+"ex": "Check all the equipment before you leave."
+},
+{
+"en": "escape",
+"tr": "kaçmak, kurtulmak",
+"level": "B1",
+"clue": "To get away from a dangerous place.",
+"ex": "They escaped from the burning building."
+},
+{
+"en": "especially",
+"tr": "özellikle",
+"level": "B1",
+"clue": "More than others.",
+"ex": "I love fruit, especially apples."
+},
+{
+"en": "evidence",
+"tr": "kanıt",
+"level": "B1",
+"clue": "Facts that show something is true.",
+"ex": "There's no evidence that he did it."
+},
+{
+"en": "exhausted",
+"tr": "bitkin",
+"level": "B1",
+"clue": "Extremely tired.",
+"ex": "I was exhausted after the long shift."
+},
+{
+"en": "expect",
+"tr": "beklemek, ummak",
+"level": "B1",
+"clue": "To think that something will happen.",
+"ex": "I expect the meeting to be short."
+},
+{
+"en": "experience",
+"tr": "deneyim",
+"level": "B1",
+"clue": "Knowledge or skill you get from doing something.",
+"ex": "She has five years of experience."
+},
+{
+"en": "fair",
+"tr": "adil",
+"level": "B1",
+"clue": "Treating everyone in the same, right way.",
+"ex": "That's not fair!"
+},
+{
+"en": "familiar",
+"tr": "tanıdık",
+"level": "B1",
+"clue": "Known to you.",
+"ex": "His face looks familiar."
+},
+{
+"en": "flood",
+"tr": "sel",
+"level": "B1",
+"clue": "A lot of water that covers land that is usually dry.",
+"ex": "The flood closed the main road."
+},
+{
+"en": "frightened",
+"tr": "korkmuş",
+"level": "B1",
+"clue": "Afraid.",
+"ex": "The child was frightened by the storm."
+},
+{
+"en": "generous",
+"tr": "cömert",
+"level": "B1",
+"clue": "Happy to give money, time or help.",
+"ex": "Thank you, that's very generous."
+},
+{
+"en": "goal",
+"tr": "hedef",
+"level": "B1",
+"clue": "Something you want to achieve.",
+"ex": "My goal is to speak English well."
+},
+{
+"en": "grateful",
+"tr": "minnettar",
+"level": "B1",
+"clue": "Feeling thankful.",
+"ex": "I'm grateful for your help."
+},
+{
+"en": "habit",
+"tr": "alışkanlık",
+"level": "B1",
+"clue": "Something you do often, almost without thinking.",
+"ex": "Reading before bed is a good habit."
+},
+{
+"en": "honest",
+"tr": "dürüst",
+"level": "B1",
+"clue": "Always telling the truth.",
+"ex": "Please be honest with me."
+},
+{
+"en": "identify",
+"tr": "tespit etmek, belirlemek",
+"level": "B1",
+"clue": "To find out or recognise who or what something is.",
+"ex": "We need to identify the problem first."
+},
+{
+"en": "immediately",
+"tr": "hemen",
+"level": "B1",
+"clue": "Right now, without waiting.",
+"ex": "Call me immediately."
+},
+{
+"en": "improve",
+"tr": "geliştirmek",
+"level": "B1",
+"clue": "To make something better.",
+"ex": "I want to improve my English."
+},
+{
+"en": "include",
+"tr": "dahil etmek, içermek",
+"level": "B1",
+"clue": "To have something as a part.",
+"ex": "The price includes breakfast."
+},
+{
+"en": "increase",
+"tr": "artmak, artırmak",
+"level": "B1",
+"clue": "To become bigger in number or amount.",
+"ex": "Prices increased this year."
+},
+{
+"en": "influence",
+"tr": "etki",
+"level": "B1",
+"clue": "The power to change how someone thinks or acts.",
+"ex": "My father had a big influence on me."
+},
+{
+"en": "injured",
+"tr": "yaralı",
+"level": "B1",
+"clue": "Hurt in an accident.",
+"ex": "Two people were injured in the accident."
+},
+{
+"en": "instead",
+"tr": "yerine",
+"level": "B1",
+"clue": "In place of something else.",
+"ex": "Let's walk instead of taking a taxi."
+},
+{
+"en": "involve",
+"tr": "içermek, gerektirmek",
+"level": "B1",
+"clue": "To include something as a necessary part.",
+"ex": "The job involves a lot of travel."
+},
+{
+"en": "knowledge",
+"tr": "bilgi",
+"level": "B1",
+"clue": "What you know and understand.",
+"ex": "He has good knowledge of first aid."
+},
+{
+"en": "lack",
+"tr": "eksiklik",
+"level": "B1",
+"clue": "Not having enough of something.",
+"ex": "Lack of sleep makes me tired."
+},
+{
+"en": "likely",
+"tr": "muhtemel",
+"level": "B1",
+"clue": "Probably going to happen.",
+"ex": "It's likely to rain later."
+},
+{
+"en": "manage",
+"tr": "başarmak, yönetmek",
+"level": "B1",
+"clue": "To succeed in doing something difficult.",
+"ex": "We managed to finish on time."
+},
+{
+"en": "mention",
+"tr": "bahsetmek",
+"level": "B1",
+"clue": "To talk about something briefly.",
+"ex": "She mentioned your name."
+},
+{
+"en": "notice",
+"tr": "fark etmek",
+"level": "B1",
+"clue": "To see or become aware of something.",
+"ex": "Did you notice anything strange?"
+},
+{
+"en": "obvious",
+"tr": "açık, belli",
+"level": "B1",
+"clue": "Easy to see or understand.",
+"ex": "The answer is obvious."
+},
+{
+"en": "opinion",
+"tr": "fikir, görüş",
+"level": "B1",
+"clue": "What you think about something.",
+"ex": "In my opinion, it's a good plan."
+},
+{
+"en": "opportunity",
+"tr": "fırsat",
+"level": "B1",
+"clue": "A chance to do something.",
+"ex": "This trip is a great opportunity."
+},
+{
+"en": "organise",
+"tr": "düzenlemek, organize etmek",
+"level": "B1",
+"clue": "To plan and prepare an event.",
+"ex": "We organised a training for volunteers."
+},
+{
+"en": "patient",
+"tr": "sabırlı",
+"level": "B1",
+"clue": "Able to wait calmly.",
+"ex": "Be patient, it takes time."
+},
+{
+"en": "permission",
+"tr": "izin",
+"level": "B1",
+"clue": "When someone allows you to do something.",
+"ex": "You need permission to enter."
+},
+{
+"en": "prepare",
+"tr": "hazırlamak, hazırlanmak",
+"level": "B1",
+"clue": "To get something or yourself ready.",
+"ex": "I need to prepare for the presentation."
+},
+{
+"en": "pressure",
+"tr": "baskı",
+"level": "B1",
+"clue": "Stress caused by things you have to do.",
+"ex": "We work under a lot of pressure."
+},
+{
+"en": "prevent",
+"tr": "önlemek",
+"level": "B1",
+"clue": "To stop something bad from happening.",
+"ex": "Training can prevent accidents."
+},
+{
+"en": "proud",
+"tr": "gururlu",
+"level": "B1",
+"clue": "Happy about something good you or others did.",
+"ex": "I'm proud of my team."
+},
+{
+"en": "provide",
+"tr": "sağlamak",
+"level": "B1",
+"clue": "To give someone something they need.",
+"ex": "We provide food and water."
+},
+{
+"en": "purpose",
+"tr": "amaç",
+"level": "B1",
+"clue": "The reason for something.",
+"ex": "What's the purpose of this meeting?"
+},
+{
+"en": "realise",
+"tr": "farkına varmak",
+"level": "B1",
+"clue": "To suddenly understand or notice something.",
+"ex": "I realised I had left my keys."
+},
+{
+"en": "recently",
+"tr": "son zamanlarda",
+"level": "B1",
+"clue": "Not long ago.",
+"ex": "I've been very busy recently."
+},
+{
+"en": "recognise",
+"tr": "tanımak",
+"level": "B1",
+"clue": "To know someone or something because you saw it before.",
+"ex": "I didn't recognise you!"
+},
+{
+"en": "recommend",
+"tr": "tavsiye etmek",
+"level": "B1",
+"clue": "To say that something is good and someone should try it.",
+"ex": "Can you recommend a good restaurant?"
+},
+{
+"en": "reduce",
+"tr": "azaltmak",
+"level": "B1",
+"clue": "To make something smaller or less.",
+"ex": "We need to reduce costs."
+},
+{
+"en": "refuse",
+"tr": "reddetmek",
+"level": "B1",
+"clue": "To say no to something.",
+"ex": "He refused to answer."
+},
+{
+"en": "regret",
+"tr": "pişman olmak",
+"level": "B1",
+"clue": "To feel sorry about something you did or didn't do.",
+"ex": "I regret not studying harder."
+},
+{
+"en": "reliable",
+"tr": "güvenilir",
+"level": "B1",
+"clue": "Someone or something you can trust.",
+"ex": "She's a reliable colleague."
+},
+{
+"en": "remind",
+"tr": "hatırlatmak",
+"level": "B1",
+"clue": "To make someone remember something.",
+"ex": "Remind me to call my mother."
+},
+{
+"en": "request",
+"tr": "talep, rica",
+"level": "B1",
+"clue": "When you ask for something politely or officially.",
+"ex": "We received your request."
+},
+{
+"en": "require",
+"tr": "gerektirmek",
+"level": "B1",
+"clue": "To need something.",
+"ex": "This job requires patience."
+},
+{
+"en": "rescue",
+"tr": "kurtarmak",
+"level": "B1",
+"clue": "To save someone from danger.",
+"ex": "The team rescued three people."
+},
+{
+"en": "responsible",
+"tr": "sorumlu",
+"level": "B1",
+"clue": "Having the duty to take care of something.",
+"ex": "Who is responsible for this project?"
+},
+{
+"en": "result",
+"tr": "sonuç",
+"level": "B1",
+"clue": "What happens because of something.",
+"ex": "The results will be ready tomorrow."
+},
+{
+"en": "safety",
+"tr": "güvenlik",
+"level": "B1",
+"clue": "Being safe from harm.",
+"ex": "Safety comes first."
+},
+{
+"en": "schedule",
+"tr": "program, takvim",
+"level": "B1",
+"clue": "A plan that shows when things will happen.",
+"ex": "What's your schedule for tomorrow?"
+},
+{
+"en": "search",
+"tr": "aramak",
+"level": "B1",
+"clue": "To look carefully for someone or something.",
+"ex": "They searched the area all night."
+},
+{
+"en": "shelter",
+"tr": "barınak",
+"level": "B1",
+"clue": "A place that keeps you safe from bad weather or danger.",
+"ex": "Families stayed in a shelter after the flood."
+},
+{
+"en": "solution",
+"tr": "çözüm",
+"level": "B1",
+"clue": "A way to fix a problem.",
+"ex": "We need a quick solution."
+},
+{
+"en": "spread",
+"tr": "yayılmak, yaymak",
+"level": "B1",
+"clue": "To move over a large area.",
+"ex": "The fire spread quickly."
+},
+{
+"en": "succeed",
+"tr": "başarılı olmak",
+"level": "B1",
+"clue": "To do what you tried to do.",
+"ex": "If you work hard, you will succeed."
+},
+{
+"en": "suggest",
+"tr": "önermek",
+"level": "B1",
+"clue": "To give an idea for others to think about.",
+"ex": "I suggest we start early."
+},
+{
+"en": "supply",
+"tr": "malzeme, tedarik",
+"level": "B1",
+"clue": "Things that are given or sold to people who need them.",
+"ex": "We need more medical supplies."
+},
+{
+"en": "support",
+"tr": "desteklemek",
+"level": "B1",
+"clue": "To help someone.",
+"ex": "Thank you for your support."
+},
+{
+"en": "suppose",
+"tr": "sanmak, farz etmek",
+"level": "B1",
+"clue": "To think that something is probably true.",
+"ex": "I suppose you're right."
+},
+{
+"en": "survive",
+"tr": "hayatta kalmak",
+"level": "B1",
+"clue": "To stay alive after a dangerous event.",
+"ex": "Everyone survived the earthquake."
+},
+{
+"en": "task",
+"tr": "görev",
+"level": "B1",
+"clue": "A piece of work you have to do.",
+"ex": "My first task is to check emails."
+},
+{
+"en": "temporary",
+"tr": "geçici",
+"level": "B1",
+"clue": "Lasting only for a short time.",
+"ex": "This is a temporary solution."
+},
+{
+"en": "tough",
+"tr": "zorlu",
+"level": "B1",
+"clue": "Difficult.",
+"ex": "It was a tough week."
+},
+{
+"en": "training",
+"tr": "eğitim",
+"level": "B1",
+"clue": "Learning the skills for a job or a sport.",
+"ex": "The training lasts three days."
+},
+{
+"en": "translate",
+"tr": "çevirmek",
+"level": "B1",
+"clue": "To change words into another language.",
+"ex": "Can you translate this email?"
+},
+{
+"en": "trust",
+"tr": "güvenmek",
+"level": "B1",
+"clue": "To believe that someone is honest and good.",
+"ex": "I trust my team."
+},
+{
+"en": "urgent",
+"tr": "acil",
+"level": "B1",
+"clue": "Needing action very quickly.",
+"ex": "This is urgent. Please call me back."
+},
+{
+"en": "valuable",
+"tr": "değerli",
+"level": "B1",
+"clue": "Worth a lot.",
+"ex": "Your help is very valuable."
+},
+{
+"en": "victim",
+"tr": "kazazede, mağdur",
+"level": "B1",
+"clue": "A person who is hurt by a crime or a disaster.",
+"ex": "The victims received help quickly."
+},
+{
+"en": "volunteer",
+"tr": "gönüllü",
+"level": "B1",
+"clue": "A person who works without being paid.",
+"ex": "She works as a volunteer."
+},
+{
+"en": "warn",
+"tr": "uyarmak",
+"level": "B1",
+"clue": "To tell someone about a possible danger.",
+"ex": "They warned us about the storm."
+},
+{
+"en": "wonder",
+"tr": "merak etmek",
+"level": "B1",
+"clue": "To want to know something.",
+"ex": "I wonder what time it is."
+},
+{
+"en": "worth",
+"tr": "değer",
+"level": "B1",
+"clue": "Good or useful enough to do.",
+"ex": "The museum is worth a visit."
+}
+]
