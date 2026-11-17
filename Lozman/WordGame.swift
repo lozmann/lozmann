@@ -26,6 +26,7 @@ enum WordBank {
 
     static var a2: [Word] { all.filter { $0.level == "A2" } }
     static var b1: [Word] { all.filter { $0.level == "B1" } }
+    static var b2: [Word] { all.filter { $0.level == "B2" } }
 }
 
 // MARK: - Sound, haptics, speech
@@ -53,6 +54,14 @@ enum Sfx {
         }
         players[name]?.currentTime = 0
         players[name]?.play()
+    }
+
+    static func preview(_ name: String) {
+        activate()
+        if let url = Bundle.main.url(forResource: name, withExtension: "wav") {
+            players[name] = try? AVAudioPlayer(contentsOf: url)
+            players[name]?.play()
+        }
     }
 
     static func say(_ text: String) {
@@ -87,14 +96,25 @@ struct GameProgress: Codable {
 enum GameMode: String, CaseIterable, Identifiable {
     case meaning = "İng → Tr"
     case reverse = "Tr → İng"
+    case sentence = "Cümlede kullan"
     case riddle = "Bilmece"
     case mistakes = "Hatalarım"
     var id: String { rawValue }
+    var icon: String {
+        switch self {
+        case .meaning: return "character.book.closed"
+        case .reverse: return "arrow.left.arrow.right"
+        case .sentence: return "text.quote"
+        case .riddle: return "puzzlepiece"
+        case .mistakes: return "arrow.counterclockwise"
+        }
+    }
 }
 
 enum GameLevel: String, CaseIterable, Identifiable {
     case a2 = "A2"
     case b1 = "B1"
+    case b2 = "B2"
     case mixed = "Karışık"
     var id: String { rawValue }
 }
@@ -174,11 +194,15 @@ final class WordGame {
             let set = Set(progress.mistakes)
             return WordBank.all.filter { set.contains($0.en) }
         }
+        let base: [Word]
         switch level {
-        case .a2: return WordBank.a2
-        case .b1: return WordBank.b1
-        case .mixed: return WordBank.all
+        case .a2: base = WordBank.a2
+        case .b1: base = WordBank.b1
+        case .b2: base = WordBank.b2
+        case .mixed: base = WordBank.all
         }
+        if mode == .sentence { return base.filter { $0.ex.lowercased().contains($0.en.lowercased()) } }
+        return base
     }
 
     var mistakesEmpty: Bool { mode == .mistakes && progress.mistakes.isEmpty }
@@ -294,8 +318,9 @@ final class WordGame {
         let key = current.en.lowercased()
         guard let range = lower.range(of: key) else { return current.ex }
         let start = current.ex.index(current.ex.startIndex, offsetBy: lower.distance(from: lower.startIndex, to: range.lowerBound))
-        let end = current.ex.index(start, offsetBy: key.count)
-        return current.ex.replacingCharacters(in: start..<end, with: String(repeating: "_", count: key.count))
+        var end = current.ex.index(start, offsetBy: key.count)
+        while end < current.ex.endIndex, current.ex[end].isLetter { end = current.ex.index(after: end) }
+        return current.ex.replacingCharacters(in: start..<end, with: "_____")
     }
 }
 
@@ -311,10 +336,23 @@ struct WordGameView: View {
             VStack(spacing: 16) {
                 header
 
-                Picker("Mod", selection: $game.mode) {
-                    ForEach(GameMode.allCases) { Text($0.rawValue).tag($0) }
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 8) {
+                        ForEach(GameMode.allCases) { m in
+                            Button {
+                                game.mode = m
+                            } label: {
+                                Label(m.rawValue, systemImage: m.icon)
+                                    .font(.subheadline.weight(game.mode == m ? .semibold : .regular))
+                                    .padding(.horizontal, 12)
+                                    .padding(.vertical, 8)
+                                    .background(game.mode == m ? Color.loz : Color(.secondarySystemBackground), in: Capsule())
+                                    .foregroundStyle(game.mode == m ? Color.white : Color.primary)
+                            }
+                            .buttonStyle(.plain)
+                        }
+                    }
                 }
-                .pickerStyle(.segmented)
 
                 if game.mode != .mistakes {
                     Picker("Seviye", selection: $game.level) {
@@ -337,6 +375,7 @@ struct WordGameView: View {
                     switch game.mode {
                     case .meaning, .mistakes: choiceCard(reverse: false)
                     case .reverse: choiceCard(reverse: true)
+                    case .sentence: sentenceCard
                     case .riddle: riddleCard
                     }
                 }
@@ -524,6 +563,55 @@ struct WordGameView: View {
         if option.en == game.current.en { return Color.green.opacity(0.18) }
         if option.en == picked.en { return Color.red.opacity(0.18) }
         return Color(.secondarySystemBackground)
+    }
+
+    private var sentenceCard: some View {
+        VStack(spacing: 16) {
+            levelBadge
+            Text("Boşluğa hangi kelime gelir?")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+            Text(game.picked == nil ? game.hiddenSentence : game.current.ex)
+                .font(.title3.weight(.semibold))
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 4)
+            VStack(spacing: 10) {
+                ForEach(game.options, id: \.self) { option in
+                    Button {
+                        withAnimation(.snappy) { game.pick(option) }
+                        if option.en == game.current.en { Sfx.say(game.current.ex) }
+                    } label: {
+                        HStack {
+                            Text(option.en).font(.body.weight(.medium))
+                            if game.picked != nil {
+                                Text("· \(option.tr)").foregroundStyle(.secondary)
+                            }
+                            Spacer()
+                            if let picked = game.picked {
+                                if option.en == game.current.en {
+                                    Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
+                                } else if option.en == picked.en {
+                                    Image(systemName: "xmark.circle.fill").foregroundStyle(.red)
+                                }
+                            }
+                        }
+                        .padding()
+                        .background(optionColor(option), in: RoundedRectangle(cornerRadius: 12))
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(game.picked != nil)
+                }
+            }
+            if let picked = game.picked {
+                Text(picked.en == game.current.en ? "Doğru!" : "Doğrusu: \(game.current.en) = \(game.current.tr)")
+                    .font(.headline)
+                    .foregroundStyle(picked.en == game.current.en ? Color.green : Color.red)
+                nextButton
+            }
+        }
+        .padding()
+        .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 18))
+        .overlay(RoundedRectangle(cornerRadius: 18).strokeBorder(Color.primary.opacity(0.08)))
     }
 
     private var riddleCard: some View {

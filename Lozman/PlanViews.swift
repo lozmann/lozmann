@@ -216,6 +216,18 @@ struct TodayView: View {
                             ProgressView(value: Double(doneCount), total: Double(todays.count))
                                 .tint(.loz)
                         }
+                        TimelineView(.everyMinute) { context in
+                            if let st = WorkClock.status(now: context.date) {
+                                VStack(alignment: .leading, spacing: 6) {
+                                    Label(st.text, systemImage: "briefcase.fill")
+                                        .font(.subheadline)
+                                        .foregroundStyle(.secondary)
+                                    if let p = st.progress {
+                                        ProgressView(value: p).tint(.blue)
+                                    }
+                                }
+                            }
+                        }
                         HStack {
                             TextField("Bugüne hızlıca ekle", text: $quick)
                                 .submitLabel(.done)
@@ -306,7 +318,7 @@ struct TodayView: View {
         let cal = Calendar.current
         let next = cal.component(.hour, from: Date()) + 1
         let time = next <= 23 ? String(format: "%02d:00", next) : "23:59"
-        store.upsert(Plan(title: title, date: Day.today, time: time))
+        store.upsert(Plan(title: title, category: WorkClock.isWorkingNow ? .work : .personal, date: Day.today, time: time))
         quick = ""
     }
 }

@@ -1881,5 +1881,761 @@
 "level": "B1",
 "clue": "Good or useful enough to do.",
 "ex": "The museum is worth a visit."
+},
+{
+"en": "abandon",
+"tr": "terk etmek",
+"level": "B2",
+"clue": "To leave someone or something and not come back.",
+"ex": "They had to abandon the car in the snow."
+},
+{
+"en": "absorb",
+"tr": "emmek",
+"level": "B2",
+"clue": "To take in a liquid or information.",
+"ex": "The towel absorbed the water."
+},
+{
+"en": "accurate",
+"tr": "doğru, kesin",
+"level": "B2",
+"clue": "Correct in every detail.",
+"ex": "We need accurate information about the damage."
+},
+{
+"en": "acknowledge",
+"tr": "kabul etmek, onaylamak",
+"level": "B2",
+"clue": "To accept that something is true or exists.",
+"ex": "He acknowledged his mistake."
+},
+{
+"en": "adapt",
+"tr": "uyum sağlamak",
+"level": "B2",
+"clue": "To change to fit a new situation.",
+"ex": "It took me a month to adapt to the new job."
+},
+{
+"en": "adequate",
+"tr": "yeterli",
+"level": "B2",
+"clue": "Good enough, or enough for a need.",
+"ex": "The shelter didn't have adequate heating."
+},
+{
+"en": "allocate",
+"tr": "tahsis etmek, ayırmak",
+"level": "B2",
+"clue": "To give money, time or things for a purpose.",
+"ex": "Most of the budget was allocated to training."
+},
+{
+"en": "alternative",
+"tr": "seçenek, alternatif",
+"level": "B2",
+"clue": "Another possible choice.",
+"ex": "Is there an alternative route?"
+},
+{
+"en": "anticipate",
+"tr": "öngörmek",
+"level": "B2",
+"clue": "To expect something and prepare for it.",
+"ex": "We anticipate heavy rain tonight."
+},
+{
+"en": "approach",
+"tr": "yaklaşım",
+"level": "B2",
+"clue": "A way of dealing with something.",
+"ex": "We need a new approach to this problem."
+},
+{
+"en": "appropriate",
+"tr": "uygun",
+"level": "B2",
+"clue": "Right for a situation.",
+"ex": "Wear appropriate clothes for the meeting."
+},
+{
+"en": "assess",
+"tr": "değerlendirmek",
+"level": "B2",
+"clue": "To judge the size, quality or value of something.",
+"ex": "Experts assessed the damage after the earthquake."
+},
+{
+"en": "assign",
+"tr": "görevlendirmek, atamak",
+"level": "B2",
+"clue": "To give someone a job or a task.",
+"ex": "I was assigned to the logistics team."
+},
+{
+"en": "assume",
+"tr": "varsaymak",
+"level": "B2",
+"clue": "To think something is true without proof.",
+"ex": "I assumed you had already left."
+},
+{
+"en": "attitude",
+"tr": "tutum, tavır",
+"level": "B2",
+"clue": "The way you think and feel about something.",
+"ex": "She has a positive attitude."
+},
+{
+"en": "authority",
+"tr": "yetki, yetkili makam",
+"level": "B2",
+"clue": "The power to decide, or an official organisation.",
+"ex": "The local authority closed the road."
+},
+{
+"en": "beneficial",
+"tr": "faydalı",
+"level": "B2",
+"clue": "Having a good effect.",
+"ex": "Regular exercise is beneficial for your health."
+},
+{
+"en": "brief",
+"tr": "kısa",
+"level": "B2",
+"clue": "Lasting a short time.",
+"ex": "We had a brief meeting this morning."
+},
+{
+"en": "capable",
+"tr": "yetenekli, muktedir",
+"level": "B2",
+"clue": "Able to do something well.",
+"ex": "She is capable of leading the team."
+},
+{
+"en": "capacity",
+"tr": "kapasite",
+"level": "B2",
+"clue": "The amount something can hold or do.",
+"ex": "The shelter has a capacity of 200 people."
+},
+{
+"en": "cease",
+"tr": "durmak, sona ermek",
+"level": "B2",
+"clue": "To stop.",
+"ex": "The rain finally ceased in the evening."
+},
+{
+"en": "circumstances",
+"tr": "koşullar",
+"level": "B2",
+"clue": "The facts or conditions of a situation.",
+"ex": "Under these circumstances, we must wait."
+},
+{
+"en": "collapse",
+"tr": "çökmek",
+"level": "B2",
+"clue": "To fall down suddenly.",
+"ex": "The old building collapsed during the earthquake."
+},
+{
+"en": "commitment",
+"tr": "bağlılık, taahhüt",
+"level": "B2",
+"clue": "A promise to do something, or strong dedication.",
+"ex": "Thank you for your commitment to the project."
+},
+{
+"en": "compensate",
+"tr": "telafi etmek, tazmin etmek",
+"level": "B2",
+"clue": "To make up for a loss or a problem.",
+"ex": "Nothing can compensate for lost time."
+},
+{
+"en": "comprehensive",
+"tr": "kapsamlı",
+"level": "B2",
+"clue": "Including everything.",
+"ex": "We prepared a comprehensive report."
+},
+{
+"en": "concern",
+"tr": "endişe",
+"level": "B2",
+"clue": "A feeling of worry.",
+"ex": "There is growing concern about the river level."
+},
+{
+"en": "consequence",
+"tr": "sonuç (genelde kötü)",
+"level": "B2",
+"clue": "A result of an action, often a bad one.",
+"ex": "Think about the consequences before you act."
+},
+{
+"en": "considerable",
+"tr": "epey, kayda değer",
+"level": "B2",
+"clue": "Large in size or amount.",
+"ex": "The project took a considerable amount of time."
+},
+{
+"en": "consistent",
+"tr": "tutarlı",
+"level": "B2",
+"clue": "Always acting or happening in the same way.",
+"ex": "You need to be consistent in your training."
+},
+{
+"en": "constant",
+"tr": "sürekli",
+"level": "B2",
+"clue": "Happening all the time.",
+"ex": "The constant noise kept me awake."
+},
+{
+"en": "coordinate",
+"tr": "koordine etmek",
+"level": "B2",
+"clue": "To organise people so they work together well.",
+"ex": "She coordinates the work of three teams."
+},
+{
+"en": "crucial",
+"tr": "çok önemli, hayati",
+"level": "B2",
+"clue": "Extremely important.",
+"ex": "The first 72 hours are crucial in a rescue."
+},
+{
+"en": "debate",
+"tr": "tartışma",
+"level": "B2",
+"clue": "A discussion where people give different opinions.",
+"ex": "There was a long debate about the budget."
+},
+{
+"en": "decline",
+"tr": "azalmak, düşmek",
+"level": "B2",
+"clue": "To become less.",
+"ex": "Sales declined last year."
+},
+{
+"en": "dedicated",
+"tr": "kendini adamış",
+"level": "B2",
+"clue": "Working hard because you care a lot.",
+"ex": "He is a dedicated volunteer."
+},
+{
+"en": "definite",
+"tr": "kesin",
+"level": "B2",
+"clue": "Certain and fixed.",
+"ex": "We don't have a definite date yet."
+},
+{
+"en": "deny",
+"tr": "inkâr etmek",
+"level": "B2",
+"clue": "To say that something is not true.",
+"ex": "He denied breaking the window."
+},
+{
+"en": "determine",
+"tr": "belirlemek",
+"level": "B2",
+"clue": "To find out or decide something.",
+"ex": "We must determine the cause of the fire."
+},
+{
+"en": "distinguish",
+"tr": "ayırt etmek",
+"level": "B2",
+"clue": "To see the difference between things.",
+"ex": "Can you distinguish between the two sounds?"
+},
+{
+"en": "distribute",
+"tr": "dağıtmak",
+"level": "B2",
+"clue": "To give things to many people.",
+"ex": "Volunteers distributed food and blankets."
+},
+{
+"en": "eliminate",
+"tr": "ortadan kaldırmak",
+"level": "B2",
+"clue": "To remove something completely.",
+"ex": "We want to eliminate all risks."
+},
+{
+"en": "emerge",
+"tr": "ortaya çıkmak",
+"level": "B2",
+"clue": "To appear or come out.",
+"ex": "New problems emerged during the test."
+},
+{
+"en": "emphasise",
+"tr": "vurgulamak",
+"level": "B2",
+"clue": "To give special importance to something.",
+"ex": "The trainer emphasised the safety rules."
+},
+{
+"en": "enable",
+"tr": "olanak sağlamak",
+"level": "B2",
+"clue": "To make it possible for someone to do something.",
+"ex": "The new system enables faster communication."
+},
+{
+"en": "ensure",
+"tr": "sağlamak, güvence altına almak",
+"level": "B2",
+"clue": "To make certain that something happens.",
+"ex": "Please ensure that all doors are closed."
+},
+{
+"en": "estimate",
+"tr": "tahmin etmek",
+"level": "B2",
+"clue": "To guess an amount or a size roughly.",
+"ex": "We estimate the cost at two million lira."
+},
+{
+"en": "evacuate",
+"tr": "tahliye etmek",
+"level": "B2",
+"clue": "To move people out of a dangerous place.",
+"ex": "They evacuated the village before the flood."
+},
+{
+"en": "evaluate",
+"tr": "değerlendirmek",
+"level": "B2",
+"clue": "To judge how good or useful something is.",
+"ex": "We will evaluate the exercise next week."
+},
+{
+"en": "eventually",
+"tr": "sonunda",
+"level": "B2",
+"clue": "In the end, after a long time.",
+"ex": "Eventually, they found the missing hiker."
+},
+{
+"en": "exceed",
+"tr": "aşmak",
+"level": "B2",
+"clue": "To be more than a limit.",
+"ex": "Do not exceed the speed limit."
+},
+{
+"en": "expand",
+"tr": "genişlemek, büyümek",
+"level": "B2",
+"clue": "To become or make something larger.",
+"ex": "The company plans to expand next year."
+},
+{
+"en": "expertise",
+"tr": "uzmanlık",
+"level": "B2",
+"clue": "Special skill or knowledge.",
+"ex": "We need your expertise in rope rescue."
+},
+{
+"en": "facility",
+"tr": "tesis",
+"level": "B2",
+"clue": "A building or place for a special purpose.",
+"ex": "The training facility is near the airport."
+},
+{
+"en": "feasible",
+"tr": "uygulanabilir",
+"level": "B2",
+"clue": "Possible and practical to do.",
+"ex": "Is this plan feasible?"
+},
+{
+"en": "flexible",
+"tr": "esnek",
+"level": "B2",
+"clue": "Able to change easily.",
+"ex": "My working hours are not very flexible."
+},
+{
+"en": "fundamental",
+"tr": "temel",
+"level": "B2",
+"clue": "Basic and very important.",
+"ex": "Trust is fundamental in a team."
+},
+{
+"en": "genuine",
+"tr": "gerçek, samimi",
+"level": "B2",
+"clue": "Real, not fake.",
+"ex": "She showed genuine interest in the project."
+},
+{
+"en": "guarantee",
+"tr": "garanti etmek",
+"level": "B2",
+"clue": "To promise that something will happen.",
+"ex": "We can't guarantee good weather."
+},
+{
+"en": "hazard",
+"tr": "tehlike",
+"level": "B2",
+"clue": "Something that can cause harm.",
+"ex": "Broken glass is a hazard."
+},
+{
+"en": "highlight",
+"tr": "öne çıkarmak",
+"level": "B2",
+"clue": "To make something easy to notice.",
+"ex": "The report highlights three main problems."
+},
+{
+"en": "implement",
+"tr": "uygulamak",
+"level": "B2",
+"clue": "To put a plan into action.",
+"ex": "We will implement the new rules next month."
+},
+{
+"en": "imply",
+"tr": "ima etmek",
+"level": "B2",
+"clue": "To suggest something without saying it directly.",
+"ex": "Are you trying to imply that I'm lazy?"
+},
+{
+"en": "inevitable",
+"tr": "kaçınılmaz",
+"level": "B2",
+"clue": "Certain to happen.",
+"ex": "Some delays are inevitable."
+},
+{
+"en": "initial",
+"tr": "ilk, başlangıçtaki",
+"level": "B2",
+"clue": "Happening at the beginning.",
+"ex": "The initial results look good."
+},
+{
+"en": "insight",
+"tr": "içgörü, kavrayış",
+"level": "B2",
+"clue": "A clear, deep understanding.",
+"ex": "The book gives insight into Thai culture."
+},
+{
+"en": "inspect",
+"tr": "denetlemek, incelemek",
+"level": "B2",
+"clue": "To look at something carefully to check it.",
+"ex": "Engineers will inspect the bridge."
+},
+{
+"en": "intend",
+"tr": "niyetinde olmak",
+"level": "B2",
+"clue": "To plan to do something.",
+"ex": "I intend to finish this by Friday."
+},
+{
+"en": "interpret",
+"tr": "yorumlamak, sözlü çeviri yapmak",
+"level": "B2",
+"clue": "To explain the meaning, or to translate speech.",
+"ex": "Can you interpret for the visitors?"
+},
+{
+"en": "investigate",
+"tr": "soruşturmak, araştırmak",
+"level": "B2",
+"clue": "To try to find out the facts about something.",
+"ex": "The police will investigate the accident."
+},
+{
+"en": "justify",
+"tr": "gerekçelendirmek",
+"level": "B2",
+"clue": "To give a good reason for something.",
+"ex": "How can you justify such a high price?"
+},
+{
+"en": "maintain",
+"tr": "sürdürmek, bakımını yapmak",
+"level": "B2",
+"clue": "To keep something in good condition.",
+"ex": "We maintain our equipment every month."
+},
+{
+"en": "minimise",
+"tr": "en aza indirmek",
+"level": "B2",
+"clue": "To make something as small as possible.",
+"ex": "We must minimise the risk to the team."
+},
+{
+"en": "negotiate",
+"tr": "müzakere etmek",
+"level": "B2",
+"clue": "To discuss something to reach an agreement.",
+"ex": "They will negotiate a new contract."
+},
+{
+"en": "objective",
+"tr": "hedef, amaç",
+"level": "B2",
+"clue": "Something you plan to achieve.",
+"ex": "The main objective is to save lives."
+},
+{
+"en": "obtain",
+"tr": "elde etmek",
+"level": "B2",
+"clue": "To get something, often with effort.",
+"ex": "You need to obtain permission first."
+},
+{
+"en": "occur",
+"tr": "meydana gelmek",
+"level": "B2",
+"clue": "To happen.",
+"ex": "Accidents often occur at night."
+},
+{
+"en": "outcome",
+"tr": "sonuç",
+"level": "B2",
+"clue": "The final result.",
+"ex": "We are happy with the outcome."
+},
+{
+"en": "overcome",
+"tr": "üstesinden gelmek",
+"level": "B2",
+"clue": "To succeed in dealing with a problem.",
+"ex": "You can overcome your fear of heights."
+},
+{
+"en": "participate",
+"tr": "katılmak",
+"level": "B2",
+"clue": "To take part in something.",
+"ex": "Fifty teams will participate in the exercise."
+},
+{
+"en": "perceive",
+"tr": "algılamak",
+"level": "B2",
+"clue": "To notice or understand something in a certain way.",
+"ex": "How do people perceive our work?"
+},
+{
+"en": "persuade",
+"tr": "ikna etmek",
+"level": "B2",
+"clue": "To make someone agree to do something.",
+"ex": "I tried to persuade him to come with us."
+},
+{
+"en": "potential",
+"tr": "olası, potansiyel",
+"level": "B2",
+"clue": "Possible in the future.",
+"ex": "We discussed potential risks."
+},
+{
+"en": "precise",
+"tr": "kesin, tam",
+"level": "B2",
+"clue": "Exact and accurate.",
+"ex": "Give me the precise location."
+},
+{
+"en": "predict",
+"tr": "öngörmek, tahmin etmek",
+"level": "B2",
+"clue": "To say what will happen in the future.",
+"ex": "Nobody can predict earthquakes."
+},
+{
+"en": "priority",
+"tr": "öncelik",
+"level": "B2",
+"clue": "Something more important than other things.",
+"ex": "Safety is our top priority."
+},
+{
+"en": "procedure",
+"tr": "prosedür, usul",
+"level": "B2",
+"clue": "The official way of doing something.",
+"ex": "Follow the standard procedure."
+},
+{
+"en": "promote",
+"tr": "terfi ettirmek, desteklemek",
+"level": "B2",
+"clue": "To move someone to a higher job, or to support something.",
+"ex": "They want to promote her to manager."
+},
+{
+"en": "pursue",
+"tr": "peşinden gitmek, sürdürmek",
+"level": "B2",
+"clue": "To try to achieve something over a long time.",
+"ex": "He wants to pursue a career in medicine."
+},
+{
+"en": "reinforce",
+"tr": "güçlendirmek",
+"level": "B2",
+"clue": "To make something stronger.",
+"ex": "They will reinforce the walls of the school."
+},
+{
+"en": "reluctant",
+"tr": "isteksiz",
+"level": "B2",
+"clue": "Not wanting to do something.",
+"ex": "He was reluctant to ask for help."
+},
+{
+"en": "resolve",
+"tr": "çözmek",
+"level": "B2",
+"clue": "To find a solution to a problem.",
+"ex": "We need to resolve this issue quickly."
+},
+{
+"en": "resource",
+"tr": "kaynak",
+"level": "B2",
+"clue": "Something useful, like money, people or materials.",
+"ex": "We don't have enough resources."
+},
+{
+"en": "restore",
+"tr": "eski haline getirmek",
+"level": "B2",
+"clue": "To bring something back to how it was.",
+"ex": "They will restore power in a few hours."
+},
+{
+"en": "restrict",
+"tr": "kısıtlamak",
+"level": "B2",
+"clue": "To limit something.",
+"ex": "They restrict access to the area."
+},
+{
+"en": "retain",
+"tr": "elde tutmak, korumak",
+"level": "B2",
+"clue": "To keep something.",
+"ex": "The company wants to retain its best staff."
+},
+{
+"en": "reveal",
+"tr": "ortaya çıkarmak",
+"level": "B2",
+"clue": "To show something that was hidden.",
+"ex": "The test will reveal the problem."
+},
+{
+"en": "significant",
+"tr": "önemli, kayda değer",
+"level": "B2",
+"clue": "Large or important enough to notice.",
+"ex": "There was a significant increase in costs."
+},
+{
+"en": "sufficient",
+"tr": "yeterli",
+"level": "B2",
+"clue": "Enough.",
+"ex": "We have sufficient water for three days."
+},
+{
+"en": "sustain",
+"tr": "sürdürmek",
+"level": "B2",
+"clue": "To keep something going.",
+"ex": "We can't sustain this speed for long."
+},
+{
+"en": "tendency",
+"tr": "eğilim",
+"level": "B2",
+"clue": "Something you usually do or that usually happens.",
+"ex": "He has a tendency to arrive late."
+},
+{
+"en": "thorough",
+"tr": "titiz, eksiksiz",
+"level": "B2",
+"clue": "Careful and complete.",
+"ex": "The team did a thorough search."
+},
+{
+"en": "ultimately",
+"tr": "nihayetinde",
+"level": "B2",
+"clue": "In the end.",
+"ex": "Ultimately, it's your decision."
+},
+{
+"en": "undergo",
+"tr": "geçirmek (değişim, ameliyat)",
+"level": "B2",
+"clue": "To experience something, often something difficult.",
+"ex": "The building will undergo repairs."
+},
+{
+"en": "vulnerable",
+"tr": "savunmasız, kırılgan",
+"level": "B2",
+"clue": "Easy to hurt or harm.",
+"ex": "Old people are more vulnerable in heat waves."
+},
+{
+"en": "widespread",
+"tr": "yaygın",
+"level": "B2",
+"clue": "Happening in many places.",
+"ex": "There was widespread damage after the storm."
+},
+{
+"en": "withdraw",
+"tr": "(para) çekmek, geri çekilmek",
+"level": "B2",
+"clue": "To take money out of a bank, or to move back.",
+"ex": "I need to withdraw some cash."
+},
+{
+"en": "workload",
+"tr": "iş yükü",
+"level": "B2",
+"clue": "The amount of work you have to do.",
+"ex": "My workload is very heavy this month."
 }
 ]

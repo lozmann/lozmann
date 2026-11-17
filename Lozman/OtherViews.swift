@@ -170,6 +170,11 @@ struct SettingsView: View {
     @Environment(PlanStore.self) private var store
     @AppStorage("morningSummary") private var morning = true
     @AppStorage("eveningSummary") private var evening = true
+    @AppStorage("notifSound") private var sound = "lz_zil"
+    @AppStorage("nagOn") private var nag = true
+    @AppStorage("workOn") private var workOn = true
+    @AppStorage("workStart") private var workStart = 540
+    @AppStorage("workEnd") private var workEnd = 1080
     @State private var status: UNAuthorizationStatus = .notDetermined
     @State private var pending = 0
 
@@ -213,6 +218,32 @@ struct SettingsView: View {
                 }
 
                 Section {
+                    Picker("Bildirim sesi", selection: $sound) {
+                        ForEach(Notifier.sounds, id: \.id) { s in Text(s.name).tag(s.id) }
+                    }
+                    if sound != "default" {
+                        Button("Sesi dinle") { Sfx.preview(sound) }
+                    }
+                    Toggle("İşaretlemediklerimi tekrar hatırlat", isOn: $nag)
+                } header: {
+                    Text("Bildirim ayarları")
+                } footer: {
+                    Text("Açıkken, işaretlemediğin planlar için saatinden yaklaşık 2 saat sonra \"Hâlâ işaretlemedin\" bildirimi ve saat 22:00'de günün açık kalanlarının listesi gelir. Ses yüksekliği telefonun zil sesine bağlıdır.")
+                }
+
+                Section {
+                    Toggle("Mesai saatlerim", isOn: $workOn)
+                    if workOn {
+                        DatePicker("Başlangıç", selection: minutesBinding($workStart), displayedComponents: .hourAndMinute)
+                        DatePicker("Bitiş", selection: minutesBinding($workEnd), displayedComponents: .hourAndMinute)
+                    }
+                } header: {
+                    Text("İş")
+                } footer: {
+                    Text("Hafta içi günlerde Bugün ekranında mesai durumu görünür, mesai bitince açık iş planlarını ve akşam planlarını özetleyen bir bildirim gelir. Mesai saatinde hızlı eklediğin planlar İş türünde kaydedilir.")
+                }
+
+                Section {
                     Text("Lozman ücretsiz Apple ID ile yüklendiği için imzası 7 günde bir yenilenmeli. Bilgisayarın açık, AltServer çalışıyor ve telefonun aynı Wi-Fi'deyken AltStore bunu kendisi yapar. Yenilenmezse uygulama açılmaz ama planların silinmez.")
                         .font(.callout)
                 } header: {
@@ -228,8 +259,23 @@ struct SettingsView: View {
             .navigationTitle("Ayarlar")
             .onChange(of: morning) { _, _ in refresh() }
             .onChange(of: evening) { _, _ in refresh() }
+            .onChange(of: sound) { _, _ in refresh() }
+            .onChange(of: nag) { _, _ in refresh() }
+            .onChange(of: workOn) { _, _ in refresh() }
+            .onChange(of: workStart) { _, _ in refresh() }
+            .onChange(of: workEnd) { _, _ in refresh() }
             .task { await loadStatus() }
         }
+    }
+
+    private func minutesBinding(_ value: Binding<Int>) -> Binding<Date> {
+        Binding(
+            get: { Calendar.current.date(bySettingHour: value.wrappedValue / 60, minute: value.wrappedValue % 60, second: 0, of: Date()) ?? Date() },
+            set: { d in
+                let c = Calendar.current.dateComponents([.hour, .minute], from: d)
+                value.wrappedValue = (c.hour ?? 0) * 60 + (c.minute ?? 0)
+            }
+        )
     }
 
     private func refresh() {

@@ -8,6 +8,8 @@ struct LozmanApp: App {
     @State private var profile = ProfileStore.shared
     @State private var notes = NotesStore.shared
     @State private var assistant = AssistantStore.shared
+    @State private var wishes = WishStore.shared
+    @State private var news = NewsStore.shared
     @State private var dayKey = Day.today
     @Environment(\.scenePhase) private var phase
 
@@ -20,6 +22,8 @@ struct LozmanApp: App {
                 .environment(profile)
                 .environment(notes)
                 .environment(assistant)
+                .environment(wishes)
+                .environment(news)
                 .tint(.loz)
                 .onAppear {
                     Notifier.requestAuthorization()
@@ -80,9 +84,26 @@ struct MoreView: View {
                         }
                     }
                     NavigationLink {
+                        WishlistView()
+                    } label: {
+                        Label("Satın alacaklarım", systemImage: "cart.fill")
+                    }
+                    NavigationLink {
+                        NewsView()
+                    } label: {
+                        Label("Gündem", systemImage: "newspaper.fill")
+                    }
+                }
+                Section("Oyunlar") {
+                    NavigationLink {
                         WordGameView()
                     } label: {
                         Label("İngilizce kelime oyunu", systemImage: "character.book.closed.fill")
+                    }
+                    NavigationLink {
+                        SnakeView()
+                    } label: {
+                        Label("Yılan", systemImage: "scribble.variable")
                     }
                 }
                 Section {

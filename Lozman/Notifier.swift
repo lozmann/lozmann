@@ -56,11 +56,34 @@ enum Notifier {
         }
     }
 
+    static let sounds: [(id: String, name: String)] = [
+        ("lz_zil", "Zil"), ("lz_marimba", "Marimba"), ("lz_dikkat", "Dikkat (bip bip)"), ("default", "iPhone varsayılanı")
+    ]
+
+    static var currentSound: UNNotificationSound {
+        let id = UserDefaults.standard.string(forKey: "notifSound") ?? "lz_zil"
+        if id == "default" { return .default }
+        return UNNotificationSound(named: UNNotificationSoundName("\(id).wav"))
+    }
+
+    /// Working hours, in minutes after midnight.
+    static var work: (on: Bool, start: Int, end: Int) {
+        let d = UserDefaults.standard
+        return (d.object(forKey: "workOn") as? Bool ?? true,
+                d.object(forKey: "workStart") as? Int ?? 9 * 60,
+                d.object(forKey: "workEnd") as? Int ?? 18 * 60)
+    }
+
+    static func isWorkday(_ day: String) -> Bool {
+        let w = Calendar.current.component(.weekday, from: Day.date(day))
+        return w != 1 && w != 7
+    }
+
     private static func content(title: String, body: String, plan: Plan?, day: String) -> UNMutableNotificationContent {
         let c = UNMutableNotificationContent()
         c.title = title
         c.body = body
-        c.sound = .default
+        c.sound = currentSound
         if let plan {
             c.categoryIdentifier = planCategory
             c.userInfo = ["plan": plan.id, "day": day]
@@ -74,6 +97,7 @@ enum Notifier {
         let horizon = now.addingTimeInterval(21 * 86400)
         let today = Day.today
         let defaults = UserDefaults.standard
+        let nag = defaults.object(forKey: "nagOn") as? Bool ?? true
         var list: [(date: Date, id: String, content: UNMutableNotificationContent)] = []
 
         for offset in 0..<29 {
@@ -90,9 +114,20 @@ enum Notifier {
                         list.append((fire, "\(p.id)|\(day)|ask", content(title: "Bunu yaptın mı?", body: p.title, plan: p, day: day)))
                     }
                 }
+                // Extra nudge if the plan is still not ticked off a while later.
+                if nag, offset <= 3, !p.time.isEmpty {
+                    let wait = max(120, p.askAfter + 90)
+                    let fire = p.dueDate(on: day).addingTimeInterval(Double(wait) * 60)
+                    let late = Calendar.current.date(bySettingHour: 23, minute: 0, second: 0, of: Day.date(day)) ?? fire
+                    if fire > now && fire < horizon && fire < late {
+                        list.append((fire, "\(p.id)|\(day)|nag",
+                                     content(title: "Hâlâ işaretlemedin", body: "\(p.title) · yaptın mı? Yaptıysan işaretle.", plan: p, day: day)))
+                    }
+                }
             }
         }
 
+        let work = Self.work
         let morning = defaults.object(forKey: "morningSummary") as? Bool ?? true
         let evening = defaults.object(forKey: "eveningSummary") as? Bool ?? true
         let cal = Calendar.current
@@ -106,6 +141,31 @@ enum Notifier {
                     "Bugün \(items.count) planın var: " + items.prefix(3).map { $0.time.isEmpty ? $0.title : "\($0.time) \($0.title)" }.joined(separator: ", ")
                 list.append((fire, "summary|\(day)|morning", content(title: morningTitle, body: body, plan: nil, day: day)))
             }
+            let dayPlans = plans.filter { $0.occurs(on: day) }
+
+            // End of the working day: what is left at work, what is planned for the evening.
+            if work.on, isWorkday(day),
+               let fire = cal.date(bySettingHour: work.end / 60, minute: work.end % 60, second: 0, of: Day.date(day)), fire > now {
+                let openWork = dayPlans.filter { $0.category == .work && !$0.isDone(day) }
+                let evening = dayPlans.filter { $0.category != .work && !$0.isDone(day) && $0.sortTime >= String(format: "%02d:%02d", work.end / 60, work.end % 60) }
+                    .sorted { $0.sortTime < $1.sortTime }
+                var parts: [String] = []
+                if !openWork.isEmpty { parts.append("İşaretlenmemiş \(openWork.count) iş planın var: " + openWork.prefix(2).map(\.title).joined(separator: ", ")) }
+                if !evening.isEmpty { parts.append("Akşam: " + evening.prefix(3).map { "\($0.time) \($0.title)" }.joined(separator: ", ")) }
+                let body = parts.isEmpty ? "İyi akşamlar, bugün iş tarafında açık plan yok." : parts.joined(separator: "\n")
+                list.append((fire, "summary|\(day)|workend", content(title: "Mesai bitti", body: body, plan: nil, day: day)))
+            }
+
+            // Evening check: everything still unticked today.
+            if nag, offset <= 3, let fire = cal.date(bySettingHour: 22, minute: 0, second: 0, of: Day.date(day)), fire > now {
+                let open = dayPlans.filter { !$0.isDone(day) }
+                if !open.isEmpty {
+                    var body = open.prefix(4).map { $0.time.isEmpty ? $0.title : "\($0.time) \($0.title)" }.joined(separator: "\n")
+                    if open.count > 4 { body += "\nve \(open.count - 4) plan daha" }
+                    list.append((fire, "summary|\(day)|open", content(title: "Bugün işaretlemediğin \(open.count) plan var", body: body, plan: nil, day: day)))
+                }
+            }
+
             let tomorrow = Day.add(day, 1)
             let items = plans.filter { $0.occurs(on: tomorrow) }.sorted { $0.sortTime < $1.sortTime }
             if evening, !items.isEmpty, let fire = cal.date(bySettingHour: 21, minute: 0, second: 0, of: Day.date(day)), fire > now {
