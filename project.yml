@@ -10,6 +10,10 @@ targets:
     sources:
       - Lozman
     scheme: {}
+    info:
+      path: Lozman/Info.plist
+      properties:
+        CADisableMinimumFrameDurationOnPhone: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.lozmann.lozman

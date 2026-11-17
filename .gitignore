@@ -3,3 +3,4 @@ build/
 Payload/
 *.ipa
 Lozman/bjk.json
+Lozman/Info.plist

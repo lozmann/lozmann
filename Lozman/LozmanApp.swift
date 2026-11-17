@@ -101,9 +101,9 @@ struct MoreView: View {
                         Label("İngilizce kelime oyunu", systemImage: "character.book.closed.fill")
                     }
                     NavigationLink {
-                        SnakeView()
+                        SlitherView()
                     } label: {
-                        Label("Yılan", systemImage: "scribble.variable")
+                        Label("Yılan.io", systemImage: "scribble.variable")
                     }
                 }
                 Section {
