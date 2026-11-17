@@ -53,12 +53,12 @@ enum GeminiEngine {
     enum Failure: LocalizedError {
         case message(String)
         case modelNotFound
-        case thinkingRejected
+        case rejected(String)
         var errorDescription: String? {
             switch self {
             case .message(let m): return m
             case .modelNotFound: return "Model bulunamadı. Ayarlar'daki Model kutusunu boş bırakıp tekrar dene."
-            case .thinkingRejected: return "Model bu ayarı desteklemiyor."
+            case .rejected(let m): return "Gemini isteği kabul etmedi. \(m)"
             }
         }
     }
@@ -67,13 +67,26 @@ enum GeminiEngine {
     static func stream(key: String, model: String, system: String, history: [ChatMessage],
                        onText: @escaping @MainActor (String) -> Void) async throws -> String {
         let chosen = model.trimmingCharacters(in: .whitespaces).isEmpty ? defaultModel : model.trimmingCharacters(in: .whitespaces)
-        do {
-            return try await attempt(key: key, model: chosen, system: system, history: history, fast: true, onText: onText)
-        } catch Failure.thinkingRejected {
-            return try await attempt(key: key, model: chosen, system: system, history: history, fast: false, onText: onText)
-        } catch Failure.modelNotFound where chosen != fallbackModel {
-            return try await attempt(key: key, model: fallbackModel, system: system, history: history, fast: true, onText: onText)
+        // Try the fast setup first, then plainer requests and other models if Google refuses.
+        var plan: [(String, Bool)] = []
+        for m in [chosen, fallbackModel, "gemini-flash-latest", "gemini-2.5-flash"] {
+            for fast in [true, false] where !plan.contains(where: { $0.0 == m && $0.1 == fast }) {
+                plan.append((m, fast))
+            }
         }
+        var lastError: Error = Failure.modelNotFound
+        for (m, fast) in plan {
+            do {
+                let text = try await attempt(key: key, model: m, system: system, history: history, fast: fast, onText: onText)
+                if m != chosen { UserDefaults.standard.set(m, forKey: "geminiModel") }
+                return text
+            } catch Failure.modelNotFound {
+                lastError = Failure.modelNotFound
+            } catch Failure.rejected(let msg) {
+                lastError = Failure.rejected(msg)
+            }
+        }
+        throw lastError
     }
 
     private static func attempt(key: String, model: String, system: String, history: [ChatMessage], fast: Bool,
@@ -107,11 +120,11 @@ enum GeminiEngine {
             let msg = ((json?["error"] as? [String: Any])?["message"] as? String) ?? ""
             let lower = msg.lowercased()
             if status == 429 { throw Failure.message("Bugünkü ücretsiz kullanım hakkı doldu. Yarın tekrar dene.") }
-            if status == 404 || lower.contains("not found") { throw Failure.modelNotFound }
-            if status == 400 && fast && lower.contains("thinking") { throw Failure.thinkingRejected }
-            if status == 400 && lower.contains("api key") || status == 401 || status == 403 {
-                throw Failure.message("Gemini anahtarı kabul edilmedi. Ayarlar'dan kontrol et.")
+            if lower.contains("api key") || lower.contains("api_key") || status == 401 || status == 403 {
+                throw Failure.message("Gemini anahtarı kabul edilmedi. Ayarlar'da anahtarı başında ve sonunda boşluk olmadan yapıştırdığından emin ol.")
             }
+            if status == 404 || lower.contains("not found") { throw Failure.modelNotFound }
+            if status == 400 { throw Failure.rejected(msg) }
             throw Failure.message("Gemini'ye ulaşılamadı (kod \(status)). \(msg)")
         }
 
@@ -160,7 +173,7 @@ final class AssistantStore {
 
     static var geminiModel: String {
         let saved = (UserDefaults.standard.string(forKey: "geminiModel") ?? "").trimmingCharacters(in: .whitespaces)
-        return (saved.isEmpty || saved == "gemini-flash-latest") ? GeminiEngine.defaultModel : saved
+        return saved.isEmpty ? GeminiEngine.defaultModel : saved
     }
 
     static var appleAvailable: Bool {
