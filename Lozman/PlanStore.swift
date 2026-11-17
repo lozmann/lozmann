@@ -49,12 +49,19 @@ final class PlanStore {
     func setDone(_ id: String, day: String, _ value: Bool) {
         guard let i = plans.firstIndex(where: { $0.id == id }) else { return }
         let limit = Day.add(Day.today, -120)
-        plans[i].done = plans[i].done.filter { $0.key >= limit && $0.value }
+        plans[i].done = plans[i].done.filter { $0.key >= limit }
         if value {
             plans[i].done[day] = true
         } else {
             plans[i].done.removeValue(forKey: day)
         }
+        save()
+    }
+
+    /// "Yapmadım": answers the question without marking the plan done.
+    func markSkipped(_ id: String, day: String) {
+        guard let i = plans.firstIndex(where: { $0.id == id }) else { return }
+        plans[i].done[day] = false
         save()
     }
 
@@ -72,7 +79,7 @@ final class PlanStore {
         var out: [AskItem] = []
         for k in 0..<7 {
             let day = Day.add(Day.today, -k)
-            for p in plans(on: day) where p.askAfter > 0 && !p.isDone(day) {
+            for p in plans(on: day) where p.askAfter > 0 && p.done[day] == nil {
                 if p.dueDate(on: day).addingTimeInterval(Double(p.askAfter) * 60) <= now {
                     out.append(AskItem(plan: p, day: day))
                 }

@@ -102,7 +102,7 @@ enum Notifier {
 
         for offset in 0..<29 {
             let day = Day.add(today, offset)
-            for p in plans where p.occurs(on: day) && !p.isDone(day) {
+            for p in plans where p.occurs(on: day) && p.done[day] == nil {
                 for code in p.reminders {
                     guard let fire = fireDate(for: code, plan: p, day: day), fire > now, fire < horizon else { continue }
                     let body = "\(whenText(for: code, plan: p, day: day)) · \(p.category.title)"

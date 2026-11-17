@@ -17,7 +17,12 @@ struct PlanRow: View {
     var body: some View {
         HStack(spacing: 12) {
             Button {
+                let becomingDone = !done
                 withAnimation(.snappy) { store.toggle(plan.id, day: day) }
+                if becomingDone {
+                    Sfx.play("correct")
+                    UINotificationFeedbackGenerator().notificationOccurred(.success)
+                }
             } label: {
                 Image(systemName: done ? "checkmark.circle.fill" : "circle")
                     .font(.title2)
@@ -290,10 +295,8 @@ struct TodayView: View {
                 if !asks.isEmpty {
                     Section("Bunu yaptın mı?") {
                         ForEach(asks) { a in
-                            PlanRow(plan: a.plan, day: a.day, showDate: a.day != today) {
-                                editing = EditRequest(plan: a.plan, day: a.day)
-                            }
-                            .listRowBackground(Color.loz.opacity(0.12))
+                            AskRow(item: a, showDate: a.day != today)
+                                .listRowBackground(Color.loz.opacity(0.12))
                         }
                     }
                 }
@@ -499,5 +502,57 @@ struct PlansView: View {
                 }
             }
         }
+    }
+}
+
+
+/// A pending "Did you do it?" question with one-tap answers.
+struct AskRow: View {
+    @Environment(PlanStore.self) private var store
+    let item: AskItem
+    var showDate = false
+
+    var body: some View {
+        HStack(spacing: 10) {
+            VStack(alignment: .leading, spacing: 3) {
+                Text(item.plan.title)
+                    .font(.body.weight(.medium))
+                    .multilineTextAlignment(.leading)
+                HStack(spacing: 6) {
+                    if showDate { Text(Day.nice(item.day)) }
+                    if !item.plan.time.isEmpty { Text(item.plan.time) }
+                    Circle().fill(item.plan.category.color).frame(width: 7, height: 7)
+                    Text(item.plan.category.title)
+                }
+                .font(.caption)
+                .foregroundStyle(.secondary)
+            }
+            Spacer(minLength: 4)
+            Button {
+                withAnimation(.snappy) { store.markSkipped(item.plan.id, day: item.day) }
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            } label: {
+                Text("Yapmadım")
+                    .font(.subheadline)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 8)
+                    .background(Color(.secondarySystemBackground), in: Capsule())
+            }
+            .buttonStyle(.plain)
+            Button {
+                withAnimation(.snappy) { store.setDone(item.plan.id, day: item.day, true) }
+                Sfx.play("correct")
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+            } label: {
+                Label("Yaptım", systemImage: "checkmark")
+                    .font(.subheadline.weight(.semibold))
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 8)
+                    .background(Color.loz, in: Capsule())
+                    .foregroundStyle(.white)
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(.vertical, 2)
     }
 }
