@@ -825,15 +825,16 @@ struct SlitherView: View {
                     Spacer()
                     leaderboard
                 }
+                .padding(.horizontal)
+                .padding(.top, 8)
                 if control == "joystick" {
                     HStack {
                         minimap.scaleEffect(0.8, anchor: .topLeading)
                         Spacer()
                     }
+                    .padding(.horizontal)
                     .padding(.top, 4)
                 }
-                .padding(.horizontal)
-                .padding(.top, 8)
                 Spacer()
             }
             .allowsHitTesting(false)
