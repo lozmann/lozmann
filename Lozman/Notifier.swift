@@ -96,13 +96,15 @@ enum Notifier {
         let morning = defaults.object(forKey: "morningSummary") as? Bool ?? true
         let evening = defaults.object(forKey: "eveningSummary") as? Bool ?? true
         let cal = Calendar.current
+        let savedName = (defaults.string(forKey: "profileName") ?? "Berat").trimmingCharacters(in: .whitespacesAndNewlines)
+        let morningTitle = savedName.isEmpty ? "Günaydın" : "Günaydın \(savedName)"
         for offset in 0..<14 {
             let day = Day.add(today, offset)
             if morning, let fire = cal.date(bySettingHour: 7, minute: 30, second: 0, of: Day.date(day)), fire > now {
                 let items = plans.filter { $0.occurs(on: day) }.sorted { $0.sortTime < $1.sortTime }
                 let body = items.isEmpty ? "Bugün için plan yok. Rahat bir gün." :
                     "Bugün \(items.count) planın var: " + items.prefix(3).map { $0.time.isEmpty ? $0.title : "\($0.time) \($0.title)" }.joined(separator: ", ")
-                list.append((fire, "summary|\(day)|morning", content(title: "Günaydın Berat", body: body, plan: nil, day: day)))
+                list.append((fire, "summary|\(day)|morning", content(title: morningTitle, body: body, plan: nil, day: day)))
             }
             let tomorrow = Day.add(day, 1)
             let items = plans.filter { $0.occurs(on: tomorrow) }.sorted { $0.sortTime < $1.sortTime }

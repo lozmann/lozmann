@@ -174,15 +174,14 @@ struct PlanEditor: View {
 struct TodayView: View {
     @Environment(PlanStore.self) private var store
     @Environment(BJKStore.self) private var bjk
+    @Environment(ProfileStore.self) private var profile
     @State private var editing: EditRequest?
     @State private var quick = ""
 
     private var greeting: String {
         let h = Calendar.current.component(.hour, from: Date())
-        if h < 5 { return "İyi geceler Berat" }
-        if h < 12 { return "Günaydın Berat" }
-        if h < 18 { return "İyi günler Berat" }
-        return "İyi akşamlar Berat"
+        let base = h < 5 ? "İyi geceler" : (h < 12 ? "Günaydın" : (h < 18 ? "İyi günler" : "İyi akşamlar"))
+        return profile.displayName.isEmpty ? base : "\(base) \(profile.displayName)"
     }
 
     var body: some View {
@@ -200,7 +199,15 @@ struct TodayView: View {
             List {
                 Section {
                     VStack(alignment: .leading, spacing: 12) {
-                        Text(greeting).font(.title2.bold())
+                        HStack(alignment: .center, spacing: 12) {
+                            Text(greeting)
+                                .font(.title2.bold())
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                            ProfilePhotoPicker {
+                                AvatarView(size: 48)
+                            }
+                            .buttonStyle(.plain)
+                        }
                         Text(todays.isEmpty ? "Bugün için planın yok." :
                                 (doneCount == todays.count ? "Bugünkü \(todays.count) planın da tamam." :
                                     "Bugün \(todays.count) planın var, \(doneCount) tanesi tamam."))

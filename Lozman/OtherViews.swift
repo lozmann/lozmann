@@ -176,6 +176,8 @@ struct SettingsView: View {
     var body: some View {
         NavigationStack {
             Form {
+                ProfileSection()
+
                 Section {
                     HStack {
                         Text("Bildirim izni")

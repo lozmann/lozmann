@@ -5,6 +5,7 @@ struct LozmanApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @State private var store = PlanStore.shared
     @State private var bjk = BJKStore.shared
+    @State private var profile = ProfileStore.shared
     @State private var dayKey = Day.today
     @Environment(\.scenePhase) private var phase
 
@@ -14,6 +15,7 @@ struct LozmanApp: App {
                 .id(dayKey)
                 .environment(store)
                 .environment(bjk)
+                .environment(profile)
                 .tint(.loz)
                 .onAppear {
                     Notifier.requestAuthorization()
