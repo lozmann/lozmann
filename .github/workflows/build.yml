@@ -28,7 +28,7 @@ jobs:
           set +e
           xcodebuild -project Lozman.xcodeproj -scheme Lozman -configuration Release \
             -sdk iphoneos -destination 'generic/platform=iOS' -derivedDataPath build \
-            CURRENT_PROJECT_VERSION=${{ github.run_number }} \
+            CURRENT_PROJECT_VERSION=${{ github.run_number }} MARKETING_VERSION=1.0.${{ github.run_number }} \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
             build > build.log 2>&1
           status=$?
@@ -40,13 +40,50 @@ jobs:
           mkdir Payload
           cp -R build/Build/Products/Release-iphoneos/Lozman.app Payload/
           zip -qry Lozman.ipa Payload
+          SIZE=$(stat -f%z Lozman.ipa)
+          VER=1.0.${{ github.run_number }}
+          TODAY=$(date -u +%Y-%m-%d)
+          cat > source.json <<JSON
+          {
+            "name": "Lozman",
+            "identifier": "com.lozmann.source",
+            "website": "https://github.com/lozmann/lozmann",
+            "apps": [
+              {
+                "name": "Lozman",
+                "bundleIdentifier": "com.lozmann.lozman",
+                "developerName": "Berat",
+                "subtitle": "Kişisel planlayıcı",
+                "localizedDescription": "Planlar, takvim, hatırlatmalar ve Beşiktaş fikstürü.",
+                "iconURL": "https://raw.githubusercontent.com/lozmann/lozmann/main/Lozman/Assets.xcassets/AppIcon.appiconset/icon.png",
+                "tintColor": "F26A1B",
+                "versions": [
+                  {
+                    "version": "$VER",
+                    "buildVersion": "${{ github.run_number }}",
+                    "date": "$TODAY",
+                    "localizedDescription": "${{ github.event.head_commit.message && 'Yeni sürüm' || 'Yeni sürüm' }}",
+                    "downloadURL": "https://github.com/lozmann/lozmann/releases/download/v$VER/Lozman.ipa",
+                    "size": $SIZE,
+                    "minOSVersion": "17.0"
+                  }
+                ],
+                "appPermissions": { "entitlements": [], "privacy": {} }
+              }
+            ],
+            "news": []
+          }
+          JSON
+          python3 -m json.tool source.json > /dev/null
 
       - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v1.0.${{ github.run_number }}
           name: Lozman 1.0 (${{ github.run_number }})
-          files: Lozman.ipa
+          files: |
+            Lozman.ipa
+            source.json
           make_latest: true
 
       - name: Publish build log
