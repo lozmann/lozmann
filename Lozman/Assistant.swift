@@ -47,53 +47,92 @@ enum AppleEngine {
 #endif
 
 enum GeminiEngine {
+    static let defaultModel = "gemini-flash-lite-latest"
+    static let fallbackModel = "gemini-2.5-flash-lite"
+
     enum Failure: LocalizedError {
         case message(String)
+        case modelNotFound
+        case thinkingRejected
         var errorDescription: String? {
             switch self {
             case .message(let m): return m
+            case .modelNotFound: return "Model bulunamadı. Ayarlar'daki Model kutusunu boş bırakıp tekrar dene."
+            case .thinkingRejected: return "Model bu ayarı desteklemiyor."
             }
         }
     }
 
-    static func reply(key: String, model: String, system: String, history: [ChatMessage]) async throws -> String {
-        let name = model.trimmingCharacters(in: .whitespaces).isEmpty ? "gemini-flash-latest" : model.trimmingCharacters(in: .whitespaces)
-        guard let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/\(name):generateContent") else {
-            throw Failure.message("Model adı geçersiz.")
+    /// Streams the answer, calling `onText` with the full text so far.
+    static func stream(key: String, model: String, system: String, history: [ChatMessage],
+                       onText: @escaping @MainActor (String) -> Void) async throws -> String {
+        let chosen = model.trimmingCharacters(in: .whitespaces).isEmpty ? defaultModel : model.trimmingCharacters(in: .whitespaces)
+        do {
+            return try await attempt(key: key, model: chosen, system: system, history: history, fast: true, onText: onText)
+        } catch Failure.thinkingRejected {
+            return try await attempt(key: key, model: chosen, system: system, history: history, fast: false, onText: onText)
+        } catch Failure.modelNotFound where chosen != fallbackModel {
+            return try await attempt(key: key, model: fallbackModel, system: system, history: history, fast: true, onText: onText)
+        }
+    }
+
+    private static func attempt(key: String, model: String, system: String, history: [ChatMessage], fast: Bool,
+                                onText: @escaping @MainActor (String) -> Void) async throws -> String {
+        guard let url = URL(string: "https://generativelanguage.googleapis.com/v1beta/models/\(model):streamGenerateContent?alt=sse") else {
+            throw Failure.modelNotFound
         }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.timeoutInterval = 40
+        request.timeoutInterval = 60
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.setValue(key, forHTTPHeaderField: "x-goog-api-key")
         let contents: [[String: Any]] = history.map { m in
             ["role": m.fromUser ? "user" : "model", "parts": [["text": m.text]]]
         }
+        var config: [String: Any] = ["maxOutputTokens": 800, "temperature": 0.7]
+        if fast { config["thinkingConfig"] = ["thinkingBudget": 0] }
         let body: [String: Any] = [
             "systemInstruction": ["parts": [["text": system]]],
-            "contents": contents
+            "contents": contents,
+            "generationConfig": config
         ]
         request.httpBody = try JSONSerialization.data(withJSONObject: body)
 
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (bytes, response) = try await URLSession.shared.bytes(for: request)
         let status = (response as? HTTPURLResponse)?.statusCode ?? 0
-        let json = (try? JSONSerialization.jsonObject(with: data)) as? [String: Any]
-        if status == 429 {
-            throw Failure.message("Bugünkü ücretsiz kullanım hakkı doldu. Yarın tekrar dene.")
-        }
-        if status == 400 || status == 401 || status == 403 {
+        if status != 200 {
+            var data = Data()
+            for try await b in bytes { data.append(b) }
+            let json = (try? JSONSerialization.jsonObject(with: data)) as? [String: Any]
             let msg = ((json?["error"] as? [String: Any])?["message"] as? String) ?? ""
-            throw Failure.message("Gemini anahtarı kabul edilmedi. Ayarlar'dan kontrol et. \(msg)")
+            let lower = msg.lowercased()
+            if status == 429 { throw Failure.message("Bugünkü ücretsiz kullanım hakkı doldu. Yarın tekrar dene.") }
+            if status == 404 || lower.contains("not found") { throw Failure.modelNotFound }
+            if status == 400 && fast && lower.contains("thinking") { throw Failure.thinkingRejected }
+            if status == 400 && lower.contains("api key") || status == 401 || status == 403 {
+                throw Failure.message("Gemini anahtarı kabul edilmedi. Ayarlar'dan kontrol et.")
+            }
+            throw Failure.message("Gemini'ye ulaşılamadı (kod \(status)). \(msg)")
         }
-        guard status == 200 else {
-            throw Failure.message("Gemini'ye ulaşılamadı (kod \(status)).")
+
+        var full = ""
+        for try await line in bytes.lines {
+            guard line.hasPrefix("data:") else { continue }
+            let payload = line.dropFirst(5).trimmingCharacters(in: .whitespaces)
+            guard let d = payload.data(using: .utf8),
+                  let json = (try? JSONSerialization.jsonObject(with: d)) as? [String: Any] else { continue }
+            let candidates = json["candidates"] as? [[String: Any]]
+            let content = candidates?.first?["content"] as? [String: Any]
+            let parts = content?["parts"] as? [[String: Any]] ?? []
+            let piece = parts.filter { ($0["thought"] as? Bool) != true }.compactMap { $0["text"] as? String }.joined()
+            if !piece.isEmpty {
+                full += piece
+                await onText(full)
+            }
         }
-        let candidates = json?["candidates"] as? [[String: Any]]
-        let content = candidates?.first?["content"] as? [String: Any]
-        let parts = content?["parts"] as? [[String: Any]] ?? []
-        let text = parts.compactMap { $0["text"] as? String }.joined()
-        guard !text.isEmpty else { throw Failure.message("Boş cevap geldi, tekrar dene.") }
-        return text.trimmingCharacters(in: .whitespacesAndNewlines)
+        let result = full.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !result.isEmpty else { throw Failure.message("Boş cevap geldi, tekrar dene.") }
+        return result
     }
 }
 
@@ -120,7 +159,8 @@ final class AssistantStore {
     }
 
     static var geminiModel: String {
-        UserDefaults.standard.string(forKey: "geminiModel") ?? "gemini-flash-latest"
+        let saved = (UserDefaults.standard.string(forKey: "geminiModel") ?? "").trimmingCharacters(in: .whitespaces)
+        return (saved.isEmpty || saved == "gemini-flash-latest") ? GeminiEngine.defaultModel : saved
     }
 
     static var appleAvailable: Bool {
@@ -202,20 +242,33 @@ final class AssistantStore {
         let system = systemPrompt()
         let history = Array(messages.suffix(10))
         do {
-            let answer: String
             switch engine {
             case .apple:
-                answer = try await appleReply(system: system, history: history)
+                let answer = try await appleReply(system: system, history: history)
+                messages.append(ChatMessage(fromUser: false, text: answer))
             case .gemini:
-                answer = try await GeminiEngine.reply(key: Self.geminiKey, model: Self.geminiModel, system: system, history: history)
+                let placeholder = ChatMessage(fromUser: false, text: "")
+                messages.append(placeholder)
+                let id = placeholder.id
+                do {
+                    let answer = try await GeminiEngine.stream(key: Self.geminiKey, model: Self.geminiModel,
+                                                               system: system, history: history) { [weak self] text in
+                        guard let self, let i = self.messages.firstIndex(where: { $0.id == id }) else { return }
+                        self.messages[i].text = text
+                    }
+                    if let i = messages.firstIndex(where: { $0.id == id }) { messages[i].text = answer }
+                } catch {
+                    messages.removeAll { $0.id == id && $0.text.isEmpty }
+                    throw error
+                }
             case .none:
                 errorText = "Asistan henüz kurulu değil. Daha fazla → Ayarlar → Asistan bölümüne bak."
                 return
             }
-            messages.append(ChatMessage(fromUser: false, text: answer))
             save()
         } catch {
             errorText = error.localizedDescription
+            save()
         }
     }
 
@@ -280,10 +333,10 @@ struct AssistantView: View {
                                 }
                                 .padding(.top, 8)
                             }
-                            ForEach(ai.messages) { m in
+                            ForEach(ai.messages.filter { !$0.text.isEmpty }) { m in
                                 bubble(m).id(m.id)
                             }
-                            if ai.busy {
+                            if ai.busy && (ai.messages.last?.fromUser == true || ai.messages.last?.text.isEmpty == true) {
                                 HStack(spacing: 8) {
                                     ProgressView()
                                     Text("Düşünüyor…").foregroundStyle(.secondary)
@@ -301,8 +354,13 @@ struct AssistantView: View {
                     }
                     .scrollDismissesKeyboard(.interactively)
                     .onChange(of: ai.messages.count) { _, _ in
-                        if let id = ai.messages.last?.id {
+                        if let id = ai.messages.last(where: { !$0.text.isEmpty })?.id {
                             withAnimation { proxy.scrollTo(id, anchor: .bottom) }
+                        }
+                    }
+                    .onChange(of: ai.messages.last?.text.count ?? 0) { _, _ in
+                        if let last = ai.messages.last, !last.text.isEmpty {
+                            proxy.scrollTo(last.id, anchor: .bottom)
                         }
                     }
                     .onChange(of: ai.busy) { _, isBusy in
@@ -402,7 +460,7 @@ struct AssistantView: View {
 
 struct AssistantSettingsSection: View {
     @AppStorage("geminiKey") private var key = ""
-    @AppStorage("geminiModel") private var model = "gemini-flash-latest"
+    @AppStorage("geminiModel") private var model = GeminiEngine.defaultModel
 
     var body: some View {
         Section {
@@ -420,7 +478,7 @@ struct AssistantSettingsSection: View {
             SecureField("Gemini API anahtarı", text: $key)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
-            TextField("Model", text: $model)
+            TextField("Model (boş bırakırsan en hızlısı)", text: $model)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
                 .font(.footnote)
