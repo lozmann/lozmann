@@ -175,11 +175,24 @@ enum Notifier {
             }
         }
 
+        // Habit reminders on due days that are still open.
+        for h in HabitStore.shared.habits {
+            guard let m = h.reminder else { continue }
+            for offset in 0..<7 {
+                let day = Day.add(today, offset)
+                guard h.isDue(day), !h.isDone(day),
+                      let fire = cal.date(bySettingHour: m / 60, minute: m % 60, second: 0, of: Day.date(day)), fire > now else { continue }
+                let streak = h.streak
+                let body = streak > 0 ? "Serin \(streak) gün, bozma! 🔥" : "Bugün de yap, seriyi başlat."
+                list.append((fire, "habit|\(h.id.uuidString)|\(day)", content(title: "\(h.icon) \(h.name)", body: body, plan: nil, day: day)))
+            }
+        }
+
         list.sort { $0.date < $1.date }
         let chosen = Array(list.prefix(60))
 
         center.getPendingNotificationRequests { pending in
-            let old = pending.map(\.identifier).filter { !$0.hasPrefix("snooze") }
+            let old = pending.map(\.identifier).filter { !$0.hasPrefix("snooze") && !$0.hasPrefix("focus") }
             center.removePendingNotificationRequests(withIdentifiers: old)
             for item in chosen {
                 let comps = cal.dateComponents([.year, .month, .day, .hour, .minute], from: item.date)

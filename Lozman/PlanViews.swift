@@ -175,6 +175,8 @@ struct TodayView: View {
     @Environment(PlanStore.self) private var store
     @Environment(BJKStore.self) private var bjk
     @Environment(ProfileStore.self) private var profile
+    @Environment(HabitStore.self) private var habits
+    @State private var habitConfetti = 0
     @State private var editing: EditRequest?
     @State private var quick = ""
 
@@ -229,7 +231,7 @@ struct TodayView: View {
                             }
                         }
                         HStack {
-                            TextField("Bugüne hızlıca ekle", text: $quick)
+                            TextField("Örn. yarın 15:00 dişçi", text: $quick)
                                 .submitLabel(.done)
                                 .onSubmit(addQuick)
                                 .padding(10)
@@ -238,8 +240,51 @@ struct TodayView: View {
                                 .buttonStyle(.borderedProminent)
                                 .disabled(quick.trimmingCharacters(in: .whitespaces).isEmpty)
                         }
+                        if !quick.trimmingCharacters(in: .whitespaces).isEmpty {
+                            let p = QuickParser.parse(quick, defaultCategory: WorkClock.isWorkingNow ? .work : .personal)
+                            HStack(spacing: 6) {
+                                Image(systemName: "sparkles").foregroundStyle(Color.loz)
+                                Text(p.title).fontWeight(.medium).lineLimit(1)
+                                Text("· " + (p.understood.isEmpty ? "Bugün" : p.understood.joined(separator: " · ")))
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(1)
+                                Spacer(minLength: 0)
+                                Text(p.category.title)
+                                    .font(.caption2.weight(.semibold))
+                                    .padding(.horizontal, 6)
+                                    .padding(.vertical, 2)
+                                    .background(p.category.color.opacity(0.18), in: Capsule())
+                            }
+                            .font(.caption)
+                            .transition(.opacity)
+                        }
                     }
                     .padding(.vertical, 6)
+                }
+
+                if !habits.dueToday.isEmpty {
+                    Section {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 14) {
+                                ForEach(habits.dueToday) { h in
+                                    HabitChip(habit: h) {
+                                        withAnimation(.snappy) {
+                                            let s = habits.toggle(h.id)
+                                            celebrateHabit(streak: s, confetti: &habitConfetti)
+                                        }
+                                    }
+                                }
+                            }
+                            .padding(.vertical, 4)
+                        }
+                    } header: {
+                        let done = habits.dueToday.filter { $0.isDone(Day.today) }.count
+                        HStack {
+                            Text("Alışkanlıklar")
+                            Spacer()
+                            Text("\(done)/\(habits.dueToday.count)")
+                        }
+                    }
                 }
 
                 if !asks.isEmpty {
@@ -309,16 +354,23 @@ struct TodayView: View {
                 }
             }
             .sheet(item: $editing) { r in PlanEditor(plan: r.plan, day: r.day) }
+            .overlay { ConfettiView(trigger: habitConfetti).allowsHitTesting(false) }
         }
     }
 
     private func addQuick() {
-        let title = quick.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !title.isEmpty else { return }
-        let cal = Calendar.current
-        let next = cal.component(.hour, from: Date()) + 1
-        let time = next <= 23 ? String(format: "%02d:00", next) : "23:59"
-        store.upsert(Plan(title: title, category: WorkClock.isWorkingNow ? .work : .personal, date: Day.today, time: time))
+        let text = quick.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !text.isEmpty else { return }
+        let p = QuickParser.parse(text, defaultCategory: WorkClock.isWorkingNow ? .work : .personal)
+        var time = p.time
+        if time.isEmpty && p.date == Day.today {
+            let next = Calendar.current.component(.hour, from: Date()) + 1
+            time = next <= 23 ? String(format: "%02d:00", next) : "23:59"
+        }
+        var reminders = ["0"]
+        if Day.diff(p.date) >= 2 { reminders.append("1d") }
+        store.upsert(Plan(title: p.title, category: p.category, date: p.date, time: time, repeatRule: p.repeatRule, reminders: reminders))
+        Sfx.play("pop")
         quick = ""
     }
 }

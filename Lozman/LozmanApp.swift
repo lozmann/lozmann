@@ -10,6 +10,8 @@ struct LozmanApp: App {
     @State private var assistant = AssistantStore.shared
     @State private var wishes = WishStore.shared
     @State private var news = NewsStore.shared
+    @State private var habits = HabitStore.shared
+    @State private var focus = FocusStore.shared
     @State private var dayKey = Day.today
     @Environment(\.scenePhase) private var phase
 
@@ -24,6 +26,8 @@ struct LozmanApp: App {
                 .environment(assistant)
                 .environment(wishes)
                 .environment(news)
+                .environment(habits)
+                .environment(focus)
                 .tint(.loz)
                 .onAppear {
                     Notifier.requestAuthorization()
@@ -66,6 +70,21 @@ struct MoreView: View {
             List {
                 Section {
                     NavigationLink {
+                        HabitsView()
+                    } label: {
+                        Label("Alışkanlıklar", systemImage: "flame.fill")
+                    }
+                    NavigationLink {
+                        FocusView()
+                    } label: {
+                        Label("Odak zamanlayıcı", systemImage: "timer")
+                    }
+                    NavigationLink {
+                        StatsView()
+                    } label: {
+                        Label("İstatistikler", systemImage: "chart.bar.fill")
+                    }
+                    NavigationLink {
                         PlansView()
                     } label: {
                         Label("Tüm planlar", systemImage: "list.bullet")
@@ -104,6 +123,21 @@ struct MoreView: View {
                         SlitherView()
                     } label: {
                         Label("Yılan.io", systemImage: "scribble.variable")
+                    }
+                    NavigationLink {
+                        BlockBlastView()
+                    } label: {
+                        Label("Blok Patlat", systemImage: "square.grid.3x3.fill")
+                    }
+                    NavigationLink {
+                        Game2048View()
+                    } label: {
+                        Label("2048", systemImage: "number.square.fill")
+                    }
+                    NavigationLink {
+                        StackGameView()
+                    } label: {
+                        Label("Kule", systemImage: "square.stack.3d.up.fill")
                     }
                 }
                 Section {

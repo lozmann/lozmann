@@ -312,6 +312,8 @@ final class SlitherScene: SKScene {
     private var nextID = 1
     private var steerTouches = Set<UITouch>()
     var boostHeld = false
+    var useJoystick = true
+    var joystickAngle: CGFloat?
     private var milestone = 0
     private let lightHaptic = UIImpactFeedbackGenerator(style: .light)
     private let heavyHaptic = UIImpactFeedbackGenerator(style: .heavy)
@@ -465,7 +467,7 @@ final class SlitherScene: SKScene {
     }
 
     private func steer(with touch: UITouch?) {
-        guard let touch, let view, let player, player.alive else { return }
+        guard !useJoystick, let touch, let view, let player, player.alive else { return }
         let p = touch.location(in: view)
         let dx = p.x - view.bounds.midX
         let dy = view.bounds.midY - p.y
@@ -482,7 +484,8 @@ final class SlitherScene: SKScene {
 
         for s in snakes where s.alive {
             if s.isPlayer {
-                s.boosting = (boostHeld || steerTouches.count >= 2) && s.mass > 12
+                s.boosting = (boostHeld || (!useJoystick && steerTouches.count >= 2)) && s.mass > 12
+                if useJoystick, let a = joystickAngle { s.targetAngle = a }
             } else {
                 think(s, dt: Double(dt))
             }
@@ -774,6 +777,7 @@ struct SlitherView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var hud = SlitherHUD()
     @State private var scene: SlitherScene?
+    @AppStorage("slitherControl") private var control = "joystick"
 
     var body: some View {
         ZStack {
@@ -794,6 +798,7 @@ struct SlitherView: View {
         .persistentSystemOverlays(.hidden)
         .onAppear {
             if scene == nil { scene = SlitherScene(hud: hud) }
+            scene?.useJoystick = control == "joystick"
             scene?.isPaused = false
         }
         .onDisappear { scene?.isPaused = true }
@@ -819,6 +824,13 @@ struct SlitherView: View {
                     .foregroundStyle(.white)
                     Spacer()
                     leaderboard
+                }
+                if control == "joystick" {
+                    HStack {
+                        minimap.scaleEffect(0.8, anchor: .topLeading)
+                        Spacer()
+                    }
+                    .padding(.top, 4)
                 }
                 .padding(.horizontal)
                 .padding(.top, 8)
@@ -853,7 +865,11 @@ struct SlitherView: View {
             VStack {
                 Spacer()
                 HStack(alignment: .bottom) {
-                    minimap.allowsHitTesting(false)
+                    if control == "joystick" {
+                        JoystickView { angle in scene?.joystickAngle = angle }
+                    } else {
+                        minimap.allowsHitTesting(false)
+                    }
                     Spacer()
                     boostButton
                 }
@@ -941,7 +957,7 @@ struct SlitherView: View {
                     .font(.system(size: 48, weight: .black, design: .rounded))
                     .foregroundStyle(LinearGradient(colors: [Color.loz, .yellow], startPoint: .leading, endPoint: .trailing))
                     .shadow(color: Color.loz.opacity(0.6), radius: 18)
-                Text("Parmağınla yön ver, ⚡ ile hızlan.\nRakipleri kendi gövdene çarptır, parçalarını topla.")
+                Text("Rakipleri kendi gövdene çarptır,\nparçalarını topla, en uzun yılan ol.")
                     .font(.subheadline)
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.white.opacity(0.8))
@@ -950,6 +966,13 @@ struct SlitherView: View {
                 stat("Rekor uzunluk", "\(hud.best)")
                 stat("Rekor av", "\(hud.bestKills)")
             }
+            Picker("Kontrol", selection: $control) {
+                Text("Joystick").tag("joystick")
+                Text("Parmakla yönlendir").tag("finger")
+            }
+            .pickerStyle(.segmented)
+            .frame(width: 280)
+            .onChange(of: control) { _, v in scene?.useJoystick = v == "joystick" }
             Button {
                 scene?.startGame()
             } label: {
@@ -963,7 +986,7 @@ struct SlitherView: View {
             Button("Çık") { dismiss() }
                 .foregroundStyle(.white.opacity(0.7))
             Spacer()
-            Text("İpucu: İki parmakla dokunmak da hızlandırır.")
+            Text(control == "joystick" ? "Sol alttaki çubukla yön ver, ⚡ ile hızlan." : "İpucu: İki parmakla dokunmak da hızlandırır.")
                 .font(.caption)
                 .foregroundStyle(.white.opacity(0.5))
                 .padding(.bottom, 30)
@@ -1007,5 +1030,63 @@ struct SlitherView: View {
             Text(value).font(.title.weight(.heavy).monospacedDigit()).foregroundStyle(.white)
             Text(title).font(.caption).foregroundStyle(.white.opacity(0.6))
         }
+    }
+}
+
+
+/// A thumb stick: drag inside the ring to steer. Reports the angle (radians, maths orientation) or nil when released.
+struct JoystickView: View {
+    let onChange: (CGFloat?) -> Void
+    @State private var knob: CGSize = .zero
+    @State private var active = false
+    private let radius: CGFloat = 62
+
+    var body: some View {
+        ZStack {
+            Circle()
+                .fill(.white.opacity(active ? 0.14 : 0.08))
+                .overlay(Circle().strokeBorder(.white.opacity(0.28), lineWidth: 2))
+                .frame(width: radius * 2, height: radius * 2)
+            // direction hint
+            Circle()
+                .trim(from: 0.0, to: 0.12)
+                .stroke(Color.loz.opacity(active ? 0.9 : 0), style: StrokeStyle(lineWidth: 5, lineCap: .round))
+                .frame(width: radius * 2 - 8, height: radius * 2 - 8)
+                .rotationEffect(.radians(Double(atan2(knob.height, knob.width)) - 0.377))
+            Circle()
+                .fill(
+                    RadialGradient(colors: [.white, Color.loz], center: .init(x: 0.35, y: 0.3), startRadius: 2, endRadius: 34)
+                )
+                .frame(width: 58, height: 58)
+                .shadow(color: Color.loz.opacity(0.6), radius: active ? 12 : 6)
+                .offset(knob)
+        }
+        .frame(width: radius * 2 + 20, height: radius * 2 + 20)
+        .contentShape(Circle())
+        .gesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged { v in
+                    let c = CGPoint(x: radius + 10, y: radius + 10)
+                    var dx = v.location.x - c.x
+                    var dy = v.location.y - c.y
+                    let len = hypot(dx, dy)
+                    if len > radius {
+                        dx = dx / len * radius
+                        dy = dy / len * radius
+                    }
+                    if !active {
+                        active = true
+                        UIImpactFeedbackGenerator(style: .soft).impactOccurred()
+                    }
+                    knob = CGSize(width: dx, height: dy)
+                    if len > 6 { onChange(atan2(-dy, dx)) }
+                }
+                .onEnded { _ in
+                    active = false
+                    withAnimation(.spring(response: 0.25, dampingFraction: 0.6)) { knob = .zero }
+                    onChange(nil)
+                }
+        )
+        .accessibilityLabel("Yön çubuğu")
     }
 }
