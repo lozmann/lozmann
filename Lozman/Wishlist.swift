@@ -47,6 +47,11 @@ final class WishStore {
         }
     }
 
+    func replaceAll(_ newItems: [WishItem]) {
+        items = newItems
+        save()
+    }
+
     func add(_ title: String) {
         items.insert(WishItem(title: title), at: 0)
         save()

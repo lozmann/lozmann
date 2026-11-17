@@ -44,6 +44,11 @@ final class NotesStore {
         }
     }
 
+    func replaceAll(_ newNotes: [Note]) {
+        notes = newNotes
+        save()
+    }
+
     @discardableResult
     func add(_ text: String = "") -> UUID {
         let note = Note(text: text)

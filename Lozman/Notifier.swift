@@ -79,11 +79,12 @@ enum Notifier {
         return w != 1 && w != 7
     }
 
-    private static func content(title: String, body: String, plan: Plan?, day: String) -> UNMutableNotificationContent {
+    private static func content(title: String, body: String, plan: Plan?, day: String, route: String? = nil) -> UNMutableNotificationContent {
         let c = UNMutableNotificationContent()
         c.title = title
         c.body = body
         c.sound = currentSound
+        if let route { c.userInfo = ["route": route] }
         if let plan {
             c.categoryIdentifier = planCategory
             c.userInfo = ["plan": plan.id, "day": day]
@@ -139,7 +140,7 @@ enum Notifier {
                 let items = plans.filter { $0.occurs(on: day) }.sorted { $0.sortTime < $1.sortTime }
                 let body = items.isEmpty ? "Bugün için plan yok. Rahat bir gün." :
                     "Bugün \(items.count) planın var: " + items.prefix(3).map { $0.time.isEmpty ? $0.title : "\($0.time) \($0.title)" }.joined(separator: ", ")
-                list.append((fire, "summary|\(day)|morning", content(title: morningTitle, body: body, plan: nil, day: day)))
+                list.append((fire, "summary|\(day)|morning", content(title: morningTitle, body: body + "\nDokun, günün 3 önceliğini seç.", plan: nil, day: day, route: "morning")))
             }
             let dayPlans = plans.filter { $0.occurs(on: day) }
 
@@ -156,13 +157,14 @@ enum Notifier {
                 list.append((fire, "summary|\(day)|workend", content(title: "Mesai bitti", body: body, plan: nil, day: day)))
             }
 
-            // Evening check: everything still unticked today.
-            if nag, offset <= 3, let fire = cal.date(bySettingHour: 22, minute: 0, second: 0, of: Day.date(day)), fire > now {
-                let open = dayPlans.filter { !$0.isDone(day) }
+            // Evening: close the day.
+            if nag, offset <= 3, let fire = cal.date(bySettingHour: 21, minute: 30, second: 0, of: Day.date(day)), fire > now {
+                let open = dayPlans.filter { $0.done[day] == nil }
                 if !open.isEmpty {
-                    var body = open.prefix(4).map { $0.time.isEmpty ? $0.title : "\($0.time) \($0.title)" }.joined(separator: "\n")
-                    if open.count > 4 { body += "\nve \(open.count - 4) plan daha" }
-                    list.append((fire, "summary|\(day)|open", content(title: "Bugün işaretlemediğin \(open.count) plan var", body: body, plan: nil, day: day)))
+                    var body = open.prefix(3).map { $0.time.isEmpty ? $0.title : "\($0.time) \($0.title)" }.joined(separator: "\n")
+                    if open.count > 3 { body += "\nve \(open.count - 3) plan daha" }
+                    body += "\nDokun: yaptıklarını işaretle, kalanları yarına taşı."
+                    list.append((fire, "summary|\(day)|open", content(title: "Günü kapatalım · \(open.count) iş açık", body: body, plan: nil, day: day, route: "review")))
                 }
             }
 
@@ -214,6 +216,8 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         UNUserNotificationCenter.current().delegate = self
         Notifier.setup()
+        Background.register()
+        Background.schedule()
         return true
     }
 
@@ -231,7 +235,11 @@ final class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCent
         let day = info["day"] as? String
         let action = response.actionIdentifier
         let content = response.notification.request.content
+        let route = info["route"] as? String
         DispatchQueue.main.async {
+            if action == UNNotificationDefaultActionIdentifier, let route, let sheet = RoutineSheet(rawValue: route) {
+                AppRouter.shared.sheet = sheet
+            }
             if action == "DONE", let planId, let day {
                 PlanStore.shared.setDone(planId, day: day, true)
             } else if action == "SNOOZE" {

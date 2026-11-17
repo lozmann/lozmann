@@ -38,7 +38,11 @@ struct LozmanApp: App {
                     if newPhase == .active {
                         dayKey = Day.today
                         Notifier.reschedule(store.plans)
+                        Backup.autoBackupIfNeeded()
                         Task { await bjk.refresh() }
+                    } else if newPhase == .background {
+                        Backup.autoBackupIfNeeded()
+                        Background.schedule()
                     }
                 }
         }
@@ -46,6 +50,8 @@ struct LozmanApp: App {
 }
 
 struct RootView: View {
+    @State private var router = AppRouter.shared
+
     var body: some View {
         TabView {
             TodayView()
@@ -58,6 +64,12 @@ struct RootView: View {
                 .tabItem { Label("Notlar", systemImage: "note.text") }
             MoreView()
                 .tabItem { Label("Daha fazla", systemImage: "square.grid.2x2.fill") }
+        }
+        .sheet(item: $router.sheet) { s in
+            switch s {
+            case .morning: MorningPlanView()
+            case .review: EveningReviewView()
+            }
         }
     }
 }

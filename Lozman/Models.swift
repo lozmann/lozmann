@@ -88,10 +88,11 @@ struct Plan: Codable, Identifiable, Equatable {
     var note: String = ""
     var done: [String: Bool] = [:]
     var fromMatch: String? = nil
+    var star: String? = nil
 
     enum CodingKeys: String, CodingKey {
         case id, title, category = "cat", date, time, repeatRule = "repeat", reminders = "rem"
-        case askAfter = "ask", note, done, fromMatch = "bjk"
+        case askAfter = "ask", note, done, fromMatch = "bjk", star
     }
 }
 

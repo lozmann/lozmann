@@ -58,6 +58,42 @@ final class PlanStore {
         save()
     }
 
+    /// Moves a one-off plan to tomorrow, keeping its time.
+    func moveToTomorrow(_ id: String, from day: String) {
+        guard let i = plans.firstIndex(where: { $0.id == id }), plans[i].repeatRule == .none else { return }
+        plans[i].done.removeValue(forKey: day)
+        plans[i].date = Day.add(Day.today, 1)
+        save()
+    }
+
+    func toggleStar(_ id: String, day: String) {
+        guard let i = plans.firstIndex(where: { $0.id == id }) else { return }
+        plans[i].star = plans[i].star == day ? nil : day
+        save()
+    }
+
+    func starred(on day: String) -> [Plan] {
+        plans(on: day).filter { $0.star == day }
+    }
+
+    func replaceAll(_ newPlans: [Plan]) {
+        plans = newPlans
+        save()
+    }
+
+    /// Plans from the last week (one-off) and today (all) that still have no answer.
+    func openItems() -> [AskItem] {
+        var out: [AskItem] = []
+        for k in (0..<7).reversed() {
+            let day = Day.add(Day.today, -k)
+            for p in plans(on: day) where p.done[day] == nil {
+                if k > 0 && p.repeatRule != .none { continue }
+                out.append(AskItem(plan: p, day: day))
+            }
+        }
+        return out
+    }
+
     /// "Yapmadım": answers the question without marking the plan done.
     func markSkipped(_ id: String, day: String) {
         guard let i = plans.firstIndex(where: { $0.id == id }) else { return }

@@ -195,6 +195,9 @@ struct TodayView: View {
         let today = Day.today
         let tomorrow = Day.add(today, 1)
         let todays = store.plans(on: today)
+        let hourNow = Calendar.current.component(.hour, from: Date())
+        let stars = store.starred(on: today)
+        let openCount = hourNow >= 17 ? store.openItems().count : 0
         let doneCount = todays.filter { $0.isDone(today) }.count
         let asks = store.pendingAsks()
         let upcoming: [AskItem] = (2...7).flatMap { k -> [AskItem] in
@@ -265,6 +268,32 @@ struct TodayView: View {
                         }
                     }
                     .padding(.vertical, 6)
+                }
+
+                if stars.isEmpty && hourNow < 13 && !todays.isEmpty {
+                    Section {
+                        routineCard(icon: "sun.max.fill", tint: .yellow, title: "Günü planla",
+                                    subtitle: "Bugünün en önemli 3 işini seç.") { AppRouter.shared.sheet = .morning }
+                    }
+                }
+                if openCount > 0 {
+                    Section {
+                        routineCard(icon: "moon.stars.fill", tint: .indigo, title: "Günü kapat",
+                                    subtitle: "\(openCount) iş cevap bekliyor. Yaptıklarını işaretle, kalanları yarına taşı.") { AppRouter.shared.sheet = .review }
+                    }
+                }
+                if !stars.isEmpty {
+                    Section {
+                        ForEach(stars) { p in
+                            PlanRow(plan: p, day: today) { editing = EditRequest(plan: p, day: today) }
+                        }
+                    } header: {
+                        HStack {
+                            Label("Bugünün öncelikleri", systemImage: "star.fill")
+                            Spacer()
+                            Button("Düzenle") { AppRouter.shared.sheet = .morning }.font(.caption)
+                        }
+                    }
                 }
 
                 if !habits.dueToday.isEmpty {
@@ -361,18 +390,30 @@ struct TodayView: View {
         }
     }
 
+    private func routineCard(icon: String, tint: Color, title: String, subtitle: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack(spacing: 14) {
+                Image(systemName: icon)
+                    .font(.title2)
+                    .foregroundStyle(tint)
+                    .frame(width: 44, height: 44)
+                    .background(tint.opacity(0.15), in: RoundedRectangle(cornerRadius: 12))
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title).font(.headline)
+                    Text(subtitle).font(.subheadline).foregroundStyle(.secondary)
+                }
+                Spacer()
+                Image(systemName: "chevron.right").foregroundStyle(.tertiary)
+            }
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+    }
+
     private func addQuick() {
         let text = quick.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !text.isEmpty else { return }
-        let p = QuickParser.parse(text, defaultCategory: WorkClock.isWorkingNow ? .work : .personal)
-        var time = p.time
-        if time.isEmpty && p.date == Day.today {
-            let next = Calendar.current.component(.hour, from: Date()) + 1
-            time = next <= 23 ? String(format: "%02d:00", next) : "23:59"
-        }
-        var reminders = ["0"]
-        if Day.diff(p.date) >= 2 { reminders.append("1d") }
-        store.upsert(Plan(title: p.title, category: p.category, date: p.date, time: time, repeatRule: p.repeatRule, reminders: reminders))
+        QuickAdd.save(text)
         Sfx.play("pop")
         quick = ""
     }

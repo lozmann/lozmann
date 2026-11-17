@@ -185,6 +185,10 @@ struct SettingsView: View {
 
                 AssistantSettingsSection()
 
+                SiriHelpSection()
+
+                BackupSection()
+
                 Section {
                     HStack {
                         Text("Bildirim izni")

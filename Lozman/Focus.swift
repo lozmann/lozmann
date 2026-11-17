@@ -34,6 +34,11 @@ final class FocusStore {
         }
     }
 
+    func replaceMinutes(_ m: [String: Int]) {
+        minutesByDay = m
+        d.set(m, forKey: "focusMinutes")
+    }
+
     var running: Bool { endDate != nil }
     var today: Int { minutesByDay[Day.today] ?? 0 }
 
