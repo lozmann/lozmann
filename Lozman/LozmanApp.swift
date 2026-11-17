@@ -12,6 +12,7 @@ struct LozmanApp: App {
     @State private var news = NewsStore.shared
     @State private var habits = HabitStore.shared
     @State private var focus = FocusStore.shared
+    @State private var career = CareerStore.shared
     @State private var dayKey = Day.today
     @Environment(\.scenePhase) private var phase
 
@@ -28,6 +29,7 @@ struct LozmanApp: App {
                 .environment(news)
                 .environment(habits)
                 .environment(focus)
+                .environment(career)
                 .tint(.loz)
                 .onAppear {
                     Notifier.requestAuthorization()
@@ -56,8 +58,8 @@ struct RootView: View {
         TabView {
             TodayView()
                 .tabItem { Label("Bugün", systemImage: "sun.max.fill") }
-            CalendarScreen()
-                .tabItem { Label("Takvim", systemImage: "calendar") }
+            CareerView()
+                .tabItem { Label("Kariyer", systemImage: "figure.soccer") }
             AssistantView()
                 .tabItem { Label("Asistan", systemImage: "sparkles") }
             NotesView()
@@ -81,6 +83,11 @@ struct MoreView: View {
         NavigationStack {
             List {
                 Section {
+                    NavigationLink {
+                        CalendarScreen()
+                    } label: {
+                        Label("Takvim", systemImage: "calendar")
+                    }
                     NavigationLink {
                         HabitsView()
                     } label: {

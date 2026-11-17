@@ -427,7 +427,7 @@ struct CalendarScreen: View {
     var body: some View {
         let day = Day.key(selected)
         let list = store.plans(on: day)
-        NavigationStack {
+        Group {
             List {
                 Section {
                     DatePicker("Gün", selection: $selected, displayedComponents: .date)
