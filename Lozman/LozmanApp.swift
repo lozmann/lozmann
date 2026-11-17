@@ -6,6 +6,8 @@ struct LozmanApp: App {
     @State private var store = PlanStore.shared
     @State private var bjk = BJKStore.shared
     @State private var profile = ProfileStore.shared
+    @State private var notes = NotesStore.shared
+    @State private var assistant = AssistantStore.shared
     @State private var dayKey = Day.today
     @Environment(\.scenePhase) private var phase
 
@@ -16,6 +18,8 @@ struct LozmanApp: App {
                 .environment(store)
                 .environment(bjk)
                 .environment(profile)
+                .environment(notes)
+                .environment(assistant)
                 .tint(.loz)
                 .onAppear {
                     Notifier.requestAuthorization()
@@ -40,12 +44,56 @@ struct RootView: View {
                 .tabItem { Label("Bugün", systemImage: "sun.max.fill") }
             CalendarScreen()
                 .tabItem { Label("Takvim", systemImage: "calendar") }
-            PlansView()
-                .tabItem { Label("Planlar", systemImage: "list.bullet") }
-            BJKView()
-                .tabItem { Label("Beşiktaş", systemImage: "soccerball") }
-            SettingsView()
-                .tabItem { Label("Ayarlar", systemImage: "gearshape.fill") }
+            AssistantView()
+                .tabItem { Label("Asistan", systemImage: "sparkles") }
+            NotesView()
+                .tabItem { Label("Notlar", systemImage: "note.text") }
+            MoreView()
+                .tabItem { Label("Daha fazla", systemImage: "square.grid.2x2.fill") }
+        }
+    }
+}
+
+struct MoreView: View {
+    @Environment(BJKStore.self) private var bjk
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Section {
+                    NavigationLink {
+                        PlansView()
+                    } label: {
+                        Label("Tüm planlar", systemImage: "list.bullet")
+                    }
+                    NavigationLink {
+                        BJKView()
+                    } label: {
+                        HStack {
+                            Label("Beşiktaş", systemImage: "soccerball")
+                            Spacer()
+                            if let m = bjk.nextMatch {
+                                Text(Day.inDays(m.date))
+                                    .font(.subheadline)
+                                    .foregroundStyle(.secondary)
+                            }
+                        }
+                    }
+                    NavigationLink {
+                        WordGameView()
+                    } label: {
+                        Label("İngilizce kelime oyunu", systemImage: "character.book.closed.fill")
+                    }
+                }
+                Section {
+                    NavigationLink {
+                        SettingsView()
+                    } label: {
+                        Label("Ayarlar", systemImage: "gearshape.fill")
+                    }
+                }
+            }
+            .navigationTitle("Daha fazla")
         }
     }
 }

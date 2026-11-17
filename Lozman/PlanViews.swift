@@ -364,7 +364,7 @@ struct PlansView: View {
         let future = all.filter { $0.repeatRule == .none && $0.date >= today }.sorted(by: byDate)
         let past = all.filter { $0.repeatRule == .none && $0.date < today }.sorted(by: byDate).reversed()
 
-        NavigationStack {
+        Group {
             List {
                 if all.isEmpty {
                     Text(store.plans.isEmpty ? "Henüz plan yok." : "Aramana uyan plan yok.")

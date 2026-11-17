@@ -15,6 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Select Xcode
+        run: |
+          XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -n "$XC" ]; then sudo xcode-select -s "$XC"; fi
+          xcodebuild -version | tee xcode-version.txt
+
       - name: Install XcodeGen
         run: brew install xcodegen
 
@@ -97,6 +103,7 @@ jobs:
             echo "no build log" > /tmp/log/errors.txt
           fi
           echo "${{ job.status }} run ${{ github.run_number }} ${{ github.sha }}" > /tmp/log/status.txt
+          cat xcode-version.txt >> /tmp/log/status.txt 2>/dev/null || true
           cd /tmp/log
           git init -q && git checkout -q -b ci-log && git add .
           git -c user.name=ci -c user.email=ci@users.noreply.github.com commit -qm "log ${{ github.run_number }}"

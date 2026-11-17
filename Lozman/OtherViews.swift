@@ -55,7 +55,7 @@ struct BJKView: View {
     @Environment(PlanStore.self) private var store
 
     var body: some View {
-        NavigationStack {
+        Group {
             List {
                 if let error = bjk.errorText {
                     Text(error).font(.footnote).foregroundStyle(.secondary)
@@ -174,9 +174,11 @@ struct SettingsView: View {
     @State private var pending = 0
 
     var body: some View {
-        NavigationStack {
+        Group {
             Form {
                 ProfileSection()
+
+                AssistantSettingsSection()
 
                 Section {
                     HStack {
