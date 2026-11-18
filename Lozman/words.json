@@ -1,2641 +1,6066 @@
 [
 {
-"en": "accident",
-"tr": "kaza",
-"level": "A2",
-"clue": "Something bad that happens by chance, like a car crash.",
-"ex": "She had an accident on her way to work."
+"en": "swiftwater",
+"tr": "hızlı akan su",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Fast-moving water in a river or flood.",
+"ex": "Swiftwater rescue needs special training."
+},
+{
+"en": "current",
+"tr": "akıntı",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "The movement of water in one direction.",
+"ex": "The current pulled him away from the shore."
+},
+{
+"en": "eddy",
+"tr": "ters akıntı cebi (eddy)",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A calm area behind a rock where water flows back upstream.",
+"ex": "We rested in an eddy behind the big rock."
+},
+{
+"en": "strainer",
+"tr": "süzgeç (dal/ağaç engeli)",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "An object like a fallen tree that lets water through but traps people.",
+"ex": "Stay away from that strainer, it can kill you."
+},
+{
+"en": "undertow",
+"tr": "dip akıntısı",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A strong current under the surface that pulls away from the shore.",
+"ex": "The undertow is very strong on this beach."
+},
+{
+"en": "rip current",
+"tr": "çekintili akıntı",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A strong narrow current that pulls swimmers out to sea.",
+"ex": "If you are caught in a rip current, swim parallel to the shore."
+},
+{
+"en": "throw bag",
+"tr": "atma torbası (ip çantası)",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A bag full of rope that you throw to someone in the water.",
+"ex": "He threw the throw bag right over the victim's shoulder."
+},
+{
+"en": "life jacket",
+"tr": "can yeleği",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "A jacket that keeps you floating in water.",
+"ex": "Everyone on the boat must wear a life jacket."
+},
+{
+"en": "personal flotation device",
+"tr": "kişisel yüzdürme ekipmanı (PFD)",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "The official name for a life jacket.",
+"ex": "Check that your personal flotation device is tight."
+},
+{
+"en": "lifebuoy",
+"tr": "can simidi",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "A ring you throw to a person in the water.",
+"ex": "She grabbed the lifebuoy and held on."
+},
+{
+"en": "drowning",
+"tr": "boğulma",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "Dying or nearly dying because you cannot breathe under water.",
+"ex": "Drowning can happen quickly and silently."
+},
+{
+"en": "drown",
+"tr": "boğulmak",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "To die under water because you cannot breathe.",
+"ex": "He almost drowned in the river."
+},
+{
+"en": "rescue swimmer",
+"tr": "kurtarıcı yüzücü",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A trained person who swims to reach victims.",
+"ex": "The rescue swimmer reached her in two minutes."
 },
 {
-"en": "address",
-"tr": "adres",
-"level": "A2",
-"clue": "The number and street where you live.",
-"ex": "Can you write your address here?"
+"en": "upstream",
+"tr": "akıntının yukarısı",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "In the direction the water comes from.",
+"ex": "Put a spotter upstream to watch for debris."
 },
 {
-"en": "afraid",
-"tr": "korkmuş",
-"level": "A2",
-"clue": "Feeling fear.",
-"ex": "Don't be afraid of the dog."
+"en": "downstream",
+"tr": "akıntının aşağısı",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "In the direction the water is flowing.",
+"ex": "Set a safety team downstream."
 },
 {
-"en": "alone",
-"tr": "yalnız",
-"level": "A2",
-"clue": "Without other people.",
-"ex": "He lives alone in a small flat."
+"en": "upstream spotter",
+"tr": "akıntı yukarısı gözcüsü",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A person who watches for danger coming down the river.",
+"ex": "The upstream spotter shouted a warning about a log."
 },
 {
-"en": "angry",
-"tr": "kızgın",
-"level": "A2",
-"clue": "Feeling very annoyed.",
-"ex": "My boss was angry because I was late."
+"en": "downstream safety",
+"tr": "akıntı aşağısı emniyeti",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Rescuers placed below the scene to catch anyone swept away.",
+"ex": "We never start without downstream safety."
 },
 {
-"en": "area",
-"tr": "bölge, alan",
-"level": "A2",
-"clue": "A part of a city or a country.",
-"ex": "This area is very quiet at night."
+"en": "riverbank",
+"tr": "nehir kıyısı",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "The land along the side of a river.",
+"ex": "The team set up on the riverbank."
 },
 {
-"en": "arrive",
-"tr": "varmak",
-"level": "A2",
-"clue": "To reach a place.",
-"ex": "We arrived at the hotel at midnight."
+"en": "shore",
+"tr": "kıyı",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "The land at the edge of a sea or lake.",
+"ex": "We pulled the boat onto the shore."
 },
 {
-"en": "autumn",
-"tr": "sonbahar",
-"level": "A2",
-"clue": "The season after summer.",
-"ex": "Leaves fall from the trees in autumn."
+"en": "hypothermia",
+"tr": "hipotermi",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A dangerous drop in body temperature.",
+"ex": "After an hour in cold water he had hypothermia."
 },
 {
-"en": "awful",
-"tr": "berbat",
-"level": "A2",
-"clue": "Very bad.",
-"ex": "The weather was awful yesterday."
+"en": "float",
+"tr": "su üstünde kalmak",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "To stay on the surface of water.",
+"ex": "Lie on your back and float."
 },
 {
-"en": "believe",
-"tr": "inanmak",
-"level": "A2",
-"clue": "To think that something is true.",
-"ex": "I can't believe it's already Friday."
+"en": "tread water",
+"tr": "suda dik durmak",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "To stay upright in deep water by moving your arms and legs.",
+"ex": "She had to tread water until help came."
 },
 {
-"en": "bill",
-"tr": "fatura, hesap",
-"level": "A2",
-"clue": "A paper that shows how much you must pay.",
-"ex": "Can we have the bill, please?"
+"en": "submerged",
+"tr": "su altında kalmış",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Completely under water.",
+"ex": "The car was fully submerged."
 },
 {
-"en": "borrow",
-"tr": "ödünç almak",
-"level": "A2",
-"clue": "To take something and give it back later.",
-"ex": "Can I borrow your pen?"
+"en": "inflatable boat",
+"tr": "şişme bot",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A rubber boat filled with air.",
+"ex": "We launched the inflatable boat from the bridge."
 },
 {
-"en": "boring",
-"tr": "sıkıcı",
-"level": "A2",
-"clue": "Not interesting.",
-"ex": "The film was so boring that I fell asleep."
+"en": "paddle",
+"tr": "kürek / kürek çekmek",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "A short pole used to move a small boat.",
+"ex": "Paddle hard to the left!"
 },
 {
-"en": "bridge",
-"tr": "köprü",
-"level": "A2",
-"clue": "You walk or drive over it to cross a river.",
-"ex": "They built a new bridge over the river."
+"en": "rope system",
+"tr": "halat sistemi",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "An arrangement of ropes, anchors and pulleys for rescue.",
+"ex": "We built a rope system across the river."
 },
 {
-"en": "bright",
-"tr": "parlak, aydınlık",
-"level": "A2",
-"clue": "Full of light.",
-"ex": "The room is bright and sunny."
+"en": "anchor",
+"tr": "ankraj noktası / çapa",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A strong point where a rope is attached.",
+"ex": "That tree is a good anchor."
 },
 {
-"en": "build",
-"tr": "inşa etmek",
-"level": "A2",
-"clue": "To make a house or a building.",
-"ex": "They are building a new hospital."
+"en": "tether",
+"tr": "emniyet ipi (bağlama halatı)",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A rope that connects a rescuer to a safe point.",
+"ex": "The swimmer was on a tether."
 },
 {
-"en": "busy",
-"tr": "meşgul",
-"level": "A2",
-"clue": "Having a lot of things to do.",
-"ex": "I'm very busy this week."
+"en": "carabiner",
+"tr": "karabina",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A metal ring with a gate used to connect ropes.",
+"ex": "Lock the carabiner before you go."
 },
 {
-"en": "careful",
-"tr": "dikkatli",
-"level": "A2",
-"clue": "Giving attention so that nothing goes wrong.",
-"ex": "Be careful when you drive in the rain."
+"en": "pulley",
+"tr": "makara",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A wheel that a rope runs over to lift or pull heavy things.",
+"ex": "We used a pulley to pull the boat out."
 },
 {
-"en": "carry",
-"tr": "taşımak",
-"level": "A2",
-"clue": "To hold something while you move.",
-"ex": "Can you help me carry these boxes?"
+"en": "helmet",
+"tr": "kask",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "A hard hat that protects your head.",
+"ex": "Always wear a helmet in moving water."
 },
 {
-"en": "catch",
-"tr": "yakalamak",
-"level": "A2",
-"clue": "To take hold of something that is moving.",
-"ex": "I ran, but I didn't catch the bus."
+"en": "dry suit",
+"tr": "kuru tulum",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A waterproof suit that keeps you dry in cold water.",
+"ex": "In winter we wear dry suits."
 },
 {
-"en": "cheap",
-"tr": "ucuz",
-"level": "A2",
-"clue": "Not costing much money.",
-"ex": "This phone is cheap but good."
+"en": "wetsuit",
+"tr": "neopren (ıslak) tulum",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A rubber suit that keeps you warm in water.",
+"ex": "He put on his wetsuit quickly."
 },
 {
-"en": "choose",
-"tr": "seçmek",
-"level": "A2",
-"clue": "To decide which one you want.",
-"ex": "You can choose any seat."
+"en": "whistle",
+"tr": "düdük",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "A small object you blow to make a loud signal.",
+"ex": "One blast on the whistle means stop."
 },
 {
-"en": "clever",
-"tr": "zeki",
-"level": "A2",
-"clue": "Quick at learning and understanding.",
-"ex": "She is a very clever student."
+"en": "hand signal",
+"tr": "el işareti",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A movement of the hand used to communicate.",
+"ex": "Use hand signals because the river is loud."
 },
 {
-"en": "climb",
-"tr": "tırmanmak",
-"level": "A2",
-"clue": "To go up something using your hands and feet.",
-"ex": "We climbed the hill to see the view."
+"en": "reach, throw, row, go",
+"tr": "uzan, at, kürek çek, git",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "The order of water rescue methods from safest to most dangerous.",
+"ex": "Remember the rule: reach, throw, row, go."
 },
 {
-"en": "collect",
-"tr": "toplamak, biriktirmek",
-"level": "A2",
-"clue": "To bring things together.",
-"ex": "He collects old coins."
+"en": "reach pole",
+"tr": "uzatma sırığı",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A long pole used to reach a person in the water.",
+"ex": "Use the reach pole first."
 },
 {
-"en": "comfortable",
-"tr": "rahat",
-"level": "A2",
-"clue": "Making you feel relaxed, with no pain.",
-"ex": "This chair is very comfortable."
+"en": "flash flood",
+"tr": "ani sel",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A flood that comes very suddenly after heavy rain.",
+"ex": "Flash floods can arrive in minutes."
 },
 {
-"en": "company",
-"tr": "şirket",
-"level": "A2",
-"clue": "A business that makes or sells things.",
-"ex": "She works for a big company."
+"en": "flood water",
+"tr": "sel suyu",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "Water from a flood, often dirty and dangerous.",
+"ex": "Don't walk through flood water."
 },
 {
-"en": "compare",
-"tr": "karşılaştırmak",
-"level": "A2",
-"clue": "To look at how things are the same or different.",
-"ex": "Compare the prices before you buy."
+"en": "debris",
+"tr": "enkaz / sürüklenen moloz",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Broken pieces of things carried by water or left after damage.",
+"ex": "The water was full of debris."
 },
 {
-"en": "competition",
-"tr": "yarışma",
-"level": "A2",
-"clue": "An event where people try to win.",
-"ex": "He won first prize in the competition."
+"en": "low-head dam",
+"tr": "alçak savak (bent)",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A small dam that creates a deadly circulating current below it.",
+"ex": "A low-head dam is called a drowning machine."
 },
 {
-"en": "complete",
-"tr": "tamamlamak",
-"level": "A2",
-"clue": "To finish something.",
-"ex": "Please complete the form."
+"en": "hydraulic",
+"tr": "geri döngü akıntısı (hidrolik)",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Water that circulates back on itself below a drop.",
+"ex": "He got stuck in the hydraulic below the weir."
 },
 {
-"en": "cost",
-"tr": "mal olmak, tutmak",
-"level": "A2",
-"clue": "To have a price.",
-"ex": "How much does this jacket cost?"
+"en": "foot entrapment",
+"tr": "ayak sıkışması",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "When a person's foot gets stuck on the river bottom.",
+"ex": "Never stand up in fast water because of foot entrapment."
 },
 {
-"en": "crowded",
-"tr": "kalabalık",
-"level": "A2",
-"clue": "Full of people.",
-"ex": "The metro is always crowded in the morning."
+"en": "defensive swimming",
+"tr": "savunma yüzüşü",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Floating on your back with your feet downstream.",
+"ex": "Use defensive swimming: on your back, feet up."
 },
 {
-"en": "culture",
-"tr": "kültür",
-"level": "A2",
-"clue": "The customs, art and way of life of a group of people.",
-"ex": "I love learning about Thai culture."
+"en": "aggressive swimming",
+"tr": "atak yüzüş",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Swimming hard on your stomach towards a target.",
+"ex": "Switch to aggressive swimming to reach the eddy."
 },
 {
-"en": "dangerous",
-"tr": "tehlikeli",
-"level": "A2",
-"clue": "Something that can hurt you.",
-"ex": "It's dangerous to swim here."
+"en": "ferry angle",
+"tr": "feribot açısı",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "The angle you keep to cross a current.",
+"ex": "Keep a 45-degree ferry angle."
 },
 {
-"en": "decide",
-"tr": "karar vermek",
-"level": "A2",
-"clue": "To make a choice after thinking.",
-"ex": "I decided to learn English."
+"en": "capsize",
+"tr": "alabora olmak",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "To turn upside down in the water.",
+"ex": "The canoe capsized near the bridge."
 },
 {
-"en": "delicious",
-"tr": "lezzetli",
-"level": "A2",
-"clue": "Tasting very good.",
-"ex": "This soup is delicious."
+"en": "rapids",
+"tr": "akıntılı sığlık (çağlayan)",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A part of a river where water flows fast over rocks.",
+"ex": "They lost a paddle in the rapids."
 },
 {
-"en": "describe",
-"tr": "anlatmak, tarif etmek",
-"level": "A2",
-"clue": "To say what someone or something is like.",
-"ex": "Can you describe the man you saw?"
+"en": "water level",
+"tr": "su seviyesi",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "How high the water is.",
+"ex": "The water level is rising fast."
 },
 {
-"en": "difference",
-"tr": "fark",
-"level": "A2",
-"clue": "The way two things are not the same.",
-"ex": "What's the difference between these two?"
+"en": "stranded",
+"tr": "mahsur kalmış",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Left in a place with no way to leave.",
+"ex": "Ten people were stranded on the roof."
 },
 {
-"en": "difficult",
-"tr": "zor",
-"level": "A2",
-"clue": "Not easy.",
-"ex": "The exam was difficult."
+"en": "CPR",
+"tr": "kalp masajı (KPR)",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "Pressing on the chest and giving breaths to restart the heart.",
+"ex": "She started CPR immediately."
 },
 {
-"en": "dirty",
-"tr": "kirli",
-"level": "A2",
-"clue": "Not clean.",
-"ex": "Your shoes are dirty."
+"en": "rescue breaths",
+"tr": "kurtarma nefesi",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Breaths given into a person's mouth to help them breathe.",
+"ex": "Give five rescue breaths to a drowning victim."
 },
 {
-"en": "discover",
-"tr": "keşfetmek",
-"level": "A2",
-"clue": "To find something for the first time.",
-"ex": "We discovered a nice café near the office."
+"en": "recovery position",
+"tr": "derlenme pozisyonu",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Lying on the side so the airway stays open.",
+"ex": "Put him in the recovery position."
 },
 {
-"en": "dream",
-"tr": "rüya, hayal",
-"level": "A2",
-"clue": "Pictures and stories in your mind when you sleep.",
-"ex": "I had a strange dream last night."
+"en": "size-up",
+"tr": "ilk durum değerlendirmesi",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A quick assessment of a scene before acting.",
+"ex": "Do a quick size-up before you enter the water."
 },
 {
-"en": "during",
-"tr": "sırasında",
-"level": "A2",
-"clue": "While something is happening.",
-"ex": "Please don't talk during the meeting."
+"en": "no-go",
+"tr": "girilmez / operasyon yok kararı",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "A decision that it is not safe to start.",
+"ex": "The leader made a no-go decision because of the storm."
 },
 {
-"en": "early",
-"tr": "erken",
-"level": "A2",
-"clue": "Before the usual or planned time.",
-"ex": "I get up early on weekdays."
+"en": "shallow",
+"tr": "sığ",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "Not deep.",
+"ex": "The water is shallow here, but the current is strong."
 },
 {
-"en": "earn",
-"tr": "(para) kazanmak",
-"level": "A2",
-"clue": "To get money for the work you do.",
-"ex": "She earns a good salary."
+"en": "deep",
+"tr": "derin",
+"level": "B1",
+"cat": "Su kurtarma",
+"clue": "Going far down.",
+"ex": "The river is deep after the rain."
 },
 {
-"en": "empty",
-"tr": "boş",
-"level": "A2",
-"clue": "With nothing inside.",
-"ex": "The fridge is empty."
+"en": "swept away",
+"tr": "(akıntıya) kapılmış",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Carried away by moving water.",
+"ex": "Two cars were swept away by the flood."
 },
 {
-"en": "enjoy",
-"tr": "keyif almak",
-"level": "A2",
-"clue": "To like doing something.",
-"ex": "I really enjoyed the trip."
+"en": "boat crew",
+"tr": "bot ekibi",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "The people who work on a boat.",
+"ex": "The boat crew was ready in five minutes."
 },
 {
-"en": "enough",
-"tr": "yeterli",
-"level": "A2",
-"clue": "As much as you need.",
-"ex": "Do we have enough time?"
+"en": "wading",
+"tr": "suda yürüme",
+"level": "B2",
+"cat": "Su kurtarma",
+"clue": "Walking through water.",
+"ex": "Wading in fast water is dangerous."
 },
 {
-"en": "exactly",
-"tr": "tam olarak",
-"level": "A2",
-"clue": "Completely correct.",
-"ex": "It's exactly three o'clock."
+"en": "search and rescue",
+"tr": "arama ve kurtarma",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Finding and saving people in danger.",
+"ex": "She works in search and rescue."
 },
 {
-"en": "excited",
-"tr": "heyecanlı",
-"level": "A2",
-"clue": "Very happy about something that will happen.",
-"ex": "I'm excited about the holiday."
+"en": "disaster",
+"tr": "afet",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A sudden event that causes great damage or loss of life.",
+"ex": "The earthquake was a huge disaster."
 },
 {
-"en": "expensive",
-"tr": "pahalı",
-"level": "A2",
-"clue": "Costing a lot of money.",
-"ex": "Hotels in the city centre are expensive."
+"en": "aftershock",
+"tr": "artçı sarsıntı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A smaller earthquake that follows a big one.",
+"ex": "There were hundreds of aftershocks."
 },
 {
-"en": "explain",
-"tr": "açıklamak",
-"level": "A2",
-"clue": "To make something clear so someone understands.",
-"ex": "Can you explain this word?"
+"en": "main shock",
+"tr": "ana şok",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The largest earthquake in a series.",
+"ex": "The main shock had a magnitude of 7.7."
 },
 {
-"en": "fail",
-"tr": "başarısız olmak, kalmak",
-"level": "A2",
-"clue": "To not succeed.",
-"ex": "He failed his driving test."
+"en": "magnitude",
+"tr": "büyüklük (deprem)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A number that shows how strong an earthquake is.",
+"ex": "The magnitude was 6.4."
 },
 {
-"en": "famous",
-"tr": "ünlü",
-"level": "A2",
-"clue": "Known by many people.",
-"ex": "Istanbul is famous for its history."
+"en": "epicentre",
+"tr": "merkez üssü",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The point on the surface above where an earthquake starts.",
+"ex": "The epicentre was near the city."
 },
 {
-"en": "fill",
-"tr": "doldurmak",
-"level": "A2",
-"clue": "To make something full.",
-"ex": "Please fill this bottle with water."
+"en": "fault line",
+"tr": "fay hattı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A crack in the earth where earthquakes happen.",
+"ex": "The town is built on a fault line."
 },
 {
-"en": "finally",
-"tr": "sonunda",
-"level": "A2",
-"clue": "After a long time.",
-"ex": "The bus finally arrived."
+"en": "collapsed structure",
+"tr": "yıkılmış yapı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A building that has fallen down.",
+"ex": "They searched the collapsed structure all night."
 },
 {
-"en": "forget",
-"tr": "unutmak",
-"level": "A2",
-"clue": "To not remember something.",
-"ex": "Don't forget your keys."
+"en": "rubble",
+"tr": "moloz",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Broken stones and bricks from a destroyed building.",
+"ex": "They pulled a child from the rubble."
 },
 {
-"en": "free",
-"tr": "ücretsiz, boş",
-"level": "A2",
-"clue": "Costing nothing, or not busy.",
-"ex": "The museum is free on Sundays."
+"en": "void",
+"tr": "boşluk (yaşam boşluğu)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "An empty space inside a collapsed building where people may survive.",
+"ex": "We found a void under the stairs."
 },
 {
-"en": "friendly",
-"tr": "arkadaş canlısı",
-"level": "A2",
-"clue": "Nice and kind to other people.",
-"ex": "The people here are very friendly."
+"en": "trapped",
+"tr": "mahsur / sıkışmış",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Unable to move or escape.",
+"ex": "A woman was trapped under the wall."
 },
 {
-"en": "future",
-"tr": "gelecek",
-"level": "A2",
-"clue": "The time that will come after now.",
-"ex": "What are your plans for the future?"
+"en": "survivor",
+"tr": "hayatta kalan",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A person who stays alive after a disaster.",
+"ex": "We found three survivors."
 },
 {
-"en": "glad",
-"tr": "memnun",
-"level": "A2",
-"clue": "Happy about something.",
-"ex": "I'm glad you came."
+"en": "casualty",
+"tr": "kayıp (ölü veya yaralı)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A person hurt or killed in an accident or disaster.",
+"ex": "There were many casualties."
 },
 {
-"en": "grow",
-"tr": "büyümek, yetiştirmek",
-"level": "A2",
-"clue": "To become bigger, or to make plants get bigger.",
-"ex": "My grandmother grows tomatoes."
+"en": "missing person",
+"tr": "kayıp kişi",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Someone whose location is unknown.",
+"ex": "We are searching for a missing person."
 },
 {
-"en": "guess",
-"tr": "tahmin etmek",
-"level": "A2",
-"clue": "To give an answer when you are not sure.",
-"ex": "Guess how old she is."
+"en": "search dog",
+"tr": "arama köpeği",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A dog trained to find people.",
+"ex": "The search dog barked at the rubble."
 },
 {
-"en": "healthy",
-"tr": "sağlıklı",
-"level": "A2",
-"clue": "Good for your body, or not ill.",
-"ex": "Eat healthy food and sleep well."
+"en": "dog handler",
+"tr": "köpek idarecisi",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A person who trains and works with a search dog.",
+"ex": "The dog handler marked the spot."
 },
 {
-"en": "heavy",
-"tr": "ağır",
-"level": "A2",
-"clue": "Weighing a lot.",
-"ex": "This bag is too heavy."
+"en": "thermal camera",
+"tr": "termal kamera",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A camera that shows heat.",
+"ex": "The thermal camera found a person in the dark."
 },
 {
-"en": "hide",
-"tr": "saklamak, saklanmak",
-"level": "A2",
-"clue": "To put something where no one can see it.",
-"ex": "The cat hid under the bed."
+"en": "listening device",
+"tr": "dinleme cihazı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Equipment that detects sounds from people under rubble.",
+"ex": "Quiet please, we are using the listening device!"
 },
 {
-"en": "hope",
-"tr": "umut etmek",
-"level": "A2",
-"clue": "To want something to happen.",
-"ex": "I hope it doesn't rain tomorrow."
+"en": "silent period",
+"tr": "sessizlik anı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A time when everyone stops working to listen for victims.",
+"ex": "Call a silent period every hour."
 },
 {
-"en": "hurry",
-"tr": "acele etmek",
-"level": "A2",
-"clue": "To move or do something quickly.",
-"ex": "Hurry up, we're late!"
+"en": "shoring",
+"tr": "destekleme (payandalama)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Supporting a damaged structure with timber or metal.",
+"ex": "Shoring made the wall safe."
 },
 {
-"en": "hurt",
-"tr": "acımak, incitmek",
-"level": "A2",
-"clue": "To feel or cause pain.",
-"ex": "My back hurts."
+"en": "breaching",
+"tr": "delme (duvar/döşeme)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Making a hole through a wall or floor.",
+"ex": "Breaching the floor took two hours."
 },
 {
-"en": "information",
-"tr": "bilgi",
-"level": "A2",
-"clue": "Facts about something.",
-"ex": "For more information, call this number."
+"en": "concrete slab",
+"tr": "beton döşeme",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A large flat piece of concrete.",
+"ex": "A concrete slab was on his legs."
 },
 {
-"en": "interested",
-"tr": "ilgili, meraklı",
-"level": "A2",
-"clue": "Wanting to know more about something.",
-"ex": "I'm interested in history."
+"en": "extrication",
+"tr": "çıkarma (kurtarma)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The act of freeing a trapped person.",
+"ex": "Extrication took four hours."
 },
 {
-"en": "invite",
-"tr": "davet etmek",
-"level": "A2",
-"clue": "To ask someone to come to an event.",
-"ex": "They invited me to their wedding."
+"en": "stretcher",
+"tr": "sedye",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A frame used to carry an injured person.",
+"ex": "Put the patient on the stretcher."
 },
 {
-"en": "journey",
-"tr": "yolculuk",
-"level": "A2",
-"clue": "Travelling from one place to another.",
-"ex": "The journey takes four hours."
+"en": "triage",
+"tr": "triyaj",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Sorting injured people by how urgently they need help.",
+"ex": "Triage was set up next to the hospital."
 },
 {
-"en": "kind",
-"tr": "nazik",
-"level": "A2",
-"clue": "Nice and helpful to others.",
-"ex": "It's very kind of you to help."
+"en": "first aid",
+"tr": "ilk yardım",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Basic medical help given at once.",
+"ex": "He gave first aid until the ambulance came."
 },
 {
-"en": "late",
-"tr": "geç",
-"level": "A2",
-"clue": "After the usual or planned time.",
-"ex": "Sorry I'm late."
+"en": "paramedic",
+"tr": "paramedik",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A person trained to give emergency medical care.",
+"ex": "The paramedic checked her breathing."
 },
 {
-"en": "lazy",
-"tr": "tembel",
-"level": "A2",
-"clue": "Not wanting to work.",
-"ex": "I feel lazy on Sunday mornings."
+"en": "emergency call centre",
+"tr": "acil çağrı merkezi",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The place that answers emergency phone calls.",
+"ex": "The emergency call centre got 5,000 calls."
 },
 {
-"en": "lend",
-"tr": "ödünç vermek",
-"level": "A2",
-"clue": "To give something to someone for a short time.",
-"ex": "Can you lend me some money?"
+"en": "emergency relief",
+"tr": "acil yardım",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Help such as food and shelter given right after a disaster.",
+"ex": "Emergency relief arrived within hours."
 },
 {
-"en": "lose",
-"tr": "kaybetmek",
-"level": "A2",
-"clue": "To not find something, or to not win.",
-"ex": "I lost my phone yesterday."
+"en": "emergency medical team",
+"tr": "acil tıbbi yardım ekibi",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A group of health workers sent to a disaster.",
+"ex": "An emergency medical team set up a field hospital."
 },
 {
-"en": "loud",
-"tr": "yüksek sesli",
-"level": "A2",
-"clue": "Making a lot of noise.",
-"ex": "The music is too loud."
+"en": "disaster response",
+"tr": "afete müdahale",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Actions taken right after a disaster.",
+"ex": "Disaster response started within minutes."
 },
 {
-"en": "luggage",
-"tr": "bagaj, valiz",
-"level": "A2",
-"clue": "The bags you take on a trip.",
-"ex": "Don't leave your luggage alone."
+"en": "disaster preparedness",
+"tr": "afete hazırlık",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Planning and training before a disaster.",
+"ex": "Disaster preparedness saves lives."
 },
 {
-"en": "mean",
-"tr": "anlamına gelmek",
-"level": "A2",
-"clue": "To have a meaning.",
-"ex": "What does this word mean?"
+"en": "disaster resilience",
+"tr": "afete dirençlilik",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The ability to recover quickly from a disaster.",
+"ex": "We want to build disaster resilience in cities."
 },
 {
-"en": "medicine",
-"tr": "ilaç",
-"level": "A2",
-"clue": "Something you take when you are ill.",
-"ex": "Take this medicine twice a day."
+"en": "disaster risk",
+"tr": "afet riski",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The chance of loss from a disaster.",
+"ex": "Disaster risk is high in this region."
 },
 {
-"en": "mistake",
-"tr": "hata",
-"level": "A2",
-"clue": "Something that is wrong.",
-"ex": "Everyone makes mistakes."
+"en": "disaster-prone area",
+"tr": "afete maruz bölge",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A place where disasters often happen.",
+"ex": "This valley is a disaster-prone area."
+},
+{
+"en": "disaster logistics",
+"tr": "afet lojistiği",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Moving people, supplies and equipment during a disaster.",
+"ex": "Disaster logistics was the biggest challenge."
+},
+{
+"en": "risk assessment",
+"tr": "risk değerlendirmesi",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Studying what dangers exist and how serious they are.",
+"ex": "We did a risk assessment before entering."
+},
+{
+"en": "rapid onset disaster",
+"tr": "ani gelişen afet",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A disaster that happens suddenly, like an earthquake.",
+"ex": "An earthquake is a rapid onset disaster."
+},
+{
+"en": "mitigation",
+"tr": "zarar azaltma",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Actions that reduce the damage of a disaster.",
+"ex": "Mitigation includes building stronger houses."
+},
+{
+"en": "recovery",
+"tr": "iyileştirme (afet sonrası)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Rebuilding normal life after a disaster.",
+"ex": "Recovery will take years."
+},
+{
+"en": "humanitarian aid",
+"tr": "insani yardım",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Help given to people affected by disaster or war.",
+"ex": "Humanitarian aid reached the city."
+},
+{
+"en": "disaster victim",
+"tr": "afetzede",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A person affected by a disaster.",
+"ex": "Disaster victims need shelter and food."
+},
+{
+"en": "disaster volunteer",
+"tr": "afet gönüllüsü",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A person who helps in disasters without pay.",
+"ex": "She became a disaster volunteer last year."
+},
+{
+"en": "emergency sheltering",
+"tr": "acil barınma",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Giving people a safe place to stay right after a disaster.",
+"ex": "Emergency sheltering was set up in the stadium."
+},
+{
+"en": "tent city",
+"tr": "çadır kent",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A camp with many tents for disaster victims.",
+"ex": "They built a tent city for 10,000 people."
+},
+{
+"en": "container city",
+"tr": "konteyner kent",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A settlement of container homes after a disaster.",
+"ex": "Families moved to the container city."
+},
+{
+"en": "assembly area",
+"tr": "toplanma alanı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A safe open place where people gather after a disaster.",
+"ex": "Go to the assembly area after the shaking stops."
+},
+{
+"en": "evacuation",
+"tr": "tahliye",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Moving people out of danger.",
+"ex": "The evacuation went smoothly."
+},
+{
+"en": "restoring family links",
+"tr": "aile birleştirme",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Helping separated family members find each other.",
+"ex": "The Red Crescent works on restoring family links."
+},
+{
+"en": "coordination",
+"tr": "koordinasyon",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Making different groups work together.",
+"ex": "Coordination between teams was excellent."
+},
+{
+"en": "coordination centre",
+"tr": "koordinasyon merkezi",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The office where operations are managed.",
+"ex": "Report to the coordination centre."
+},
+{
+"en": "incident commander",
+"tr": "olay yeri komutanı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The person in charge at the scene.",
+"ex": "The incident commander ordered a pause."
+},
+{
+"en": "chain of command",
+"tr": "komuta zinciri",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The order of authority from leader to team.",
+"ex": "Follow the chain of command."
+},
+{
+"en": "briefing",
+"tr": "brifing",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A meeting that gives information before a task.",
+"ex": "We had a briefing at 6 a.m."
+},
+{
+"en": "debriefing",
+"tr": "görev sonrası değerlendirme",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A meeting after a task to discuss what happened.",
+"ex": "The debriefing lasted an hour."
+},
+{
+"en": "deployment",
+"tr": "görevlendirme / sevk",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Sending a team to a place to work.",
+"ex": "Our deployment to the site took 12 hours."
+},
+{
+"en": "mobilisation",
+"tr": "harekete geçme (seferberlik)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Getting people and equipment ready to go.",
+"ex": "Mobilisation started as soon as the alarm came."
+},
+{
+"en": "accreditation",
+"tr": "akreditasyon",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Official approval that a team meets a standard.",
+"ex": "Our team got INSARAG accreditation."
+},
+{
+"en": "classification",
+"tr": "sınıflandırma",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Putting teams into categories like light, medium or heavy.",
+"ex": "The team passed its classification exercise."
+},
+{
+"en": "worksite",
+"tr": "çalışma sahası",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The exact place where a team is working.",
+"ex": "Keep the worksite clear."
+},
+{
+"en": "marking system",
+"tr": "işaretleme sistemi",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Symbols painted on buildings to share search results.",
+"ex": "Use the INSARAG marking system."
+},
+{
+"en": "gas leak",
+"tr": "gaz kaçağı",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Gas escaping from a pipe.",
+"ex": "Evacuate! There is a gas leak."
+},
+{
+"en": "hazardous materials",
+"tr": "tehlikeli maddeler",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Chemicals or substances that are dangerous.",
+"ex": "Hazardous materials need a special team."
+},
+{
+"en": "decontamination",
+"tr": "arındırma (dekontaminasyon)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Removing dangerous substances from people or equipment.",
+"ex": "Everyone went through decontamination."
+},
+{
+"en": "landslide",
+"tr": "heyelan",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A mass of earth sliding down a hill.",
+"ex": "The landslide blocked the road."
+},
+{
+"en": "avalanche",
+"tr": "çığ",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A large amount of snow falling down a mountain.",
+"ex": "Two climbers were caught in an avalanche."
+},
+{
+"en": "wildfire",
+"tr": "orman yangını",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A large uncontrolled fire in nature.",
+"ex": "The wildfire burned for five days."
+},
+{
+"en": "tsunami",
+"tr": "tsunami",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A huge wave caused by an underwater earthquake.",
+"ex": "A tsunami warning was issued."
+},
+{
+"en": "early warning",
+"tr": "erken uyarı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A system that tells people a disaster is coming.",
+"ex": "Early warning gave them time to escape."
+},
+{
+"en": "golden hours",
+"tr": "altın saatler",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The first hours after a disaster when rescue saves the most lives.",
+"ex": "We must use the golden hours."
+},
+{
+"en": "psychosocial support",
+"tr": "psikososyal destek",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Help for people's emotional and social wellbeing.",
+"ex": "Children received psychosocial support."
+},
+{
+"en": "infrastructure",
+"tr": "altyapı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Basic systems like roads, water and power.",
+"ex": "The earthquake damaged the infrastructure."
+},
+{
+"en": "aftermath",
+"tr": "(felaket) sonrası",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The period after a bad event.",
+"ex": "In the aftermath, people needed food and water."
+},
+{
+"en": "damage assessment",
+"tr": "hasar tespiti",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Checking how badly buildings are damaged.",
+"ex": "Damage assessment teams checked 5,000 buildings."
+},
+{
+"en": "liaison officer",
+"tr": "irtibat görevlisi",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A person who connects two organisations.",
+"ex": "I worked as a liaison officer with the foreign team."
+},
+{
+"en": "reception centre",
+"tr": "karşılama merkezi (RDC)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The place where arriving international teams register.",
+"ex": "The team checked in at the reception centre."
+},
+{
+"en": "host country",
+"tr": "ev sahibi ülke",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "The country where the disaster happened.",
+"ex": "We follow the rules of the host country."
+},
+{
+"en": "treated water",
+"tr": "arıtılmış su",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Water that has been cleaned so it is safe to drink.",
+"ex": "Only drink treated water."
+},
+{
+"en": "active fault",
+"tr": "aktif fay",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A fault that can still cause earthquakes.",
+"ex": "The North Anatolian Fault is an active fault."
+},
+{
+"en": "radio",
+"tr": "telsiz",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A device used to talk over distance.",
+"ex": "Keep your radio on channel 3."
+},
+{
+"en": "over",
+"tr": "tamam, sözü bırakıyorum (telsiz)",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A word used on the radio to end your turn.",
+"ex": "Team two, report your position, over."
+},
+{
+"en": "copy that",
+"tr": "anlaşıldı",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A radio phrase meaning \"I understood\".",
+"ex": "Copy that, moving to sector C."
+},
+{
+"en": "stand by",
+"tr": "beklemede kal",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "To wait and be ready.",
+"ex": "Stand by for further orders."
+},
+{
+"en": "headcount",
+"tr": "personel sayımı",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "Counting people to make sure everyone is present.",
+"ex": "Do a headcount before we leave."
+},
+{
+"en": "shift",
+"tr": "vardiya",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A period of work.",
+"ex": "Our shift ends at midnight."
+},
+{
+"en": "rotate",
+"tr": "nöbetleşmek",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "To change places in turns.",
+"ex": "Teams rotate every four hours."
+},
+{
+"en": "on-site",
+"tr": "sahada",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "At the place where the work is happening.",
+"ex": "On-site coordination is essential."
+},
+{
+"en": "generator",
+"tr": "jeneratör",
+"level": "B1",
+"cat": "Arama kurtarma & AFAD",
+"clue": "A machine that produces electricity.",
+"ex": "The generator kept the lights on."
+},
+{
+"en": "sector",
+"tr": "sektör (bölge)",
+"level": "B2",
+"cat": "Arama kurtarma & AFAD",
+"clue": "An area of the disaster zone given to a team.",
+"ex": "We were assigned sector B."
+},
+{
+"en": "firefighter",
+"tr": "itfaiyeci",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person whose job is to put out fires.",
+"ex": "The firefighter climbed the ladder."
+},
+{
+"en": "police officer",
+"tr": "polis memuru",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A member of the police.",
+"ex": "A police officer stopped the traffic."
+},
+{
+"en": "nurse",
+"tr": "hemşire",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who cares for sick people in hospital.",
+"ex": "The nurse gave me some water."
+},
+{
+"en": "surgeon",
+"tr": "cerrah",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A doctor who does operations.",
+"ex": "The surgeon operated for six hours."
+},
+{
+"en": "pharmacist",
+"tr": "eczacı",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who prepares and sells medicine.",
+"ex": "Ask the pharmacist about side effects."
+},
+{
+"en": "dentist",
+"tr": "diş hekimi",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A doctor for your teeth.",
+"ex": "I have an appointment with the dentist."
+},
+{
+"en": "engineer",
+"tr": "mühendis",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who designs machines, buildings or systems.",
+"ex": "My brother is a civil engineer."
+},
+{
+"en": "architect",
+"tr": "mimar",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who designs buildings.",
+"ex": "The architect showed us the plans."
+},
+{
+"en": "lawyer",
+"tr": "avukat",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who gives legal advice.",
+"ex": "You should talk to a lawyer."
+},
+{
+"en": "judge",
+"tr": "hakim",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who decides cases in a court.",
+"ex": "The judge listened carefully."
+},
+{
+"en": "accountant",
+"tr": "muhasebeci",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who manages financial records.",
+"ex": "Our accountant checks the taxes."
+},
+{
+"en": "electrician",
+"tr": "elektrikçi",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who fixes electrical systems.",
+"ex": "Call an electrician, the lights are off."
+},
+{
+"en": "plumber",
+"tr": "tesisatçı",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who fixes water pipes.",
+"ex": "The plumber fixed the leak."
+},
+{
+"en": "mechanic",
+"tr": "tamirci",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who repairs cars.",
+"ex": "The mechanic changed the oil."
+},
+{
+"en": "carpenter",
+"tr": "marangoz",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who makes things from wood.",
+"ex": "A carpenter made our kitchen table."
+},
+{
+"en": "builder",
+"tr": "inşaat ustası",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who builds houses.",
+"ex": "The builders started at 7 a.m."
+},
+{
+"en": "farmer",
+"tr": "çiftçi",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who grows crops or keeps animals.",
+"ex": "The farmer lost his crops in the flood."
+},
+{
+"en": "chef",
+"tr": "şef aşçı",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A professional cook.",
+"ex": "The chef recommended the fish."
+},
+{
+"en": "waiter",
+"tr": "garson",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who serves food in a restaurant.",
+"ex": "The waiter brought the bill."
+},
+{
+"en": "cashier",
+"tr": "kasiyer",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who takes money in a shop.",
+"ex": "Pay the cashier at the front."
+},
+{
+"en": "journalist",
+"tr": "gazeteci",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who writes news.",
+"ex": "A journalist interviewed the rescuers."
+},
+{
+"en": "pilot",
+"tr": "pilot",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who flies a plane.",
+"ex": "The pilot announced a short delay."
+},
+{
+"en": "soldier",
+"tr": "asker",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A member of an army.",
+"ex": "Soldiers helped carry supplies."
+},
+{
+"en": "civil servant",
+"tr": "devlet memuru",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who works for the government.",
+"ex": "As a civil servant, I work for a public agency."
+},
+{
+"en": "manager",
+"tr": "müdür / yönetici",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person in charge of a team.",
+"ex": "I spoke to the manager about the problem."
+},
+{
+"en": "receptionist",
+"tr": "resepsiyonist",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who welcomes visitors.",
+"ex": "The receptionist gave me a key card."
+},
+{
+"en": "technician",
+"tr": "teknisyen",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person whose job is to work with technical equipment.",
+"ex": "I'm a search and rescue technician."
+},
+{
+"en": "interpreter",
+"tr": "tercüman (sözlü)",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who translates spoken words.",
+"ex": "I worked as an interpreter in Thailand."
+},
+{
+"en": "translator",
+"tr": "çevirmen (yazılı)",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who translates written text.",
+"ex": "The translator finished the report."
+},
+{
+"en": "trainer",
+"tr": "eğitmen",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who teaches skills.",
+"ex": "Our trainer showed us how to tie knots."
+},
+{
+"en": "coach",
+"tr": "antrenör / koç",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who trains a sports team.",
+"ex": "The coach was angry after the match."
+},
+{
+"en": "social worker",
+"tr": "sosyal hizmet uzmanı",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who helps people with social problems.",
+"ex": "A social worker visited the family."
+},
+{
+"en": "psychologist",
+"tr": "psikolog",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who helps people with emotional problems.",
+"ex": "The psychologist talked to the survivors."
+},
+{
+"en": "vet",
+"tr": "veteriner",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A doctor for animals.",
+"ex": "We took the dog to the vet."
+},
+{
+"en": "software developer",
+"tr": "yazılımcı",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who writes computer programs.",
+"ex": "She works as a software developer."
+},
+{
+"en": "designer",
+"tr": "tasarımcı",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who plans how things look.",
+"ex": "A designer made our new logo."
+},
+{
+"en": "salesperson",
+"tr": "satış elemanı",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who sells products.",
+"ex": "The salesperson was very helpful."
+},
+{
+"en": "driver",
+"tr": "şoför",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who drives a vehicle.",
+"ex": "The bus driver waited for us."
+},
+{
+"en": "cleaner",
+"tr": "temizlik görevlisi",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person whose job is cleaning.",
+"ex": "The cleaner comes every morning."
+},
+{
+"en": "security guard",
+"tr": "güvenlik görevlisi",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who protects a building.",
+"ex": "The security guard checked my bag."
+},
+{
+"en": "self-employed",
+"tr": "serbest çalışan",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "Working for yourself, not for a company.",
+"ex": "My father is self-employed."
+},
+{
+"en": "employer",
+"tr": "işveren",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person or company that pays people to work.",
+"ex": "My employer pays for my training."
+},
+{
+"en": "employee",
+"tr": "çalışan",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who works for a company.",
+"ex": "The company has 200 employees."
+},
+{
+"en": "retired",
+"tr": "emekli",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "No longer working because of age.",
+"ex": "My grandfather is retired."
+},
+{
+"en": "hairdresser",
+"tr": "kuaför",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who cuts hair.",
+"ex": "I go to the hairdresser every month."
+},
+{
+"en": "tailor",
+"tr": "terzi",
+"level": "B2",
+"cat": "Meslekler",
+"clue": "A person who makes or repairs clothes.",
+"ex": "The tailor shortened my trousers."
+},
+{
+"en": "butcher",
+"tr": "kasap",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who sells meat.",
+"ex": "I bought chicken from the butcher."
+},
+{
+"en": "baker",
+"tr": "fırıncı",
+"level": "B1",
+"cat": "Meslekler",
+"clue": "A person who makes bread.",
+"ex": "The baker opens at six."
+},
+{
+"en": "chores",
+"tr": "ev işleri",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "Small regular jobs at home.",
+"ex": "I do the chores on Saturday."
+},
+{
+"en": "laundry",
+"tr": "çamaşır",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "Clothes that need washing.",
+"ex": "I need to do the laundry."
+},
+{
+"en": "do the dishes",
+"tr": "bulaşık yıkamak",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To wash plates, cups and pans.",
+"ex": "Who is going to do the dishes tonight?"
+},
+{
+"en": "vacuum",
+"tr": "elektrik süpürgesiyle süpürmek",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To clean the floor with a machine that sucks dust.",
+"ex": "I vacuum the living room every week."
+},
+{
+"en": "iron",
+"tr": "ütülemek",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To make clothes smooth with a hot tool.",
+"ex": "I have to iron my shirt."
+},
+{
+"en": "rubbish",
+"tr": "çöp",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "Things you throw away.",
+"ex": "Take the rubbish out, please."
+},
+{
+"en": "groceries",
+"tr": "market alışverişi",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "Food and things for the house that you buy.",
+"ex": "I'm buying groceries after work."
+},
+{
+"en": "leftovers",
+"tr": "artık yemek",
+"level": "B2",
+"cat": "Günlük hayat",
+"clue": "Food remaining after a meal.",
+"ex": "We ate the leftovers for lunch."
+},
+{
+"en": "recipe",
+"tr": "tarif",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "Instructions for cooking a dish.",
+"ex": "Can you give me the recipe?"
+},
+{
+"en": "ingredient",
+"tr": "malzeme (yemek)",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "One of the foods used in a recipe.",
+"ex": "What are the ingredients?"
+},
+{
+"en": "boil",
+"tr": "kaynatmak",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To heat water until it bubbles.",
+"ex": "Boil the pasta for ten minutes."
+},
+{
+"en": "fry",
+"tr": "kızartmak",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To cook in hot oil.",
+"ex": "Fry the onions first."
+},
+{
+"en": "bake",
+"tr": "fırında pişirmek",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To cook in an oven.",
+"ex": "My mother bakes bread on Sundays."
+},
+{
+"en": "fridge",
+"tr": "buzdolabı",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A cold box to keep food fresh.",
+"ex": "Put the milk in the fridge."
+},
+{
+"en": "kettle",
+"tr": "su ısıtıcısı",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A pot for boiling water.",
+"ex": "Turn on the kettle, I'll make tea."
+},
+{
+"en": "cupboard",
+"tr": "dolap",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A piece of furniture with doors for storing things.",
+"ex": "The cups are in the cupboard."
+},
+{
+"en": "drawer",
+"tr": "çekmece",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A box that slides in and out of furniture.",
+"ex": "The keys are in the top drawer."
+},
+{
+"en": "landlord",
+"tr": "ev sahibi",
+"level": "B2",
+"cat": "Günlük hayat",
+"clue": "A person who rents a house to you.",
+"ex": "My landlord increased the rent."
+},
+{
+"en": "rent",
+"tr": "kira",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "Money you pay to live in someone's house.",
+"ex": "The rent is due on the first of the month."
 },
 {
 "en": "neighbour",
 "tr": "komşu",
-"level": "A2",
+"level": "B1",
+"cat": "Günlük hayat",
 "clue": "A person who lives next to you.",
-"ex": "Our neighbours are very kind."
+"ex": "My neighbour has a noisy dog."
 },
 {
-"en": "nervous",
-"tr": "gergin",
-"level": "A2",
-"clue": "Worried and a little afraid.",
-"ex": "I always get nervous before exams."
+"en": "flatmate",
+"tr": "ev arkadaşı",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A person you share a flat with.",
+"ex": "My flatmate is a student."
 },
 {
-"en": "noisy",
-"tr": "gürültülü",
-"level": "A2",
-"clue": "Making a lot of loud sounds.",
-"ex": "The street is noisy at night."
+"en": "commute",
+"tr": "işe gidip gelmek",
+"level": "B2",
+"cat": "Günlük hayat",
+"clue": "To travel to and from work.",
+"ex": "My commute takes 40 minutes."
 },
 {
-"en": "offer",
-"tr": "teklif etmek, ikram etmek",
-"level": "A2",
-"clue": "To ask if someone wants something.",
-"ex": "He offered me a cup of tea."
+"en": "traffic jam",
+"tr": "trafik sıkışıklığı",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "Lots of cars that cannot move.",
+"ex": "I was stuck in a traffic jam."
 },
 {
-"en": "order",
-"tr": "sipariş vermek",
-"level": "A2",
-"clue": "To ask for food or goods.",
-"ex": "Let's order a pizza."
+"en": "oversleep",
+"tr": "uyuya kalmak",
+"level": "B2",
+"cat": "Günlük hayat",
+"clue": "To sleep longer than planned.",
+"ex": "I overslept and missed the bus."
 },
 {
-"en": "own",
-"tr": "kendi, sahip olmak",
-"level": "A2",
-"clue": "Belonging to you.",
-"ex": "I want my own room."
+"en": "nap",
+"tr": "kestirme",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A short sleep during the day.",
+"ex": "I had a nap after lunch."
 },
 {
-"en": "pack",
-"tr": "(bavul) hazırlamak",
-"level": "A2",
-"clue": "To put things in a bag for a trip.",
-"ex": "Did you pack your passport?"
+"en": "errand",
+"tr": "ufak iş (dışarıda halledilecek)",
+"level": "B2",
+"cat": "Günlük hayat",
+"clue": "A short trip to do something, like going to the post office.",
+"ex": "I have a few errands to run."
 },
 {
-"en": "pass",
-"tr": "geçmek",
-"level": "A2",
-"clue": "To succeed in an exam, or to go past something.",
-"ex": "I passed the test!"
+"en": "bill",
+"tr": "fatura / hesap",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A paper showing how much you must pay.",
+"ex": "Can we have the bill, please?"
 },
 {
-"en": "pay",
-"tr": "ödemek",
-"level": "A2",
-"clue": "To give money for something.",
-"ex": "Can I pay by card?"
+"en": "receipt",
+"tr": "fiş",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A paper that shows you paid.",
+"ex": "Keep the receipt in case you return it."
 },
 {
-"en": "perhaps",
-"tr": "belki",
-"level": "A2",
-"clue": "Maybe.",
-"ex": "Perhaps we can meet tomorrow."
+"en": "queue",
+"tr": "sıra (kuyruk)",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A line of people waiting.",
+"ex": "There was a long queue at the bank."
 },
 {
-"en": "polite",
-"tr": "kibar",
-"level": "A2",
-"clue": "Speaking and acting in a nice, respectful way.",
-"ex": "Always be polite to customers."
+"en": "routine",
+"tr": "rutin",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "The usual order of things you do.",
+"ex": "My morning routine starts with coffee."
 },
 {
-"en": "popular",
-"tr": "sevilen, popüler",
-"level": "A2",
-"clue": "Liked by many people.",
-"ex": "This café is very popular."
+"en": "mess",
+"tr": "dağınıklık",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "An untidy state.",
+"ex": "Your room is a mess!"
 },
 {
-"en": "possible",
-"tr": "mümkün",
-"level": "A2",
-"clue": "Able to happen or be done.",
-"ex": "Is it possible to change the date?"
+"en": "tidy up",
+"tr": "toplamak (ortalığı)",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To make a place neat.",
+"ex": "Please tidy up your desk."
 },
 {
-"en": "prefer",
-"tr": "tercih etmek",
-"level": "A2",
-"clue": "To like one thing more than another.",
-"ex": "I prefer tea to coffee."
+"en": "spill",
+"tr": "dökmek (sıvı)",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To accidentally let liquid fall.",
+"ex": "I spilled coffee on my shirt."
 },
 {
-"en": "present",
-"tr": "hediye",
-"level": "A2",
-"clue": "A gift.",
-"ex": "I bought a present for my mother."
+"en": "broken",
+"tr": "bozuk / kırık",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "Damaged and not working.",
+"ex": "The washing machine is broken."
 },
 {
-"en": "prize",
-"tr": "ödül",
-"level": "A2",
-"clue": "Something you get when you win.",
-"ex": "She won a prize."
+"en": "charger",
+"tr": "şarj aleti",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "A device that charges a phone.",
+"ex": "I forgot my charger."
 },
 {
-"en": "quiet",
-"tr": "sessiz",
-"level": "A2",
-"clue": "Making very little noise.",
-"ex": "The library is very quiet."
+"en": "plug in",
+"tr": "fişe takmak",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To connect to electricity.",
+"ex": "Plug in the charger, please."
 },
 {
-"en": "quickly",
-"tr": "hızlıca",
-"level": "A2",
-"clue": "At a fast speed.",
-"ex": "He finished his work quickly."
+"en": "get dressed",
+"tr": "giyinmek",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To put on your clothes.",
+"ex": "I get dressed in five minutes."
 },
 {
-"en": "ready",
-"tr": "hazır",
-"level": "A2",
-"clue": "Prepared.",
-"ex": "Dinner is ready!"
+"en": "brush your teeth",
+"tr": "dişlerini fırçalamak",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To clean your teeth.",
+"ex": "Brush your teeth before bed."
 },
 {
-"en": "receive",
-"tr": "almak (gelen bir şeyi)",
-"level": "A2",
-"clue": "To get something that someone sends you.",
-"ex": "Did you receive my email?"
+"en": "take a shower",
+"tr": "duş almak",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To wash your body under water.",
+"ex": "I take a shower every morning."
 },
 {
-"en": "remember",
-"tr": "hatırlamak",
-"level": "A2",
-"clue": "To keep something in your mind.",
-"ex": "I can't remember his name."
+"en": "wake up",
+"tr": "uyanmak",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To stop sleeping.",
+"ex": "I wake up at 7:30."
 },
 {
-"en": "rent",
-"tr": "kira, kiralamak",
-"level": "A2",
-"clue": "Money you pay to live in a place.",
-"ex": "The rent is due on the first day of the month."
+"en": "leak",
+"tr": "sızıntı / sızdırmak",
+"level": "B2",
+"cat": "Günlük hayat",
+"clue": "A hole that lets water or gas escape.",
+"ex": "There's a leak under the sink."
 },
 {
-"en": "repair",
-"tr": "tamir etmek",
-"level": "A2",
-"clue": "To fix something that is broken.",
-"ex": "They repaired my car."
+"en": "borrow",
+"tr": "ödünç almak",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To take something and give it back later.",
+"ex": "Can I borrow your pen?"
 },
 {
-"en": "rest",
-"tr": "dinlenmek",
-"level": "A2",
-"clue": "To relax after work.",
-"ex": "You should rest after the trip."
+"en": "lend",
+"tr": "ödünç vermek",
+"level": "B1",
+"cat": "Günlük hayat",
+"clue": "To give something for a short time.",
+"ex": "Can you lend me some money?"
 },
 {
-"en": "return",
-"tr": "geri dönmek",
-"level": "A2",
-"clue": "To come or go back.",
-"ex": "When will you return from Thailand?"
+"en": "symptom",
+"tr": "belirti",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "A sign of illness.",
+"ex": "Fever is a common symptom."
 },
 {
-"en": "rich",
-"tr": "zengin",
-"level": "A2",
-"clue": "Having a lot of money.",
-"ex": "He became rich after selling his company."
+"en": "fever",
+"tr": "ateş",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "A high body temperature.",
+"ex": "The child has a high fever."
 },
 {
-"en": "safe",
-"tr": "güvenli",
-"level": "A2",
-"clue": "Not in danger.",
-"ex": "Keep your passport in a safe place."
+"en": "headache",
+"tr": "baş ağrısı",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "Pain in your head.",
+"ex": "I have a terrible headache."
 },
 {
-"en": "save",
-"tr": "biriktirmek, kurtarmak",
-"level": "A2",
-"clue": "To keep money for later, or to help someone in danger.",
-"ex": "I'm saving money for a new phone."
+"en": "sore throat",
+"tr": "boğaz ağrısı",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "Pain in your throat.",
+"ex": "I have a sore throat and a cough."
 },
 {
-"en": "share",
-"tr": "paylaşmak",
-"level": "A2",
-"clue": "To use or have something with other people.",
-"ex": "Let's share the cake."
+"en": "cough",
+"tr": "öksürük / öksürmek",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "To push air out of your throat with a noise.",
+"ex": "He was coughing all night."
+},
+{
+"en": "dizzy",
+"tr": "başı dönen",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "Feeling that everything is spinning.",
+"ex": "I feel dizzy when I stand up."
+},
+{
+"en": "nausea",
+"tr": "mide bulantısı",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "The feeling that you want to vomit.",
+"ex": "The medicine can cause nausea."
+},
+{
+"en": "bleeding",
+"tr": "kanama",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "Losing blood.",
+"ex": "Press hard to stop the bleeding."
+},
+{
+"en": "bruise",
+"tr": "morluk",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "A dark mark on the skin after a hit.",
+"ex": "She has a big bruise on her arm."
+},
+{
+"en": "sprain",
+"tr": "burkmak",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "To injure a joint by twisting it.",
+"ex": "I sprained my ankle."
+},
+{
+"en": "fracture",
+"tr": "kırık (kemik)",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "A broken bone.",
+"ex": "The X-ray showed a fracture."
+},
+{
+"en": "bandage",
+"tr": "bandaj / sargı",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "A strip of cloth to cover a wound.",
+"ex": "Put a bandage on the cut."
+},
+{
+"en": "wound",
+"tr": "yara",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "An injury where the skin is cut.",
+"ex": "Clean the wound with water."
+},
+{
+"en": "burn",
+"tr": "yanık",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "An injury from heat or fire.",
+"ex": "He had burns on his hands."
+},
+{
+"en": "unconscious",
+"tr": "bilinçsiz (baygın)",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "Not awake and not able to respond.",
+"ex": "The victim was unconscious."
+},
+{
+"en": "conscious",
+"tr": "bilinci açık",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "Awake and aware.",
+"ex": "Is he conscious? Can he talk?"
+},
+{
+"en": "breathe",
+"tr": "nefes almak",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "To take air in and out.",
+"ex": "Breathe slowly."
+},
+{
+"en": "pulse",
+"tr": "nabız",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "The beat of your heart you can feel at the wrist.",
+"ex": "Check his pulse."
+},
+{
+"en": "blood pressure",
+"tr": "tansiyon",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "The force of blood moving in your body.",
+"ex": "My blood pressure is a bit high."
+},
+{
+"en": "prescription",
+"tr": "reçete",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "A doctor's written order for medicine.",
+"ex": "You need a prescription for this."
+},
+{
+"en": "painkiller",
+"tr": "ağrı kesici",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "Medicine that stops pain.",
+"ex": "Take a painkiller."
+},
+{
+"en": "side effect",
+"tr": "yan etki",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "An unwanted effect of a medicine.",
+"ex": "Sleepiness is a side effect."
+},
+{
+"en": "allergy",
+"tr": "alerji",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "A bad reaction of the body to something.",
+"ex": "I have an allergy to nuts."
+},
+{
+"en": "injection",
+"tr": "iğne (enjeksiyon)",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "Putting medicine into the body with a needle.",
+"ex": "The nurse gave me an injection."
+},
+{
+"en": "recover",
+"tr": "iyileşmek",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "To get better after an illness.",
+"ex": "He recovered quickly."
+},
+{
+"en": "check-up",
+"tr": "kontrol muayenesi",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "A routine medical examination.",
+"ex": "I go for a check-up every year."
+},
+{
+"en": "emergency room",
+"tr": "acil servis",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "The part of a hospital for urgent cases.",
+"ex": "They took him to the emergency room."
+},
+{
+"en": "dehydrated",
+"tr": "susuz kalmış",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "Not having enough water in the body.",
+"ex": "Drink water, you are dehydrated."
+},
+{
+"en": "injury",
+"tr": "yaralanma",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "Damage to the body.",
+"ex": "He has a knee injury."
+},
+{
+"en": "ankle",
+"tr": "ayak bileği",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "The joint between the foot and the leg.",
+"ex": "I twisted my ankle."
+},
+{
+"en": "wrist",
+"tr": "el bileği",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "The joint between the hand and the arm.",
+"ex": "She broke her wrist."
+},
+{
+"en": "shoulder",
+"tr": "omuz",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "The joint at the top of the arm.",
+"ex": "My shoulder hurts."
+},
+{
+"en": "airway",
+"tr": "hava yolu",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "The passage air goes through to the lungs.",
+"ex": "Open the airway first."
+},
+{
+"en": "splint",
+"tr": "atel",
+"level": "B2",
+"cat": "Sağlık",
+"clue": "A hard support to keep a broken bone still.",
+"ex": "We put a splint on his leg."
+},
+{
+"en": "bleed",
+"tr": "kanamak",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "To lose blood.",
+"ex": "His knee is bleeding."
+},
+{
+"en": "heart attack",
+"tr": "kalp krizi",
+"level": "B1",
+"cat": "Sağlık",
+"clue": "A sudden serious problem with the heart.",
+"ex": "He had a heart attack at work."
+},
+{
+"en": "meeting",
+"tr": "toplantı",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "When people come together to discuss something.",
+"ex": "The meeting starts at ten."
+},
+{
+"en": "agenda",
+"tr": "gündem",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "A list of things to discuss in a meeting.",
+"ex": "What's on the agenda today?"
+},
+{
+"en": "report",
+"tr": "rapor",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "A written document about a subject.",
+"ex": "I need to write a report."
+},
+{
+"en": "presentation",
+"tr": "sunum",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "A talk that shows information to a group.",
+"ex": "My presentation is on Monday."
+},
+{
+"en": "responsibility",
+"tr": "sorumluluk",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "A duty that you must do.",
+"ex": "It's my responsibility to check the equipment."
+},
+{
+"en": "in charge of",
+"tr": "-den sorumlu",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Responsible for something.",
+"ex": "I'm in charge of coordination."
+},
+{
+"en": "official letter",
+"tr": "resmi yazı",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "A formal letter from an institution.",
+"ex": "I drafted an official letter to the ministry."
+},
+{
+"en": "attach",
+"tr": "eklemek (dosya)",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "To add a file to an email.",
+"ex": "I attached the report."
+},
+{
+"en": "forward",
+"tr": "iletmek (e-posta)",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "To send an email you received to someone else.",
+"ex": "Can you forward me that email?"
+},
+{
+"en": "reply",
+"tr": "yanıtlamak",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "To answer.",
+"ex": "Please reply by Friday."
+},
+{
+"en": "signature",
+"tr": "imza",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "Your name written by hand.",
+"ex": "We need the director's signature."
+},
+{
+"en": "approve",
+"tr": "onaylamak",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "To officially agree to something.",
+"ex": "The director approved the plan."
+},
+{
+"en": "budget",
+"tr": "bütçe",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "The money available for something.",
+"ex": "The budget for the project is small."
+},
+{
+"en": "department",
+"tr": "daire / birim",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "A part of an organisation.",
+"ex": "I work in the operations department."
+},
+{
+"en": "head of department",
+"tr": "daire başkanı",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "The person who leads a department.",
+"ex": "I report to the head of department."
+},
+{
+"en": "supervisor",
+"tr": "amir",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "A person who watches and directs workers.",
+"ex": "Ask your supervisor first."
+},
+{
+"en": "staff",
+"tr": "personel",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "The people who work in an organisation.",
+"ex": "All staff must attend the training."
+},
+{
+"en": "overtime",
+"tr": "fazla mesai",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Extra hours worked after normal time.",
+"ex": "I worked overtime yesterday."
+},
+{
+"en": "day off",
+"tr": "izin günü",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "A day when you don't work.",
+"ex": "Tomorrow is my day off."
+},
+{
+"en": "annual leave",
+"tr": "yıllık izin",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Paid holiday from work each year.",
+"ex": "I'm taking annual leave in July."
+},
+{
+"en": "promotion",
+"tr": "terfi",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Moving to a higher position at work.",
+"ex": "She got a promotion."
+},
+{
+"en": "salary",
+"tr": "maaş",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "Money you earn every month.",
+"ex": "The salary is paid on the 15th."
+},
+{
+"en": "apply for",
+"tr": "-e başvurmak",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "To ask formally for a job or place.",
+"ex": "I applied for the course."
+},
+{
+"en": "job interview",
+"tr": "iş görüşmesi",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "A formal meeting to test a job candidate.",
+"ex": "I have a job interview tomorrow."
+},
+{
+"en": "skill",
+"tr": "beceri",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "An ability to do something well.",
+"ex": "Communication is an important skill."
+},
+{
+"en": "feedback",
+"tr": "geri bildirim",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Comments on how well you did.",
+"ex": "Thanks for your feedback."
+},
+{
+"en": "follow up",
+"tr": "takip etmek",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "To check on something later.",
+"ex": "I'll follow up with an email."
+},
+{
+"en": "on behalf of",
+"tr": "adına",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Representing someone.",
+"ex": "I'm writing on behalf of my director."
+},
+{
+"en": "regarding",
+"tr": "ile ilgili olarak",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "About.",
+"ex": "I'm writing regarding the training."
+},
+{
+"en": "workshop",
+"tr": "çalıştay",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "A meeting where people work on a topic together.",
+"ex": "We held a workshop in Tekirdağ."
+},
+{
+"en": "participant",
+"tr": "katılımcı",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "A person who takes part.",
+"ex": "There were 40 participants."
+},
+{
+"en": "guideline",
+"tr": "kılavuz / yönerge",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Advice on how to do something.",
+"ex": "Follow the INSARAG guidelines."
+},
+{
+"en": "draft",
+"tr": "taslak",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "A first version of a document.",
+"ex": "Send me the draft by tomorrow."
+},
+{
+"en": "postpone",
+"tr": "ertelemek",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "To move to a later time.",
+"ex": "The meeting was postponed."
+},
+{
+"en": "cancel",
+"tr": "iptal etmek",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "To decide something will not happen.",
+"ex": "The flight was cancelled."
+},
+{
+"en": "attendance",
+"tr": "katılım",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Being present at an event.",
+"ex": "Attendance at the training is required."
+},
+{
+"en": "minutes",
+"tr": "toplantı tutanağı",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "A written record of what was said in a meeting.",
+"ex": "Who is taking the minutes?"
+},
+{
+"en": "invitation",
+"tr": "davet",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "A request to come to an event.",
+"ex": "We sent the invitation to all teams."
+},
+{
+"en": "colleague",
+"tr": "iş arkadaşı",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "A person you work with.",
+"ex": "My colleague helped me with the report."
+},
+{
+"en": "deadline",
+"tr": "son teslim tarihi",
+"level": "B1",
+"cat": "İş & ofis",
+"clue": "The time by which something must be done.",
+"ex": "The deadline is Friday."
+},
+{
+"en": "assignment",
+"tr": "görevlendirme / ödev",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "A task given to someone.",
+"ex": "My assignment is to train the new staff."
+},
+{
+"en": "expense",
+"tr": "masraf",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Money spent for a purpose.",
+"ex": "The agency will cover your expenses."
+},
+{
+"en": "per diem",
+"tr": "harcırah (gündelik)",
+"level": "B2",
+"cat": "İş & ofis",
+"clue": "Daily money paid to staff on a work trip.",
+"ex": "The per diem is paid in dollars."
+},
+{
+"en": "flight",
+"tr": "uçuş",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "A journey by plane.",
+"ex": "Our flight leaves at 6."
+},
+{
+"en": "boarding pass",
+"tr": "biniş kartı",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "A card that lets you get on a plane.",
+"ex": "Show your boarding pass at the gate."
+},
+{
+"en": "check in",
+"tr": "check-in yapmak",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "To register at an airport or hotel.",
+"ex": "We checked in at the hotel at noon."
+},
+{
+"en": "luggage",
+"tr": "bagaj",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "Bags you take on a trip.",
+"ex": "My luggage didn't arrive."
+},
+{
+"en": "hand luggage",
+"tr": "kabin bagajı",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "A small bag you take on the plane.",
+"ex": "I only have hand luggage."
+},
+{
+"en": "customs",
+"tr": "gümrük",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "The place where officers check goods at the border.",
+"ex": "We waited at customs for an hour."
+},
+{
+"en": "passport control",
+"tr": "pasaport kontrolü",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "Where officers check passports.",
+"ex": "Passport control was fast."
+},
+{
+"en": "visa",
+"tr": "vize",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "A document that lets you enter a country.",
+"ex": "Do I need a visa for Thailand?"
+},
+{
+"en": "layover",
+"tr": "aktarma beklemesi",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "A short stop between two flights.",
+"ex": "We had a five-hour layover in Doha."
+},
+{
+"en": "gate",
+"tr": "kapı (havalimanı)",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "The place where you get on the plane.",
+"ex": "Our flight departs from gate 12."
+},
+{
+"en": "return ticket",
+"tr": "gidiş-dönüş bilet",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "A ticket to go somewhere and come back.",
+"ex": "A return ticket is cheaper."
+},
+{
+"en": "one-way",
+"tr": "tek yön",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "Going only, not coming back.",
+"ex": "A one-way ticket to Bangkok, please."
+},
+{
+"en": "reservation",
+"tr": "rezervasyon",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "An arrangement to keep a room or table for you.",
+"ex": "I have a reservation under Dirgen."
+},
+{
+"en": "accommodation",
+"tr": "konaklama",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "A place to stay.",
+"ex": "Accommodation is included."
+},
+{
+"en": "sightseeing",
+"tr": "gezip görme",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "Visiting interesting places.",
+"ex": "We went sightseeing in the old town."
+},
+{
+"en": "destination",
+"tr": "varış yeri",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "The place you are going to.",
+"ex": "Our final destination is Bangkok."
+},
+{
+"en": "currency exchange",
+"tr": "döviz bürosu",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "A place to change money.",
+"ex": "Is there a currency exchange nearby?"
+},
+{
+"en": "directions",
+"tr": "yol tarifi",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "Instructions to get somewhere.",
+"ex": "Can you give me directions to the station?"
+},
+{
+"en": "get lost",
+"tr": "kaybolmak",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "To not know where you are.",
+"ex": "We got lost in the city."
+},
+{
+"en": "jet lag",
+"tr": "saat farkı yorgunluğu",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "Tiredness after flying across time zones.",
+"ex": "I have terrible jet lag."
+},
+{
+"en": "souvenir",
+"tr": "hediyelik eşya",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "Something you buy to remember a place.",
+"ex": "I bought a souvenir for my mum."
+},
+{
+"en": "platform",
+"tr": "peron",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "Where you get on a train.",
+"ex": "The train leaves from platform 4."
+},
+{
+"en": "fare",
+"tr": "yol ücreti",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "The money you pay for a journey.",
+"ex": "The taxi fare was 300 lira."
+},
+{
+"en": "crowded",
+"tr": "kalabalık",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "Full of people.",
+"ex": "The metro was very crowded."
+},
+{
+"en": "book",
+"tr": "rezerve etmek",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "To arrange a ticket or room in advance.",
+"ex": "I booked a hotel online."
+},
+{
+"en": "lost and found",
+"tr": "kayıp eşya bürosu",
+"level": "B1",
+"cat": "Seyahat",
+"clue": "A place where lost things are kept.",
+"ex": "Ask at the lost and found."
+},
+{
+"en": "departure",
+"tr": "kalkış",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "The act of leaving.",
+"ex": "Departure is at 9:40."
+},
+{
+"en": "arrival",
+"tr": "varış",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "The act of arriving.",
+"ex": "Arrival time is 18:00 local time."
+},
+{
+"en": "aisle seat",
+"tr": "koridor koltuğu",
+"level": "B2",
+"cat": "Seyahat",
+"clue": "A seat next to the walkway on a plane.",
+"ex": "Can I have an aisle seat?"
+},
+{
+"en": "anxious",
+"tr": "kaygılı",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Worried and nervous.",
+"ex": "I feel anxious before exams."
+},
+{
+"en": "relieved",
+"tr": "rahatlamış",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Happy because a worry has ended.",
+"ex": "I was relieved when they found him alive."
+},
+{
+"en": "frustrated",
+"tr": "bıkkın (engellenmiş hisseden)",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Annoyed because you cannot do something.",
+"ex": "I get frustrated when I can't find the words."
+},
+{
+"en": "embarrassed",
+"tr": "mahcup",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Feeling ashamed in front of others.",
+"ex": "I was embarrassed when I forgot his name."
+},
+{
+"en": "overwhelmed",
+"tr": "bunalmış",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Feeling there is too much to deal with.",
+"ex": "I felt overwhelmed by the work."
+},
+{
+"en": "upset",
+"tr": "morali bozuk",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Unhappy or worried.",
+"ex": "She was upset about the news."
+},
+{
+"en": "stubborn",
+"tr": "inatçı",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Not willing to change your mind.",
+"ex": "He is too stubborn to apologise."
 },
 {
 "en": "shy",
 "tr": "utangaç",
-"level": "A2",
-"clue": "Nervous with people you don't know.",
-"ex": "He's shy and doesn't talk much."
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Nervous around other people.",
+"ex": "I'm shy when I speak English."
 },
 {
-"en": "sick",
-"tr": "hasta",
-"level": "A2",
-"clue": "Ill.",
-"ex": "I feel sick today."
+"en": "brave",
+"tr": "cesur",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Not afraid of danger.",
+"ex": "The rescuers were very brave."
 },
 {
-"en": "similar",
-"tr": "benzer",
-"level": "A2",
-"clue": "Almost the same.",
-"ex": "Our phones are very similar."
+"en": "curious",
+"tr": "meraklı",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Wanting to know things.",
+"ex": "Kids are curious about everything."
 },
 {
-"en": "smell",
-"tr": "kokmak, koklamak",
-"level": "A2",
-"clue": "To notice something with your nose.",
-"ex": "The bread smells great."
+"en": "jealous",
+"tr": "kıskanç",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Unhappy because someone has what you want.",
+"ex": "He was jealous of his brother."
+},
+{
+"en": "lonely",
+"tr": "yalnız hisseden",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Sad because you are alone.",
+"ex": "I felt lonely in a new city."
+},
+{
+"en": "motivated",
+"tr": "motive",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Wanting to do something.",
+"ex": "I feel motivated today."
+},
+{
+"en": "bored",
+"tr": "sıkılmış",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Not interested.",
+"ex": "I'm bored, let's go out."
+},
+{
+"en": "excited",
+"tr": "heyecanlı",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Very happy and eager.",
+"ex": "I'm excited about the trip."
+},
+{
+"en": "scared",
+"tr": "korkmuş",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Afraid.",
+"ex": "The child was scared of the dark."
+},
+{
+"en": "annoyed",
+"tr": "canı sıkılmış",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "A little angry.",
+"ex": "I'm annoyed that he is late again."
+},
+{
+"en": "mood",
+"tr": "ruh hali",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "How you feel at a particular time.",
+"ex": "I'm in a good mood today."
+},
+{
+"en": "hard-working",
+"tr": "çalışkan",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Working with a lot of effort.",
+"ex": "She is very hard-working."
+},
+{
+"en": "sensitive",
+"tr": "hassas",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Easily hurt or upset.",
+"ex": "Be careful, he is sensitive about it."
+},
+{
+"en": "moody",
+"tr": "huysuz",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Changing feelings quickly.",
+"ex": "He's moody in the mornings."
+},
+{
+"en": "nervous",
+"tr": "gergin",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Worried and a bit afraid.",
+"ex": "I was nervous before the interview."
+},
+{
+"en": "confused",
+"tr": "kafası karışmış",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Not able to understand.",
+"ex": "I'm confused, can you explain again?"
+},
+{
+"en": "cheerful",
+"tr": "neşeli",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Happy and positive.",
+"ex": "She is always cheerful."
+},
+{
+"en": "selfish",
+"tr": "bencil",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Thinking only about yourself.",
+"ex": "Don't be so selfish."
+},
+{
+"en": "polite",
+"tr": "kibar",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Having good manners.",
+"ex": "He is very polite to everyone."
+},
+{
+"en": "rude",
+"tr": "kaba",
+"level": "B1",
+"cat": "Duygular & karakter",
+"clue": "Not polite.",
+"ex": "It's rude to interrupt."
+},
+{
+"en": "mature",
+"tr": "olgun",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Behaving like a sensible adult.",
+"ex": "He is very mature for his age."
+},
+{
+"en": "determined",
+"tr": "kararlı",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Not giving up.",
+"ex": "She is determined to pass the exam."
+},
+{
+"en": "homesick",
+"tr": "memleket özlemi çeken",
+"level": "B2",
+"cat": "Duygular & karakter",
+"clue": "Sad because you are away from home.",
+"ex": "I was homesick in Erzurum at first."
+},
+{
+"en": "forecast",
+"tr": "hava tahmini",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "A statement about the weather to come.",
+"ex": "The forecast says rain tomorrow."
+},
+{
+"en": "humid",
+"tr": "nemli",
+"level": "B2",
+"cat": "Doğa & hava",
+"clue": "Hot and wet air.",
+"ex": "Bangkok is very humid."
+},
+{
+"en": "foggy",
+"tr": "sisli",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "With thick cloud near the ground.",
+"ex": "It's too foggy to drive fast."
+},
+{
+"en": "freezing",
+"tr": "dondurucu",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "Very cold.",
+"ex": "It's freezing outside!"
+},
+{
+"en": "heatwave",
+"tr": "sıcak hava dalgası",
+"level": "B2",
+"cat": "Doğa & hava",
+"clue": "A period of very hot weather.",
+"ex": "The heatwave lasted two weeks."
+},
+{
+"en": "drought",
+"tr": "kuraklık",
+"level": "B2",
+"cat": "Doğa & hava",
+"clue": "A long period without rain.",
+"ex": "The drought killed the crops."
+},
+{
+"en": "thunder",
+"tr": "gök gürültüsü",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "The loud noise during a storm.",
+"ex": "The thunder woke me up."
+},
+{
+"en": "lightning",
+"tr": "şimşek",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "The bright light in the sky in a storm.",
+"ex": "Lightning hit the tree."
+},
+{
+"en": "hail",
+"tr": "dolu",
+"level": "B2",
+"cat": "Doğa & hava",
+"clue": "Small balls of ice falling from the sky.",
+"ex": "Hail damaged the cars."
+},
+{
+"en": "heavy rain",
+"tr": "şiddetli yağış",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "A lot of rain.",
+"ex": "Heavy rain caused flooding."
+},
+{
+"en": "slippery",
+"tr": "kaygan",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "Smooth and wet, easy to fall on.",
+"ex": "The rocks are slippery."
+},
+{
+"en": "valley",
+"tr": "vadi",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "Low land between hills.",
+"ex": "The village is in a valley."
+},
+{
+"en": "stream",
+"tr": "dere",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "A small river.",
+"ex": "We crossed a stream."
+},
+{
+"en": "waterfall",
+"tr": "şelale",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "Water falling from a high place.",
+"ex": "We swam under the waterfall."
+},
+{
+"en": "cliff",
+"tr": "uçurum",
+"level": "B2",
+"cat": "Doğa & hava",
+"clue": "A high steep rock face.",
+"ex": "Don't go near the edge of the cliff."
+},
+{
+"en": "cave",
+"tr": "mağara",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "A large hole in a mountain or under the ground.",
+"ex": "They explored the cave."
+},
+{
+"en": "climate change",
+"tr": "iklim değişikliği",
+"level": "B2",
+"cat": "Doğa & hava",
+"clue": "Long-term change in the earth's temperature.",
+"ex": "Climate change causes more floods."
+},
+{
+"en": "pollution",
+"tr": "kirlilik",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "Dirty air, water or land.",
+"ex": "Air pollution is bad in winter."
+},
+{
+"en": "recycle",
+"tr": "geri dönüştürmek",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "To use materials again.",
+"ex": "We recycle plastic and glass."
+},
+{
+"en": "sunrise",
+"tr": "gün doğumu",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "When the sun comes up.",
+"ex": "We started work at sunrise."
+},
+{
+"en": "sunset",
+"tr": "gün batımı",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "When the sun goes down.",
+"ex": "The sunset was beautiful."
+},
+{
+"en": "season",
+"tr": "mevsim",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "Spring, summer, autumn or winter.",
+"ex": "Autumn is my favourite season."
+},
+{
+"en": "mud",
+"tr": "çamur",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "Wet soft earth.",
+"ex": "Our boots were covered in mud."
+},
+{
+"en": "soil",
+"tr": "toprak",
+"level": "B2",
+"cat": "Doğa & hava",
+"clue": "The top layer of earth where plants grow.",
+"ex": "The soil was too wet."
+},
+{
+"en": "storm",
+"tr": "fırtına",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "Very bad weather with strong wind and rain.",
+"ex": "The storm damaged many roofs."
+},
+{
+"en": "snowstorm",
+"tr": "kar fırtınası",
+"level": "B2",
+"cat": "Doğa & hava",
+"clue": "A storm with heavy snow and wind.",
+"ex": "The snowstorm closed the roads in Erzurum."
+},
+{
+"en": "temperature",
+"tr": "sıcaklık",
+"level": "B1",
+"cat": "Doğa & hava",
+"clue": "How hot or cold something is.",
+"ex": "The temperature dropped below zero."
+},
+{
+"en": "battery",
+"tr": "pil / batarya",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "Something that stores electricity.",
+"ex": "My battery is almost dead."
+},
+{
+"en": "signal",
+"tr": "sinyal (çekim)",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "The connection for a phone.",
+"ex": "There's no signal here."
+},
+{
+"en": "update",
+"tr": "güncelleme",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "A newer version of software.",
+"ex": "Install the latest update."
+},
+{
+"en": "download",
+"tr": "indirmek",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "To copy from the internet to your device.",
+"ex": "Download the app."
+},
+{
+"en": "password",
+"tr": "şifre",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "A secret word to enter an account.",
+"ex": "I forgot my password."
+},
+{
+"en": "log in",
+"tr": "giriş yapmak",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "To enter an account.",
+"ex": "Log in with your email."
+},
+{
+"en": "screenshot",
+"tr": "ekran görüntüsü",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "A picture of your screen.",
+"ex": "Send me a screenshot."
+},
+{
+"en": "storage",
+"tr": "depolama alanı",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "Space for saving files.",
+"ex": "My phone is out of storage."
+},
+{
+"en": "crash",
+"tr": "çökmek (program)",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "When a program suddenly stops working.",
+"ex": "The app crashed again."
+},
+{
+"en": "backup",
+"tr": "yedek",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "A copy of data kept safe.",
+"ex": "Make a backup of your files."
+},
+{
+"en": "settings",
+"tr": "ayarlar",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "Options to change how a device works.",
+"ex": "Go to settings and turn on Bluetooth."
+},
+{
+"en": "notification",
+"tr": "bildirim",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "A message that appears on your phone.",
+"ex": "I got a notification from the bank."
+},
+{
+"en": "device",
+"tr": "cihaz",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "A machine like a phone or tablet.",
+"ex": "Turn off all devices."
+},
+{
+"en": "wireless",
+"tr": "kablosuz",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "Without wires.",
+"ex": "Is there wireless internet here?"
+},
+{
+"en": "artificial intelligence",
+"tr": "yapay zeka",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "Computer systems that can think like humans.",
+"ex": "Artificial intelligence is changing everything."
+},
+{
+"en": "drone",
+"tr": "dron",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "A small aircraft without a pilot.",
+"ex": "We used a drone to search the river."
+},
+{
+"en": "satellite phone",
+"tr": "uydu telefonu",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "A phone that works through satellites, without towers.",
+"ex": "We used a satellite phone in the mountains."
+},
+{
+"en": "coordinates",
+"tr": "koordinatlar",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "Numbers that show an exact location.",
+"ex": "Send me the coordinates."
+},
+{
+"en": "attachment",
+"tr": "ek (dosya)",
+"level": "B2",
+"cat": "Teknoloji",
+"clue": "A file sent with an email.",
+"ex": "Open the attachment."
+},
+{
+"en": "fix",
+"tr": "tamir etmek",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "To repair.",
+"ex": "Can you fix my laptop?"
+},
+{
+"en": "app",
+"tr": "uygulama",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "A program on a phone.",
+"ex": "I made my own app."
+},
+{
+"en": "keyboard",
+"tr": "klavye",
+"level": "B1",
+"cat": "Teknoloji",
+"clue": "The keys you type on.",
+"ex": "The keyboard is not working."
+},
+{
+"en": "discount",
+"tr": "indirim",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "A lower price.",
+"ex": "There's a 20% discount today."
+},
+{
+"en": "on sale",
+"tr": "indirimde",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "Sold at a lower price.",
+"ex": "These shoes are on sale."
+},
+{
+"en": "expensive",
+"tr": "pahalı",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "Costing a lot.",
+"ex": "Istanbul is expensive."
+},
+{
+"en": "cheap",
+"tr": "ucuz",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "Not costing much.",
+"ex": "This phone was cheap."
+},
+{
+"en": "refund",
+"tr": "para iadesi",
+"level": "B2",
+"cat": "Para & alışveriş",
+"clue": "Money given back.",
+"ex": "I asked for a refund."
+},
+{
+"en": "cash",
+"tr": "nakit",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "Money in coins or notes.",
+"ex": "Do you accept cash?"
+},
+{
+"en": "credit card",
+"tr": "kredi kartı",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "A plastic card to pay.",
+"ex": "Can I pay by credit card?"
+},
+{
+"en": "instalment",
+"tr": "taksit",
+"level": "B2",
+"cat": "Para & alışveriş",
+"clue": "One of several payments.",
+"ex": "I'm paying in six instalments."
+},
+{
+"en": "loan",
+"tr": "kredi (borç)",
+"level": "B2",
+"cat": "Para & alışveriş",
+"clue": "Money borrowed from a bank.",
+"ex": "He took a loan for his house."
+},
+{
+"en": "save up",
+"tr": "para biriktirmek",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "To keep money for later.",
+"ex": "I'm saving up for a new phone."
 },
 {
 "en": "spend",
 "tr": "harcamak",
-"level": "A2",
-"clue": "To use money or time.",
-"ex": "How much time do you spend on your phone?"
-},
-{
-"en": "strange",
-"tr": "garip",
-"level": "A2",
-"clue": "Unusual or surprising.",
-"ex": "I heard a strange noise."
-},
-{
-"en": "strong",
-"tr": "güçlü",
-"level": "A2",
-"clue": "Having a lot of power.",
-"ex": "He's very strong."
-},
-{
-"en": "suddenly",
-"tr": "aniden",
-"level": "A2",
-"clue": "Very quickly and without warning.",
-"ex": "Suddenly the lights went out."
-},
-{
-"en": "sure",
-"tr": "emin",
-"level": "A2",
-"clue": "Certain.",
-"ex": "Are you sure?"
-},
-{
-"en": "surprised",
-"tr": "şaşırmış",
-"level": "A2",
-"clue": "Feeling that something is unexpected.",
-"ex": "I was surprised to see him there."
-},
-{
-"en": "teach",
-"tr": "öğretmek",
-"level": "A2",
-"clue": "To help someone learn.",
-"ex": "Can you teach me to swim?"
-},
-{
-"en": "thirsty",
-"tr": "susamış",
-"level": "A2",
-"clue": "Wanting to drink.",
-"ex": "I'm thirsty. Is there any water?"
-},
-{
-"en": "throw",
-"tr": "atmak, fırlatmak",
-"level": "A2",
-"clue": "To send something through the air with your hand.",
-"ex": "Throw the ball to me!"
-},
-{
-"en": "tidy",
-"tr": "düzenli, toplu",
-"level": "A2",
-"clue": "Neat, with everything in its place.",
-"ex": "Keep your room tidy."
-},
-{
-"en": "tired",
-"tr": "yorgun",
-"level": "A2",
-"clue": "Needing rest or sleep.",
-"ex": "I'm tired after work."
-},
-{
-"en": "together",
-"tr": "birlikte",
-"level": "A2",
-"clue": "With each other.",
-"ex": "Let's work together."
-},
-{
-"en": "trip",
-"tr": "gezi",
-"level": "A2",
-"clue": "A short journey.",
-"ex": "We had a great trip to Cappadocia."
-},
-{
-"en": "true",
-"tr": "doğru, gerçek",
-"level": "A2",
-"clue": "Correct or real.",
-"ex": "Is it true that you're moving?"
-},
-{
-"en": "understand",
-"tr": "anlamak",
-"level": "A2",
-"clue": "To know the meaning of something.",
-"ex": "I don't understand this sentence."
-},
-{
-"en": "unfortunately",
-"tr": "maalesef",
-"level": "A2",
-"clue": "Sadly.",
-"ex": "Unfortunately, the shop is closed."
-},
-{
-"en": "usually",
-"tr": "genellikle",
-"level": "A2",
-"clue": "Most of the time.",
-"ex": "I usually walk to work."
-},
-{
-"en": "visit",
-"tr": "ziyaret etmek",
-"level": "A2",
-"clue": "To go to see a person or a place.",
-"ex": "I visit my parents every weekend."
-},
-{
-"en": "wait",
-"tr": "beklemek",
-"level": "A2",
-"clue": "To stay somewhere until something happens.",
-"ex": "Please wait here."
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "To use money.",
+"ex": "I spend too much on food."
 },
 {
 "en": "wallet",
 "tr": "cüzdan",
-"level": "A2",
-"clue": "A small case for your money and cards.",
-"ex": "I left my wallet at home."
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "A small case for money.",
+"ex": "I lost my wallet."
 },
 {
-"en": "warm",
-"tr": "ılık, sıcak",
-"level": "A2",
-"clue": "A little hot.",
-"ex": "It's warm today."
+"en": "price tag",
+"tr": "fiyat etiketi",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "A label showing the price.",
+"ex": "There's no price tag on this."
 },
 {
-"en": "waste",
-"tr": "israf etmek",
-"level": "A2",
-"clue": "To use something badly or without need.",
-"ex": "Don't waste water."
+"en": "bargain",
+"tr": "kelepir",
+"level": "B2",
+"cat": "Para & alışveriş",
+"clue": "Something bought cheaply.",
+"ex": "It was a real bargain."
 },
 {
-"en": "wear",
-"tr": "giymek",
-"level": "A2",
-"clue": "To have clothes on your body.",
-"ex": "I wear a uniform at work."
+"en": "change",
+"tr": "para üstü",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "Money you get back when you pay too much.",
+"ex": "Keep the change."
 },
 {
-"en": "weather",
-"tr": "hava durumu",
-"level": "A2",
-"clue": "Rain, sun, wind and temperature.",
-"ex": "What's the weather like today?"
+"en": "tax",
+"tr": "vergi",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "Money paid to the government.",
+"ex": "The price includes tax."
 },
 {
-"en": "win",
-"tr": "kazanmak",
-"level": "A2",
-"clue": "To be first in a game or a competition.",
-"ex": "Beşiktaş won the match!"
+"en": "size",
+"tr": "beden",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "How big clothes are.",
+"ex": "Do you have this in a medium size?"
 },
 {
-"en": "worried",
-"tr": "endişeli",
-"level": "A2",
-"clue": "Thinking a lot about a problem.",
-"ex": "I'm worried about the exam."
+"en": "try on",
+"tr": "denemek (kıyafet)",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "To put on clothes to see if they fit.",
+"ex": "Can I try on this jacket?"
 },
 {
-"en": "wrong",
-"tr": "yanlış",
-"level": "A2",
-"clue": "Not correct.",
-"ex": "Sorry, wrong number."
+"en": "fit",
+"tr": "uymak (beden)",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "To be the right size.",
+"ex": "These jeans don't fit."
+},
+{
+"en": "exchange",
+"tr": "değiştirmek (ürün)",
+"level": "B1",
+"cat": "Para & alışveriş",
+"clue": "To give something back and get another.",
+"ex": "Can I exchange this for a bigger size?"
+},
+{
+"en": "out of stock",
+"tr": "stokta yok",
+"level": "B2",
+"cat": "Para & alışveriş",
+"clue": "Not available in the shop now.",
+"ex": "Sorry, it's out of stock."
+},
+{
+"en": "give up",
+"tr": "vazgeçmek",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To stop trying.",
+"ex": "Don't give up, you're close."
+},
+{
+"en": "find out",
+"tr": "öğrenmek (ortaya çıkarmak)",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To discover information.",
+"ex": "I found out the truth yesterday."
+},
+{
+"en": "look for",
+"tr": "aramak",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To try to find.",
+"ex": "I'm looking for my keys."
+},
+{
+"en": "look after",
+"tr": "bakmak (ilgilenmek)",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To take care of.",
+"ex": "Can you look after my dog?"
+},
+{
+"en": "look forward to",
+"tr": "dört gözle beklemek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To be excited about something in the future.",
+"ex": "I look forward to meeting you."
+},
+{
+"en": "come up with",
+"tr": "(fikir) bulmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To think of an idea.",
+"ex": "She came up with a great plan."
+},
+{
+"en": "run out of",
+"tr": "-i tükenmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To have none left.",
+"ex": "We ran out of water."
+},
+{
+"en": "get along with",
+"tr": "iyi geçinmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To have a good relationship.",
+"ex": "I get along with my colleagues."
+},
+{
+"en": "put off",
+"tr": "ertelemek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To postpone.",
+"ex": "Don't put off your homework."
+},
+{
+"en": "set up",
+"tr": "kurmak",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To prepare or build something.",
+"ex": "We set up the tents."
+},
+{
+"en": "carry on",
+"tr": "devam etmek",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To continue.",
+"ex": "Carry on, you're doing great."
+},
+{
+"en": "turn down",
+"tr": "reddetmek / kısmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To refuse; to lower the volume.",
+"ex": "He turned down the job offer."
+},
+{
+"en": "take off",
+"tr": "havalanmak / çıkarmak",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "When a plane leaves the ground; to remove clothes.",
+"ex": "The plane took off on time."
+},
+{
+"en": "pick up",
+"tr": "almak (birini)",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To lift or collect.",
+"ex": "I'll pick you up at eight."
+},
+{
+"en": "figure out",
+"tr": "çözmek / anlamak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To understand or solve.",
+"ex": "I can't figure out this problem."
+},
+{
+"en": "deal with",
+"tr": "ilgilenmek / başa çıkmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To handle a problem.",
+"ex": "I'll deal with it tomorrow."
+},
+{
+"en": "point out",
+"tr": "belirtmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To show or mention.",
+"ex": "He pointed out a mistake."
+},
+{
+"en": "break down",
+"tr": "bozulmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To stop working.",
+"ex": "Our car broke down on the highway."
+},
+{
+"en": "calm down",
+"tr": "sakinleşmek",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To become less excited or angry.",
+"ex": "Calm down, everything is OK."
+},
+{
+"en": "hold on",
+"tr": "bir saniye bekle",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To wait a moment.",
+"ex": "Hold on, I'll check."
+},
+{
+"en": "keep up with",
+"tr": "ayak uydurmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To move or learn at the same speed.",
+"ex": "I can't keep up with native speakers."
+},
+{
+"en": "catch up",
+"tr": "yetişmek (açığı kapatmak)",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To reach the same level as others.",
+"ex": "I need to catch up on my emails."
+},
+{
+"en": "show up",
+"tr": "gelmek (ortaya çıkmak)",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To arrive.",
+"ex": "He didn't show up to the meeting."
+},
+{
+"en": "turn out",
+"tr": "... olduğu ortaya çıkmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To happen in a way you didn't expect.",
+"ex": "It turned out he was right."
+},
+{
+"en": "bring up",
+"tr": "gündeme getirmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To mention a subject.",
+"ex": "Don't bring up politics at dinner."
+},
+{
+"en": "end up",
+"tr": "sonunda ... olmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To finally be in a place or situation.",
+"ex": "We ended up sleeping in the car."
+},
+{
+"en": "get over",
+"tr": "atlatmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To recover from something bad.",
+"ex": "It took months to get over the shock."
+},
+{
+"en": "go on",
+"tr": "devam etmek / olmak",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To continue; to happen.",
+"ex": "What's going on?"
+},
+{
+"en": "work out",
+"tr": "spor yapmak / yoluna girmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To exercise; to have a good result.",
+"ex": "Don't worry, it will work out."
+},
+{
+"en": "fill in",
+"tr": "doldurmak (form)",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To complete a form.",
+"ex": "Fill in this form, please."
+},
+{
+"en": "run into",
+"tr": "rastlamak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To meet by chance.",
+"ex": "I ran into my teacher at the mall."
+},
+{
+"en": "look up",
+"tr": "(bilgi) bakmak",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To search for information.",
+"ex": "Look up the word in the dictionary."
+},
+{
+"en": "make up",
+"tr": "uydurmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To invent a story or excuse.",
+"ex": "He made up an excuse."
+},
+{
+"en": "call off",
+"tr": "iptal etmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To cancel.",
+"ex": "They called off the search at night."
+},
+{
+"en": "back up",
+"tr": "desteklemek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To support someone.",
+"ex": "My team backed me up."
+},
+{
+"en": "get through",
+"tr": "atlatmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To survive a difficult time.",
+"ex": "We'll get through this together."
+},
+{
+"en": "take over",
+"tr": "devralmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To take control or responsibility.",
+"ex": "Team B will take over at midnight."
+},
+{
+"en": "hand over",
+"tr": "teslim etmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To give responsibility to someone else.",
+"ex": "Hand over the radio to the next shift."
+},
+{
+"en": "cut off",
+"tr": "(dünyadan) koparmak",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To isolate a place.",
+"ex": "The village was cut off by the flood."
+},
+{
+"en": "wash away",
+"tr": "(su) sürükleyip götürmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "When water carries something away.",
+"ex": "The bridge was washed away."
+},
+{
+"en": "pull out",
+"tr": "çekip çıkarmak",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To remove by pulling.",
+"ex": "We pulled him out of the water."
+},
+{
+"en": "check on",
+"tr": "kontrol etmek (birini)",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To see if someone is OK.",
+"ex": "Check on the patient every hour."
+},
+{
+"en": "speak up",
+"tr": "sesini yükseltmek / fikrini söylemek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To talk louder or say your opinion.",
+"ex": "Speak up, I can't hear you."
+},
+{
+"en": "make sure",
+"tr": "emin olmak",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To check that something is true.",
+"ex": "Make sure the rope is tight."
+},
+{
+"en": "get back",
+"tr": "geri dönmek",
+"level": "B1",
+"cat": "Phrasal verbs",
+"clue": "To return.",
+"ex": "When did you get back from Thailand?"
+},
+{
+"en": "sort out",
+"tr": "halletmek",
+"level": "B2",
+"cat": "Phrasal verbs",
+"clue": "To solve a problem or organise something.",
+"ex": "I'll sort out the tickets."
+},
+{
+"en": "actually",
+"tr": "aslında",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to say what is really true.",
+"ex": "Actually, I've never been there."
+},
+{
+"en": "anyway",
+"tr": "neyse",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to change the subject.",
+"ex": "Anyway, let's get back to work."
+},
+{
+"en": "by the way",
+"tr": "bu arada",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to add a new topic.",
+"ex": "By the way, did you call him?"
+},
+{
+"en": "to be honest",
+"tr": "dürüst olmak gerekirse",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used before saying your true opinion.",
+"ex": "To be honest, I didn't like it."
+},
+{
+"en": "in my opinion",
+"tr": "bence",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to give your view.",
+"ex": "In my opinion, we should wait."
+},
+{
+"en": "as far as I know",
+"tr": "bildiğim kadarıyla",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "Based on what I know.",
+"ex": "As far as I know, the meeting is at ten."
+},
+{
+"en": "on the other hand",
+"tr": "öte yandan",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "Used to give the opposite idea.",
+"ex": "It's cheap. On the other hand, it's slow."
+},
+{
+"en": "however",
+"tr": "ancak",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "But.",
+"ex": "It was raining. However, we went out."
+},
+{
+"en": "although",
+"tr": "-e rağmen",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "Despite the fact that.",
+"ex": "Although I was tired, I kept working."
+},
+{
+"en": "unless",
+"tr": "-medikçe",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "Except if.",
+"ex": "We won't go unless it stops raining."
+},
+{
+"en": "otherwise",
+"tr": "aksi takdirde",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "If not.",
+"ex": "Hurry, otherwise we'll miss the bus."
+},
+{
+"en": "basically",
+"tr": "kısacası / temelde",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to give the main point simply.",
+"ex": "Basically, we need more people."
+},
+{
+"en": "I mean",
+"tr": "yani",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to explain more clearly.",
+"ex": "It's far. I mean, really far."
+},
+{
+"en": "let me think",
+"tr": "bir düşüneyim",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used when you need time to answer.",
+"ex": "Let me think... yes, Tuesday works."
+},
+{
+"en": "how can I put it",
+"tr": "nasıl desem",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "Used when looking for the right words.",
+"ex": "He's... how can I put it... unusual."
+},
+{
+"en": "it depends",
+"tr": "duruma göre değişir",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "The answer changes with the situation.",
+"ex": "\"Do you swim in winter?\" \"It depends.\""
+},
+{
+"en": "that makes sense",
+"tr": "mantıklı",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "I understand and agree.",
+"ex": "Oh, that makes sense now."
+},
+{
+"en": "fair enough",
+"tr": "makul, haklısın",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "Used to accept someone's point.",
+"ex": "\"I'm too tired to go.\" \"Fair enough.\""
+},
+{
+"en": "no wonder",
+"tr": "şaşılacak bir şey değil",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "It is not surprising.",
+"ex": "No wonder you're tired, you worked 12 hours."
+},
+{
+"en": "as soon as possible",
+"tr": "en kısa sürede",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Very quickly.",
+"ex": "Please reply as soon as possible."
+},
+{
+"en": "in case",
+"tr": "olur da diye",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "Because something might happen.",
+"ex": "Take a jacket in case it gets cold."
+},
+{
+"en": "apparently",
+"tr": "anlaşılan / görünüşe göre",
+"level": "B2",
+"cat": "Sohbet kalıpları",
+"clue": "Based on what you heard.",
+"ex": "Apparently, the road is closed."
+},
+{
+"en": "definitely",
+"tr": "kesinlikle",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Certainly.",
+"ex": "I'll definitely come."
+},
+{
+"en": "probably",
+"tr": "muhtemelen",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Likely.",
+"ex": "It will probably rain."
+},
+{
+"en": "exactly",
+"tr": "aynen",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to agree strongly.",
+"ex": "Exactly! That's what I mean."
+},
+{
+"en": "no way",
+"tr": "olamaz / yok artık",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to show surprise.",
+"ex": "No way! You won the lottery?"
+},
+{
+"en": "what do you mean",
+"tr": "ne demek istiyorsun",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to ask for explanation.",
+"ex": "What do you mean by \"later\"?"
+},
+{
+"en": "could you repeat that",
+"tr": "tekrar eder misiniz",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Asking someone to say it again.",
+"ex": "Sorry, could you repeat that?"
+},
+{
+"en": "what's the word for",
+"tr": "... için kelime neydi",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used when you forget a word.",
+"ex": "What's the word for \"çadır\" in English?"
+},
+{
+"en": "I'm looking forward to it",
+"tr": "sabırsızlıkla bekliyorum",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Saying you are excited about a future event.",
+"ex": "\"See you in Bangkok!\" \"I'm looking forward to it.\""
+},
+{
+"en": "sounds good",
+"tr": "kulağa iyi geliyor",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "Used to agree with a plan.",
+"ex": "\"Let's meet at five.\" \"Sounds good.\""
+},
+{
+"en": "no worries",
+"tr": "sorun değil",
+"level": "B1",
+"cat": "Sohbet kalıpları",
+"clue": "It's OK, don't worry.",
+"ex": "\"Sorry I'm late.\" \"No worries.\""
 },
 {
 "en": "achieve",
 "tr": "başarmak",
 "level": "B1",
 "clue": "To succeed in doing something after working hard.",
-"ex": "She achieved her goal."
+"ex": "She achieved her goal.",
+"cat": "Genel"
 },
 {
 "en": "admit",
 "tr": "itiraf etmek, kabul etmek",
 "level": "B1",
 "clue": "To agree that something bad is true.",
-"ex": "He admitted that he was wrong."
+"ex": "He admitted that he was wrong.",
+"cat": "Genel"
 },
 {
 "en": "advice",
 "tr": "tavsiye",
 "level": "B1",
 "clue": "An opinion about what someone should do.",
-"ex": "Can you give me some advice?"
+"ex": "Can you give me some advice?",
+"cat": "Genel"
 },
 {
 "en": "afford",
 "tr": "parası yetmek",
 "level": "B1",
 "clue": "To have enough money to buy something.",
-"ex": "I can't afford a new car."
+"ex": "I can't afford a new car.",
+"cat": "Genel"
 },
 {
 "en": "agree",
 "tr": "katılmak, aynı fikirde olmak",
 "level": "B1",
 "clue": "To have the same opinion as someone.",
-"ex": "I agree with you."
+"ex": "I agree with you.",
+"cat": "Genel"
 },
 {
 "en": "aim",
 "tr": "amaç",
 "level": "B1",
 "clue": "What you try to do.",
-"ex": "Our aim is to finish by Friday."
+"ex": "Our aim is to finish by Friday.",
+"cat": "Genel"
 },
 {
 "en": "allow",
 "tr": "izin vermek",
 "level": "B1",
 "clue": "To let someone do something.",
-"ex": "Phones are not allowed in the exam."
+"ex": "Phones are not allowed in the exam.",
+"cat": "Genel"
 },
 {
 "en": "amazing",
 "tr": "muhteşem",
 "level": "B1",
 "clue": "Very surprising and very good.",
-"ex": "The view was amazing."
+"ex": "The view was amazing.",
+"cat": "Genel"
 },
 {
 "en": "announce",
 "tr": "duyurmak",
 "level": "B1",
 "clue": "To tell everyone something officially.",
-"ex": "They announced the results today."
+"ex": "They announced the results today.",
+"cat": "Genel"
 },
 {
 "en": "apologise",
 "tr": "özür dilemek",
 "level": "B1",
 "clue": "To say sorry.",
-"ex": "I apologise for the delay."
+"ex": "I apologise for the delay.",
+"cat": "Genel"
 },
 {
 "en": "appointment",
 "tr": "randevu",
 "level": "B1",
 "clue": "A planned time to meet someone, like a doctor.",
-"ex": "I have a doctor's appointment at three."
+"ex": "I have a doctor's appointment at three.",
+"cat": "Genel"
 },
 {
 "en": "arrange",
 "tr": "ayarlamak, düzenlemek",
 "level": "B1",
 "clue": "To plan or organise something.",
-"ex": "Can you arrange a meeting for Monday?"
+"ex": "Can you arrange a meeting for Monday?",
+"cat": "Genel"
 },
 {
 "en": "attend",
 "tr": "katılmak (toplantıya, derse)",
 "level": "B1",
 "clue": "To go to an event, a class or a meeting.",
-"ex": "All staff must attend the training."
+"ex": "All staff must attend the training.",
+"cat": "Genel"
 },
 {
 "en": "available",
 "tr": "müsait, mevcut",
 "level": "B1",
 "clue": "Free to meet, or ready to use.",
-"ex": "Are you available on Thursday?"
+"ex": "Are you available on Thursday?",
+"cat": "Genel"
 },
 {
 "en": "avoid",
 "tr": "kaçınmak",
 "level": "B1",
 "clue": "To stay away from something.",
-"ex": "Avoid the city centre during rush hour."
+"ex": "Avoid the city centre during rush hour.",
+"cat": "Genel"
 },
 {
 "en": "aware",
 "tr": "farkında",
 "level": "B1",
 "clue": "Knowing that something exists or is happening.",
-"ex": "Are you aware of the risks?"
+"ex": "Are you aware of the risks?",
+"cat": "Genel"
 },
 {
 "en": "behaviour",
 "tr": "davranış",
 "level": "B1",
 "clue": "The way a person acts.",
-"ex": "His behaviour was very polite."
+"ex": "His behaviour was very polite.",
+"cat": "Genel"
 },
 {
 "en": "benefit",
 "tr": "fayda",
 "level": "B1",
 "clue": "A good effect.",
-"ex": "Exercise has many benefits."
+"ex": "Exercise has many benefits.",
+"cat": "Genel"
 },
 {
 "en": "calm",
 "tr": "sakin",
 "level": "B1",
 "clue": "Not worried, angry or excited.",
-"ex": "Stay calm and listen."
+"ex": "Stay calm and listen.",
+"cat": "Genel"
 },
 {
 "en": "challenge",
 "tr": "zorluk, meydan okuma",
 "level": "B1",
 "clue": "Something difficult that tests your ability.",
-"ex": "Learning English is a challenge, but it's fun."
+"ex": "Learning English is a challenge, but it's fun.",
+"cat": "Genel"
 },
 {
 "en": "claim",
 "tr": "iddia etmek",
 "level": "B1",
 "clue": "To say that something is true.",
-"ex": "He claims he saw the accident."
-},
-{
-"en": "colleague",
-"tr": "iş arkadaşı",
-"level": "B1",
-"clue": "A person you work with.",
-"ex": "My colleagues helped me a lot."
+"ex": "He claims he saw the accident.",
+"cat": "Genel"
 },
 {
 "en": "complain",
 "tr": "şikayet etmek",
 "level": "B1",
 "clue": "To say that you are not happy about something.",
-"ex": "Customers complained about the noise."
+"ex": "Customers complained about the noise.",
+"cat": "Genel"
 },
 {
 "en": "condition",
 "tr": "durum, koşul",
 "level": "B1",
 "clue": "The state that something is in.",
-"ex": "The road is in bad condition."
+"ex": "The road is in bad condition.",
+"cat": "Genel"
 },
 {
 "en": "confident",
 "tr": "kendinden emin",
 "level": "B1",
 "clue": "Sure about yourself and your abilities.",
-"ex": "She felt confident before the interview."
+"ex": "She felt confident before the interview.",
+"cat": "Genel"
 },
 {
 "en": "confirm",
 "tr": "onaylamak",
 "level": "B1",
 "clue": "To say that something is true or will happen.",
-"ex": "Please confirm your booking."
+"ex": "Please confirm your booking.",
+"cat": "Genel"
 },
 {
 "en": "connect",
 "tr": "bağlamak, bağlanmak",
 "level": "B1",
 "clue": "To join two things together.",
-"ex": "Connect your phone to the Wi-Fi."
+"ex": "Connect your phone to the Wi-Fi.",
+"cat": "Genel"
 },
 {
 "en": "consider",
 "tr": "düşünmek, göz önünde bulundurmak",
 "level": "B1",
 "clue": "To think carefully about something.",
-"ex": "We're considering moving to a bigger flat."
+"ex": "We're considering moving to a bigger flat.",
+"cat": "Genel"
 },
 {
 "en": "contact",
 "tr": "iletişime geçmek",
 "level": "B1",
 "clue": "To call or write to someone.",
-"ex": "Contact me if you need help."
+"ex": "Contact me if you need help.",
+"cat": "Genel"
 },
 {
 "en": "contain",
 "tr": "içermek",
 "level": "B1",
 "clue": "To have something inside.",
-"ex": "This box contains medical supplies."
+"ex": "This box contains medical supplies.",
+"cat": "Genel"
 },
 {
 "en": "convince",
 "tr": "ikna etmek",
 "level": "B1",
 "clue": "To make someone believe or do something.",
-"ex": "She convinced me to join the team."
+"ex": "She convinced me to join the team.",
+"cat": "Genel"
 },
 {
 "en": "damage",
 "tr": "hasar",
 "level": "B1",
 "clue": "Harm that makes something broken or less useful.",
-"ex": "The storm caused a lot of damage."
-},
-{
-"en": "deadline",
-"tr": "son teslim tarihi",
-"level": "B1",
-"clue": "The last day or time to finish something.",
-"ex": "The deadline for the report is Friday."
+"ex": "The storm caused a lot of damage.",
+"cat": "Genel"
 },
 {
 "en": "delay",
 "tr": "gecikme",
 "level": "B1",
 "clue": "When something happens later than planned.",
-"ex": "There's a two-hour delay."
+"ex": "There's a two-hour delay.",
+"cat": "Genel"
 },
 {
 "en": "deliver",
 "tr": "teslim etmek",
 "level": "B1",
 "clue": "To take something to a person or a place.",
-"ex": "They delivered the package this morning."
+"ex": "They delivered the package this morning.",
+"cat": "Genel"
 },
 {
 "en": "demand",
 "tr": "talep etmek",
 "level": "B1",
 "clue": "To ask for something very strongly.",
-"ex": "The workers demanded higher pay."
+"ex": "The workers demanded higher pay.",
+"cat": "Genel"
 },
 {
 "en": "develop",
 "tr": "geliştirmek, gelişmek",
 "level": "B1",
 "clue": "To grow, or to make something better.",
-"ex": "We need to develop new skills."
+"ex": "We need to develop new skills.",
+"cat": "Genel"
 },
 {
 "en": "disappointed",
 "tr": "hayal kırıklığına uğramış",
 "level": "B1",
 "clue": "Sad because something was not as good as you hoped.",
-"ex": "I was disappointed with the result."
+"ex": "I was disappointed with the result.",
+"cat": "Genel"
 },
 {
 "en": "earthquake",
 "tr": "deprem",
 "level": "B1",
 "clue": "When the ground shakes strongly.",
-"ex": "The earthquake damaged many buildings."
+"ex": "The earthquake damaged many buildings.",
+"cat": "Genel"
 },
 {
 "en": "efficient",
 "tr": "verimli",
 "level": "B1",
 "clue": "Working well, without wasting time or energy.",
-"ex": "This system is fast and efficient."
+"ex": "This system is fast and efficient.",
+"cat": "Genel"
 },
 {
 "en": "effort",
 "tr": "çaba",
 "level": "B1",
 "clue": "Hard work to do something.",
-"ex": "Thanks for your effort."
+"ex": "Thanks for your effort.",
+"cat": "Genel"
 },
 {
 "en": "emergency",
 "tr": "acil durum",
 "level": "B1",
 "clue": "A dangerous situation where you must act quickly.",
-"ex": "In an emergency, call 112."
+"ex": "In an emergency, call 112.",
+"cat": "Genel"
 },
 {
 "en": "encourage",
 "tr": "cesaretlendirmek",
 "level": "B1",
 "clue": "To give support so someone does something.",
-"ex": "My teacher encouraged me to keep going."
+"ex": "My teacher encouraged me to keep going.",
+"cat": "Genel"
 },
 {
 "en": "environment",
 "tr": "çevre",
 "level": "B1",
 "clue": "The air, water and land around us.",
-"ex": "We must protect the environment."
+"ex": "We must protect the environment.",
+"cat": "Genel"
 },
 {
 "en": "equipment",
 "tr": "ekipman",
 "level": "B1",
 "clue": "The tools you need for a job or an activity.",
-"ex": "Check all the equipment before you leave."
+"ex": "Check all the equipment before you leave.",
+"cat": "Genel"
 },
 {
 "en": "escape",
 "tr": "kaçmak, kurtulmak",
 "level": "B1",
 "clue": "To get away from a dangerous place.",
-"ex": "They escaped from the burning building."
+"ex": "They escaped from the burning building.",
+"cat": "Genel"
 },
 {
 "en": "especially",
 "tr": "özellikle",
 "level": "B1",
 "clue": "More than others.",
-"ex": "I love fruit, especially apples."
+"ex": "I love fruit, especially apples.",
+"cat": "Genel"
 },
 {
 "en": "evidence",
 "tr": "kanıt",
 "level": "B1",
 "clue": "Facts that show something is true.",
-"ex": "There's no evidence that he did it."
+"ex": "There's no evidence that he did it.",
+"cat": "Genel"
 },
 {
 "en": "exhausted",
 "tr": "bitkin",
 "level": "B1",
 "clue": "Extremely tired.",
-"ex": "I was exhausted after the long shift."
+"ex": "I was exhausted after the long shift.",
+"cat": "Genel"
 },
 {
 "en": "expect",
 "tr": "beklemek, ummak",
 "level": "B1",
 "clue": "To think that something will happen.",
-"ex": "I expect the meeting to be short."
+"ex": "I expect the meeting to be short.",
+"cat": "Genel"
 },
 {
 "en": "experience",
 "tr": "deneyim",
 "level": "B1",
 "clue": "Knowledge or skill you get from doing something.",
-"ex": "She has five years of experience."
+"ex": "She has five years of experience.",
+"cat": "Genel"
 },
 {
 "en": "fair",
 "tr": "adil",
 "level": "B1",
 "clue": "Treating everyone in the same, right way.",
-"ex": "That's not fair!"
+"ex": "That's not fair!",
+"cat": "Genel"
 },
 {
 "en": "familiar",
 "tr": "tanıdık",
 "level": "B1",
 "clue": "Known to you.",
-"ex": "His face looks familiar."
+"ex": "His face looks familiar.",
+"cat": "Genel"
 },
 {
 "en": "flood",
 "tr": "sel",
 "level": "B1",
 "clue": "A lot of water that covers land that is usually dry.",
-"ex": "The flood closed the main road."
+"ex": "The flood closed the main road.",
+"cat": "Genel"
 },
 {
 "en": "frightened",
 "tr": "korkmuş",
 "level": "B1",
 "clue": "Afraid.",
-"ex": "The child was frightened by the storm."
+"ex": "The child was frightened by the storm.",
+"cat": "Genel"
 },
 {
 "en": "generous",
 "tr": "cömert",
 "level": "B1",
 "clue": "Happy to give money, time or help.",
-"ex": "Thank you, that's very generous."
+"ex": "Thank you, that's very generous.",
+"cat": "Genel"
 },
 {
 "en": "goal",
 "tr": "hedef",
 "level": "B1",
 "clue": "Something you want to achieve.",
-"ex": "My goal is to speak English well."
+"ex": "My goal is to speak English well.",
+"cat": "Genel"
 },
 {
 "en": "grateful",
 "tr": "minnettar",
 "level": "B1",
 "clue": "Feeling thankful.",
-"ex": "I'm grateful for your help."
+"ex": "I'm grateful for your help.",
+"cat": "Genel"
 },
 {
 "en": "habit",
 "tr": "alışkanlık",
 "level": "B1",
 "clue": "Something you do often, almost without thinking.",
-"ex": "Reading before bed is a good habit."
+"ex": "Reading before bed is a good habit.",
+"cat": "Genel"
 },
 {
 "en": "honest",
 "tr": "dürüst",
 "level": "B1",
 "clue": "Always telling the truth.",
-"ex": "Please be honest with me."
+"ex": "Please be honest with me.",
+"cat": "Genel"
 },
 {
 "en": "identify",
 "tr": "tespit etmek, belirlemek",
 "level": "B1",
 "clue": "To find out or recognise who or what something is.",
-"ex": "We need to identify the problem first."
+"ex": "We need to identify the problem first.",
+"cat": "Genel"
 },
 {
 "en": "immediately",
 "tr": "hemen",
 "level": "B1",
 "clue": "Right now, without waiting.",
-"ex": "Call me immediately."
+"ex": "Call me immediately.",
+"cat": "Genel"
 },
 {
 "en": "improve",
 "tr": "geliştirmek",
 "level": "B1",
 "clue": "To make something better.",
-"ex": "I want to improve my English."
+"ex": "I want to improve my English.",
+"cat": "Genel"
 },
 {
 "en": "include",
 "tr": "dahil etmek, içermek",
 "level": "B1",
 "clue": "To have something as a part.",
-"ex": "The price includes breakfast."
+"ex": "The price includes breakfast.",
+"cat": "Genel"
 },
 {
 "en": "increase",
 "tr": "artmak, artırmak",
 "level": "B1",
 "clue": "To become bigger in number or amount.",
-"ex": "Prices increased this year."
+"ex": "Prices increased this year.",
+"cat": "Genel"
 },
 {
 "en": "influence",
 "tr": "etki",
 "level": "B1",
 "clue": "The power to change how someone thinks or acts.",
-"ex": "My father had a big influence on me."
+"ex": "My father had a big influence on me.",
+"cat": "Genel"
 },
 {
 "en": "injured",
 "tr": "yaralı",
 "level": "B1",
 "clue": "Hurt in an accident.",
-"ex": "Two people were injured in the accident."
+"ex": "Two people were injured in the accident.",
+"cat": "Genel"
 },
 {
 "en": "instead",
 "tr": "yerine",
 "level": "B1",
 "clue": "In place of something else.",
-"ex": "Let's walk instead of taking a taxi."
+"ex": "Let's walk instead of taking a taxi.",
+"cat": "Genel"
 },
 {
 "en": "involve",
 "tr": "içermek, gerektirmek",
 "level": "B1",
 "clue": "To include something as a necessary part.",
-"ex": "The job involves a lot of travel."
+"ex": "The job involves a lot of travel.",
+"cat": "Genel"
 },
 {
 "en": "knowledge",
 "tr": "bilgi",
 "level": "B1",
 "clue": "What you know and understand.",
-"ex": "He has good knowledge of first aid."
+"ex": "He has good knowledge of first aid.",
+"cat": "Genel"
 },
 {
 "en": "lack",
 "tr": "eksiklik",
 "level": "B1",
 "clue": "Not having enough of something.",
-"ex": "Lack of sleep makes me tired."
+"ex": "Lack of sleep makes me tired.",
+"cat": "Genel"
 },
 {
 "en": "likely",
 "tr": "muhtemel",
 "level": "B1",
 "clue": "Probably going to happen.",
-"ex": "It's likely to rain later."
+"ex": "It's likely to rain later.",
+"cat": "Genel"
 },
 {
 "en": "manage",
 "tr": "başarmak, yönetmek",
 "level": "B1",
 "clue": "To succeed in doing something difficult.",
-"ex": "We managed to finish on time."
+"ex": "We managed to finish on time.",
+"cat": "Genel"
 },
 {
 "en": "mention",
 "tr": "bahsetmek",
 "level": "B1",
 "clue": "To talk about something briefly.",
-"ex": "She mentioned your name."
+"ex": "She mentioned your name.",
+"cat": "Genel"
 },
 {
 "en": "notice",
 "tr": "fark etmek",
 "level": "B1",
 "clue": "To see or become aware of something.",
-"ex": "Did you notice anything strange?"
+"ex": "Did you notice anything strange?",
+"cat": "Genel"
 },
 {
 "en": "obvious",
 "tr": "açık, belli",
 "level": "B1",
 "clue": "Easy to see or understand.",
-"ex": "The answer is obvious."
+"ex": "The answer is obvious.",
+"cat": "Genel"
 },
 {
 "en": "opinion",
 "tr": "fikir, görüş",
 "level": "B1",
 "clue": "What you think about something.",
-"ex": "In my opinion, it's a good plan."
+"ex": "In my opinion, it's a good plan.",
+"cat": "Genel"
 },
 {
 "en": "opportunity",
 "tr": "fırsat",
 "level": "B1",
 "clue": "A chance to do something.",
-"ex": "This trip is a great opportunity."
+"ex": "This trip is a great opportunity.",
+"cat": "Genel"
 },
 {
 "en": "organise",
 "tr": "düzenlemek, organize etmek",
 "level": "B1",
 "clue": "To plan and prepare an event.",
-"ex": "We organised a training for volunteers."
+"ex": "We organised a training for volunteers.",
+"cat": "Genel"
 },
 {
 "en": "patient",
 "tr": "sabırlı",
 "level": "B1",
 "clue": "Able to wait calmly.",
-"ex": "Be patient, it takes time."
+"ex": "Be patient, it takes time.",
+"cat": "Genel"
 },
 {
 "en": "permission",
 "tr": "izin",
 "level": "B1",
 "clue": "When someone allows you to do something.",
-"ex": "You need permission to enter."
+"ex": "You need permission to enter.",
+"cat": "Genel"
 },
 {
 "en": "prepare",
 "tr": "hazırlamak, hazırlanmak",
 "level": "B1",
 "clue": "To get something or yourself ready.",
-"ex": "I need to prepare for the presentation."
+"ex": "I need to prepare for the presentation.",
+"cat": "Genel"
 },
 {
 "en": "pressure",
 "tr": "baskı",
 "level": "B1",
 "clue": "Stress caused by things you have to do.",
-"ex": "We work under a lot of pressure."
+"ex": "We work under a lot of pressure.",
+"cat": "Genel"
 },
 {
 "en": "prevent",
 "tr": "önlemek",
 "level": "B1",
 "clue": "To stop something bad from happening.",
-"ex": "Training can prevent accidents."
+"ex": "Training can prevent accidents.",
+"cat": "Genel"
 },
 {
 "en": "proud",
 "tr": "gururlu",
 "level": "B1",
 "clue": "Happy about something good you or others did.",
-"ex": "I'm proud of my team."
+"ex": "I'm proud of my team.",
+"cat": "Genel"
 },
 {
 "en": "provide",
 "tr": "sağlamak",
 "level": "B1",
 "clue": "To give someone something they need.",
-"ex": "We provide food and water."
+"ex": "We provide food and water.",
+"cat": "Genel"
 },
 {
 "en": "purpose",
 "tr": "amaç",
 "level": "B1",
 "clue": "The reason for something.",
-"ex": "What's the purpose of this meeting?"
+"ex": "What's the purpose of this meeting?",
+"cat": "Genel"
 },
 {
 "en": "realise",
 "tr": "farkına varmak",
 "level": "B1",
 "clue": "To suddenly understand or notice something.",
-"ex": "I realised I had left my keys."
+"ex": "I realised I had left my keys.",
+"cat": "Genel"
 },
 {
 "en": "recently",
 "tr": "son zamanlarda",
 "level": "B1",
 "clue": "Not long ago.",
-"ex": "I've been very busy recently."
+"ex": "I've been very busy recently.",
+"cat": "Genel"
 },
 {
 "en": "recognise",
 "tr": "tanımak",
 "level": "B1",
 "clue": "To know someone or something because you saw it before.",
-"ex": "I didn't recognise you!"
+"ex": "I didn't recognise you!",
+"cat": "Genel"
 },
 {
 "en": "recommend",
 "tr": "tavsiye etmek",
 "level": "B1",
 "clue": "To say that something is good and someone should try it.",
-"ex": "Can you recommend a good restaurant?"
+"ex": "Can you recommend a good restaurant?",
+"cat": "Genel"
 },
 {
 "en": "reduce",
 "tr": "azaltmak",
 "level": "B1",
 "clue": "To make something smaller or less.",
-"ex": "We need to reduce costs."
+"ex": "We need to reduce costs.",
+"cat": "Genel"
 },
 {
 "en": "refuse",
 "tr": "reddetmek",
 "level": "B1",
 "clue": "To say no to something.",
-"ex": "He refused to answer."
+"ex": "He refused to answer.",
+"cat": "Genel"
 },
 {
 "en": "regret",
 "tr": "pişman olmak",
 "level": "B1",
 "clue": "To feel sorry about something you did or didn't do.",
-"ex": "I regret not studying harder."
+"ex": "I regret not studying harder.",
+"cat": "Genel"
 },
 {
 "en": "reliable",
 "tr": "güvenilir",
 "level": "B1",
 "clue": "Someone or something you can trust.",
-"ex": "She's a reliable colleague."
+"ex": "She's a reliable colleague.",
+"cat": "Genel"
 },
 {
 "en": "remind",
 "tr": "hatırlatmak",
 "level": "B1",
 "clue": "To make someone remember something.",
-"ex": "Remind me to call my mother."
+"ex": "Remind me to call my mother.",
+"cat": "Genel"
 },
 {
 "en": "request",
 "tr": "talep, rica",
 "level": "B1",
 "clue": "When you ask for something politely or officially.",
-"ex": "We received your request."
+"ex": "We received your request.",
+"cat": "Genel"
 },
 {
 "en": "require",
 "tr": "gerektirmek",
 "level": "B1",
 "clue": "To need something.",
-"ex": "This job requires patience."
+"ex": "This job requires patience.",
+"cat": "Genel"
 },
 {
 "en": "rescue",
 "tr": "kurtarmak",
 "level": "B1",
 "clue": "To save someone from danger.",
-"ex": "The team rescued three people."
+"ex": "The team rescued three people.",
+"cat": "Genel"
 },
 {
 "en": "responsible",
 "tr": "sorumlu",
 "level": "B1",
 "clue": "Having the duty to take care of something.",
-"ex": "Who is responsible for this project?"
+"ex": "Who is responsible for this project?",
+"cat": "Genel"
 },
 {
 "en": "result",
 "tr": "sonuç",
 "level": "B1",
 "clue": "What happens because of something.",
-"ex": "The results will be ready tomorrow."
+"ex": "The results will be ready tomorrow.",
+"cat": "Genel"
 },
 {
 "en": "safety",
 "tr": "güvenlik",
 "level": "B1",
 "clue": "Being safe from harm.",
-"ex": "Safety comes first."
+"ex": "Safety comes first.",
+"cat": "Genel"
 },
 {
 "en": "schedule",
 "tr": "program, takvim",
 "level": "B1",
 "clue": "A plan that shows when things will happen.",
-"ex": "What's your schedule for tomorrow?"
+"ex": "What's your schedule for tomorrow?",
+"cat": "Genel"
 },
 {
 "en": "search",
 "tr": "aramak",
 "level": "B1",
 "clue": "To look carefully for someone or something.",
-"ex": "They searched the area all night."
+"ex": "They searched the area all night.",
+"cat": "Genel"
 },
 {
 "en": "shelter",
 "tr": "barınak",
 "level": "B1",
 "clue": "A place that keeps you safe from bad weather or danger.",
-"ex": "Families stayed in a shelter after the flood."
+"ex": "Families stayed in a shelter after the flood.",
+"cat": "Genel"
 },
 {
 "en": "solution",
 "tr": "çözüm",
 "level": "B1",
 "clue": "A way to fix a problem.",
-"ex": "We need a quick solution."
+"ex": "We need a quick solution.",
+"cat": "Genel"
 },
 {
 "en": "spread",
 "tr": "yayılmak, yaymak",
 "level": "B1",
 "clue": "To move over a large area.",
-"ex": "The fire spread quickly."
+"ex": "The fire spread quickly.",
+"cat": "Genel"
 },
 {
 "en": "succeed",
 "tr": "başarılı olmak",
 "level": "B1",
 "clue": "To do what you tried to do.",
-"ex": "If you work hard, you will succeed."
+"ex": "If you work hard, you will succeed.",
+"cat": "Genel"
 },
 {
 "en": "suggest",
 "tr": "önermek",
 "level": "B1",
 "clue": "To give an idea for others to think about.",
-"ex": "I suggest we start early."
+"ex": "I suggest we start early.",
+"cat": "Genel"
 },
 {
 "en": "supply",
 "tr": "malzeme, tedarik",
 "level": "B1",
 "clue": "Things that are given or sold to people who need them.",
-"ex": "We need more medical supplies."
+"ex": "We need more medical supplies.",
+"cat": "Genel"
 },
 {
 "en": "support",
 "tr": "desteklemek",
 "level": "B1",
 "clue": "To help someone.",
-"ex": "Thank you for your support."
+"ex": "Thank you for your support.",
+"cat": "Genel"
 },
 {
 "en": "suppose",
 "tr": "sanmak, farz etmek",
 "level": "B1",
 "clue": "To think that something is probably true.",
-"ex": "I suppose you're right."
+"ex": "I suppose you're right.",
+"cat": "Genel"
 },
 {
 "en": "survive",
 "tr": "hayatta kalmak",
 "level": "B1",
 "clue": "To stay alive after a dangerous event.",
-"ex": "Everyone survived the earthquake."
+"ex": "Everyone survived the earthquake.",
+"cat": "Genel"
 },
 {
 "en": "task",
 "tr": "görev",
 "level": "B1",
 "clue": "A piece of work you have to do.",
-"ex": "My first task is to check emails."
+"ex": "My first task is to check emails.",
+"cat": "Genel"
 },
 {
 "en": "temporary",
 "tr": "geçici",
 "level": "B1",
 "clue": "Lasting only for a short time.",
-"ex": "This is a temporary solution."
+"ex": "This is a temporary solution.",
+"cat": "Genel"
 },
 {
 "en": "tough",
 "tr": "zorlu",
 "level": "B1",
 "clue": "Difficult.",
-"ex": "It was a tough week."
+"ex": "It was a tough week.",
+"cat": "Genel"
 },
 {
 "en": "training",
 "tr": "eğitim",
 "level": "B1",
 "clue": "Learning the skills for a job or a sport.",
-"ex": "The training lasts three days."
+"ex": "The training lasts three days.",
+"cat": "Genel"
 },
 {
 "en": "translate",
 "tr": "çevirmek",
 "level": "B1",
 "clue": "To change words into another language.",
-"ex": "Can you translate this email?"
+"ex": "Can you translate this email?",
+"cat": "Genel"
 },
 {
 "en": "trust",
 "tr": "güvenmek",
 "level": "B1",
 "clue": "To believe that someone is honest and good.",
-"ex": "I trust my team."
+"ex": "I trust my team.",
+"cat": "Genel"
 },
 {
 "en": "urgent",
 "tr": "acil",
 "level": "B1",
 "clue": "Needing action very quickly.",
-"ex": "This is urgent. Please call me back."
+"ex": "This is urgent. Please call me back.",
+"cat": "Genel"
 },
 {
 "en": "valuable",
 "tr": "değerli",
 "level": "B1",
 "clue": "Worth a lot.",
-"ex": "Your help is very valuable."
+"ex": "Your help is very valuable.",
+"cat": "Genel"
 },
 {
 "en": "victim",
 "tr": "kazazede, mağdur",
 "level": "B1",
 "clue": "A person who is hurt by a crime or a disaster.",
-"ex": "The victims received help quickly."
+"ex": "The victims received help quickly.",
+"cat": "Genel"
 },
 {
 "en": "volunteer",
 "tr": "gönüllü",
 "level": "B1",
 "clue": "A person who works without being paid.",
-"ex": "She works as a volunteer."
+"ex": "She works as a volunteer.",
+"cat": "Genel"
 },
 {
 "en": "warn",
 "tr": "uyarmak",
 "level": "B1",
 "clue": "To tell someone about a possible danger.",
-"ex": "They warned us about the storm."
+"ex": "They warned us about the storm.",
+"cat": "Genel"
 },
 {
 "en": "wonder",
 "tr": "merak etmek",
 "level": "B1",
 "clue": "To want to know something.",
-"ex": "I wonder what time it is."
+"ex": "I wonder what time it is.",
+"cat": "Genel"
 },
 {
 "en": "worth",
 "tr": "değer",
 "level": "B1",
 "clue": "Good or useful enough to do.",
-"ex": "The museum is worth a visit."
+"ex": "The museum is worth a visit.",
+"cat": "Genel"
 },
 {
 "en": "abandon",
 "tr": "terk etmek",
 "level": "B2",
 "clue": "To leave someone or something and not come back.",
-"ex": "They had to abandon the car in the snow."
+"ex": "They had to abandon the car in the snow.",
+"cat": "Genel"
 },
 {
 "en": "absorb",
 "tr": "emmek",
 "level": "B2",
 "clue": "To take in a liquid or information.",
-"ex": "The towel absorbed the water."
+"ex": "The towel absorbed the water.",
+"cat": "Genel"
 },
 {
 "en": "accurate",
 "tr": "doğru, kesin",
 "level": "B2",
 "clue": "Correct in every detail.",
-"ex": "We need accurate information about the damage."
+"ex": "We need accurate information about the damage.",
+"cat": "Genel"
 },
 {
 "en": "acknowledge",
 "tr": "kabul etmek, onaylamak",
 "level": "B2",
 "clue": "To accept that something is true or exists.",
-"ex": "He acknowledged his mistake."
+"ex": "He acknowledged his mistake.",
+"cat": "Genel"
 },
 {
 "en": "adapt",
 "tr": "uyum sağlamak",
 "level": "B2",
 "clue": "To change to fit a new situation.",
-"ex": "It took me a month to adapt to the new job."
+"ex": "It took me a month to adapt to the new job.",
+"cat": "Genel"
 },
 {
 "en": "adequate",
 "tr": "yeterli",
 "level": "B2",
 "clue": "Good enough, or enough for a need.",
-"ex": "The shelter didn't have adequate heating."
+"ex": "The shelter didn't have adequate heating.",
+"cat": "Genel"
 },
 {
 "en": "allocate",
 "tr": "tahsis etmek, ayırmak",
 "level": "B2",
 "clue": "To give money, time or things for a purpose.",
-"ex": "Most of the budget was allocated to training."
+"ex": "Most of the budget was allocated to training.",
+"cat": "Genel"
 },
 {
 "en": "alternative",
 "tr": "seçenek, alternatif",
 "level": "B2",
 "clue": "Another possible choice.",
-"ex": "Is there an alternative route?"
+"ex": "Is there an alternative route?",
+"cat": "Genel"
 },
 {
 "en": "anticipate",
 "tr": "öngörmek",
 "level": "B2",
 "clue": "To expect something and prepare for it.",
-"ex": "We anticipate heavy rain tonight."
+"ex": "We anticipate heavy rain tonight.",
+"cat": "Genel"
 },
 {
 "en": "approach",
 "tr": "yaklaşım",
 "level": "B2",
 "clue": "A way of dealing with something.",
-"ex": "We need a new approach to this problem."
+"ex": "We need a new approach to this problem.",
+"cat": "Genel"
 },
 {
 "en": "appropriate",
 "tr": "uygun",
 "level": "B2",
 "clue": "Right for a situation.",
-"ex": "Wear appropriate clothes for the meeting."
+"ex": "Wear appropriate clothes for the meeting.",
+"cat": "Genel"
 },
 {
 "en": "assess",
 "tr": "değerlendirmek",
 "level": "B2",
 "clue": "To judge the size, quality or value of something.",
-"ex": "Experts assessed the damage after the earthquake."
+"ex": "Experts assessed the damage after the earthquake.",
+"cat": "Genel"
 },
 {
 "en": "assign",
 "tr": "görevlendirmek, atamak",
 "level": "B2",
 "clue": "To give someone a job or a task.",
-"ex": "I was assigned to the logistics team."
+"ex": "I was assigned to the logistics team.",
+"cat": "Genel"
 },
 {
 "en": "assume",
 "tr": "varsaymak",
 "level": "B2",
 "clue": "To think something is true without proof.",
-"ex": "I assumed you had already left."
+"ex": "I assumed you had already left.",
+"cat": "Genel"
 },
 {
 "en": "attitude",
 "tr": "tutum, tavır",
 "level": "B2",
 "clue": "The way you think and feel about something.",
-"ex": "She has a positive attitude."
+"ex": "She has a positive attitude.",
+"cat": "Genel"
 },
 {
 "en": "authority",
 "tr": "yetki, yetkili makam",
 "level": "B2",
 "clue": "The power to decide, or an official organisation.",
-"ex": "The local authority closed the road."
+"ex": "The local authority closed the road.",
+"cat": "Genel"
 },
 {
 "en": "beneficial",
 "tr": "faydalı",
 "level": "B2",
 "clue": "Having a good effect.",
-"ex": "Regular exercise is beneficial for your health."
+"ex": "Regular exercise is beneficial for your health.",
+"cat": "Genel"
 },
 {
 "en": "brief",
 "tr": "kısa",
 "level": "B2",
 "clue": "Lasting a short time.",
-"ex": "We had a brief meeting this morning."
+"ex": "We had a brief meeting this morning.",
+"cat": "Genel"
 },
 {
 "en": "capable",
 "tr": "yetenekli, muktedir",
 "level": "B2",
 "clue": "Able to do something well.",
-"ex": "She is capable of leading the team."
+"ex": "She is capable of leading the team.",
+"cat": "Genel"
 },
 {
 "en": "capacity",
 "tr": "kapasite",
 "level": "B2",
 "clue": "The amount something can hold or do.",
-"ex": "The shelter has a capacity of 200 people."
+"ex": "The shelter has a capacity of 200 people.",
+"cat": "Genel"
 },
 {
 "en": "cease",
 "tr": "durmak, sona ermek",
 "level": "B2",
 "clue": "To stop.",
-"ex": "The rain finally ceased in the evening."
+"ex": "The rain finally ceased in the evening.",
+"cat": "Genel"
 },
 {
 "en": "circumstances",
 "tr": "koşullar",
 "level": "B2",
 "clue": "The facts or conditions of a situation.",
-"ex": "Under these circumstances, we must wait."
+"ex": "Under these circumstances, we must wait.",
+"cat": "Genel"
 },
 {
 "en": "collapse",
 "tr": "çökmek",
 "level": "B2",
 "clue": "To fall down suddenly.",
-"ex": "The old building collapsed during the earthquake."
+"ex": "The old building collapsed during the earthquake.",
+"cat": "Genel"
 },
 {
 "en": "commitment",
 "tr": "bağlılık, taahhüt",
 "level": "B2",
 "clue": "A promise to do something, or strong dedication.",
-"ex": "Thank you for your commitment to the project."
+"ex": "Thank you for your commitment to the project.",
+"cat": "Genel"
 },
 {
 "en": "compensate",
 "tr": "telafi etmek, tazmin etmek",
 "level": "B2",
 "clue": "To make up for a loss or a problem.",
-"ex": "Nothing can compensate for lost time."
+"ex": "Nothing can compensate for lost time.",
+"cat": "Genel"
 },
 {
 "en": "comprehensive",
 "tr": "kapsamlı",
 "level": "B2",
 "clue": "Including everything.",
-"ex": "We prepared a comprehensive report."
+"ex": "We prepared a comprehensive report.",
+"cat": "Genel"
 },
 {
 "en": "concern",
 "tr": "endişe",
 "level": "B2",
 "clue": "A feeling of worry.",
-"ex": "There is growing concern about the river level."
+"ex": "There is growing concern about the river level.",
+"cat": "Genel"
 },
 {
 "en": "consequence",
 "tr": "sonuç (genelde kötü)",
 "level": "B2",
 "clue": "A result of an action, often a bad one.",
-"ex": "Think about the consequences before you act."
+"ex": "Think about the consequences before you act.",
+"cat": "Genel"
 },
 {
 "en": "considerable",
 "tr": "epey, kayda değer",
 "level": "B2",
 "clue": "Large in size or amount.",
-"ex": "The project took a considerable amount of time."
+"ex": "The project took a considerable amount of time.",
+"cat": "Genel"
 },
 {
 "en": "consistent",
 "tr": "tutarlı",
 "level": "B2",
 "clue": "Always acting or happening in the same way.",
-"ex": "You need to be consistent in your training."
+"ex": "You need to be consistent in your training.",
+"cat": "Genel"
 },
 {
 "en": "constant",
 "tr": "sürekli",
 "level": "B2",
 "clue": "Happening all the time.",
-"ex": "The constant noise kept me awake."
+"ex": "The constant noise kept me awake.",
+"cat": "Genel"
 },
 {
 "en": "coordinate",
 "tr": "koordine etmek",
 "level": "B2",
 "clue": "To organise people so they work together well.",
-"ex": "She coordinates the work of three teams."
+"ex": "She coordinates the work of three teams.",
+"cat": "Genel"
 },
 {
 "en": "crucial",
 "tr": "çok önemli, hayati",
 "level": "B2",
 "clue": "Extremely important.",
-"ex": "The first 72 hours are crucial in a rescue."
+"ex": "The first 72 hours are crucial in a rescue.",
+"cat": "Genel"
 },
 {
 "en": "debate",
 "tr": "tartışma",
 "level": "B2",
 "clue": "A discussion where people give different opinions.",
-"ex": "There was a long debate about the budget."
+"ex": "There was a long debate about the budget.",
+"cat": "Genel"
 },
 {
 "en": "decline",
 "tr": "azalmak, düşmek",
 "level": "B2",
 "clue": "To become less.",
-"ex": "Sales declined last year."
+"ex": "Sales declined last year.",
+"cat": "Genel"
 },
 {
 "en": "dedicated",
 "tr": "kendini adamış",
 "level": "B2",
 "clue": "Working hard because you care a lot.",
-"ex": "He is a dedicated volunteer."
+"ex": "He is a dedicated volunteer.",
+"cat": "Genel"
 },
 {
 "en": "definite",
 "tr": "kesin",
 "level": "B2",
 "clue": "Certain and fixed.",
-"ex": "We don't have a definite date yet."
+"ex": "We don't have a definite date yet.",
+"cat": "Genel"
 },
 {
 "en": "deny",
 "tr": "inkâr etmek",
 "level": "B2",
 "clue": "To say that something is not true.",
-"ex": "He denied breaking the window."
+"ex": "He denied breaking the window.",
+"cat": "Genel"
 },
 {
 "en": "determine",
 "tr": "belirlemek",
 "level": "B2",
 "clue": "To find out or decide something.",
-"ex": "We must determine the cause of the fire."
+"ex": "We must determine the cause of the fire.",
+"cat": "Genel"
 },
 {
 "en": "distinguish",
 "tr": "ayırt etmek",
 "level": "B2",
 "clue": "To see the difference between things.",
-"ex": "Can you distinguish between the two sounds?"
+"ex": "Can you distinguish between the two sounds?",
+"cat": "Genel"
 },
 {
 "en": "distribute",
 "tr": "dağıtmak",
 "level": "B2",
 "clue": "To give things to many people.",
-"ex": "Volunteers distributed food and blankets."
+"ex": "Volunteers distributed food and blankets.",
+"cat": "Genel"
 },
 {
 "en": "eliminate",
 "tr": "ortadan kaldırmak",
 "level": "B2",
 "clue": "To remove something completely.",
-"ex": "We want to eliminate all risks."
+"ex": "We want to eliminate all risks.",
+"cat": "Genel"
 },
 {
 "en": "emerge",
 "tr": "ortaya çıkmak",
 "level": "B2",
 "clue": "To appear or come out.",
-"ex": "New problems emerged during the test."
+"ex": "New problems emerged during the test.",
+"cat": "Genel"
 },
 {
 "en": "emphasise",
 "tr": "vurgulamak",
 "level": "B2",
 "clue": "To give special importance to something.",
-"ex": "The trainer emphasised the safety rules."
+"ex": "The trainer emphasised the safety rules.",
+"cat": "Genel"
 },
 {
 "en": "enable",
 "tr": "olanak sağlamak",
 "level": "B2",
 "clue": "To make it possible for someone to do something.",
-"ex": "The new system enables faster communication."
+"ex": "The new system enables faster communication.",
+"cat": "Genel"
 },
 {
 "en": "ensure",
 "tr": "sağlamak, güvence altına almak",
 "level": "B2",
 "clue": "To make certain that something happens.",
-"ex": "Please ensure that all doors are closed."
+"ex": "Please ensure that all doors are closed.",
+"cat": "Genel"
 },
 {
 "en": "estimate",
 "tr": "tahmin etmek",
 "level": "B2",
 "clue": "To guess an amount or a size roughly.",
-"ex": "We estimate the cost at two million lira."
+"ex": "We estimate the cost at two million lira.",
+"cat": "Genel"
 },
 {
 "en": "evacuate",
 "tr": "tahliye etmek",
 "level": "B2",
 "clue": "To move people out of a dangerous place.",
-"ex": "They evacuated the village before the flood."
+"ex": "They evacuated the village before the flood.",
+"cat": "Genel"
 },
 {
 "en": "evaluate",
 "tr": "değerlendirmek",
 "level": "B2",
 "clue": "To judge how good or useful something is.",
-"ex": "We will evaluate the exercise next week."
+"ex": "We will evaluate the exercise next week.",
+"cat": "Genel"
 },
 {
 "en": "eventually",
 "tr": "sonunda",
 "level": "B2",
 "clue": "In the end, after a long time.",
-"ex": "Eventually, they found the missing hiker."
+"ex": "Eventually, they found the missing hiker.",
+"cat": "Genel"
 },
 {
 "en": "exceed",
 "tr": "aşmak",
 "level": "B2",
 "clue": "To be more than a limit.",
-"ex": "Do not exceed the speed limit."
+"ex": "Do not exceed the speed limit.",
+"cat": "Genel"
 },
 {
 "en": "expand",
 "tr": "genişlemek, büyümek",
 "level": "B2",
 "clue": "To become or make something larger.",
-"ex": "The company plans to expand next year."
+"ex": "The company plans to expand next year.",
+"cat": "Genel"
 },
 {
 "en": "expertise",
 "tr": "uzmanlık",
 "level": "B2",
 "clue": "Special skill or knowledge.",
-"ex": "We need your expertise in rope rescue."
+"ex": "We need your expertise in rope rescue.",
+"cat": "Genel"
 },
 {
 "en": "facility",
 "tr": "tesis",
 "level": "B2",
 "clue": "A building or place for a special purpose.",
-"ex": "The training facility is near the airport."
+"ex": "The training facility is near the airport.",
+"cat": "Genel"
 },
 {
 "en": "feasible",
 "tr": "uygulanabilir",
 "level": "B2",
 "clue": "Possible and practical to do.",
-"ex": "Is this plan feasible?"
+"ex": "Is this plan feasible?",
+"cat": "Genel"
 },
 {
 "en": "flexible",
 "tr": "esnek",
 "level": "B2",
 "clue": "Able to change easily.",
-"ex": "My working hours are not very flexible."
+"ex": "My working hours are not very flexible.",
+"cat": "Genel"
 },
 {
 "en": "fundamental",
 "tr": "temel",
 "level": "B2",
 "clue": "Basic and very important.",
-"ex": "Trust is fundamental in a team."
+"ex": "Trust is fundamental in a team.",
+"cat": "Genel"
 },
 {
 "en": "genuine",
 "tr": "gerçek, samimi",
 "level": "B2",
 "clue": "Real, not fake.",
-"ex": "She showed genuine interest in the project."
+"ex": "She showed genuine interest in the project.",
+"cat": "Genel"
 },
 {
 "en": "guarantee",
 "tr": "garanti etmek",
 "level": "B2",
 "clue": "To promise that something will happen.",
-"ex": "We can't guarantee good weather."
+"ex": "We can't guarantee good weather.",
+"cat": "Genel"
 },
 {
 "en": "hazard",
 "tr": "tehlike",
 "level": "B2",
 "clue": "Something that can cause harm.",
-"ex": "Broken glass is a hazard."
+"ex": "Broken glass is a hazard.",
+"cat": "Genel"
 },
 {
 "en": "highlight",
 "tr": "öne çıkarmak",
 "level": "B2",
 "clue": "To make something easy to notice.",
-"ex": "The report highlights three main problems."
+"ex": "The report highlights three main problems.",
+"cat": "Genel"
 },
 {
 "en": "implement",
 "tr": "uygulamak",
 "level": "B2",
 "clue": "To put a plan into action.",
-"ex": "We will implement the new rules next month."
+"ex": "We will implement the new rules next month.",
+"cat": "Genel"
 },
 {
 "en": "imply",
 "tr": "ima etmek",
 "level": "B2",
 "clue": "To suggest something without saying it directly.",
-"ex": "Are you trying to imply that I'm lazy?"
+"ex": "Are you trying to imply that I'm lazy?",
+"cat": "Genel"
 },
 {
 "en": "inevitable",
 "tr": "kaçınılmaz",
 "level": "B2",
 "clue": "Certain to happen.",
-"ex": "Some delays are inevitable."
+"ex": "Some delays are inevitable.",
+"cat": "Genel"
 },
 {
 "en": "initial",
 "tr": "ilk, başlangıçtaki",
 "level": "B2",
 "clue": "Happening at the beginning.",
-"ex": "The initial results look good."
+"ex": "The initial results look good.",
+"cat": "Genel"
 },
 {
 "en": "insight",
 "tr": "içgörü, kavrayış",
 "level": "B2",
 "clue": "A clear, deep understanding.",
-"ex": "The book gives insight into Thai culture."
+"ex": "The book gives insight into Thai culture.",
+"cat": "Genel"
 },
 {
 "en": "inspect",
 "tr": "denetlemek, incelemek",
 "level": "B2",
 "clue": "To look at something carefully to check it.",
-"ex": "Engineers will inspect the bridge."
+"ex": "Engineers will inspect the bridge.",
+"cat": "Genel"
 },
 {
 "en": "intend",
 "tr": "niyetinde olmak",
 "level": "B2",
 "clue": "To plan to do something.",
-"ex": "I intend to finish this by Friday."
+"ex": "I intend to finish this by Friday.",
+"cat": "Genel"
 },
 {
 "en": "interpret",
 "tr": "yorumlamak, sözlü çeviri yapmak",
 "level": "B2",
 "clue": "To explain the meaning, or to translate speech.",
-"ex": "Can you interpret for the visitors?"
+"ex": "Can you interpret for the visitors?",
+"cat": "Genel"
 },
 {
 "en": "investigate",
 "tr": "soruşturmak, araştırmak",
 "level": "B2",
 "clue": "To try to find out the facts about something.",
-"ex": "The police will investigate the accident."
+"ex": "The police will investigate the accident.",
+"cat": "Genel"
 },
 {
 "en": "justify",
 "tr": "gerekçelendirmek",
 "level": "B2",
 "clue": "To give a good reason for something.",
-"ex": "How can you justify such a high price?"
+"ex": "How can you justify such a high price?",
+"cat": "Genel"
 },
 {
 "en": "maintain",
 "tr": "sürdürmek, bakımını yapmak",
 "level": "B2",
 "clue": "To keep something in good condition.",
-"ex": "We maintain our equipment every month."
+"ex": "We maintain our equipment every month.",
+"cat": "Genel"
 },
 {
 "en": "minimise",
 "tr": "en aza indirmek",
 "level": "B2",
 "clue": "To make something as small as possible.",
-"ex": "We must minimise the risk to the team."
+"ex": "We must minimise the risk to the team.",
+"cat": "Genel"
 },
 {
 "en": "negotiate",
 "tr": "müzakere etmek",
 "level": "B2",
 "clue": "To discuss something to reach an agreement.",
-"ex": "They will negotiate a new contract."
+"ex": "They will negotiate a new contract.",
+"cat": "Genel"
 },
 {
 "en": "objective",
 "tr": "hedef, amaç",
 "level": "B2",
 "clue": "Something you plan to achieve.",
-"ex": "The main objective is to save lives."
+"ex": "The main objective is to save lives.",
+"cat": "Genel"
 },
 {
 "en": "obtain",
 "tr": "elde etmek",
 "level": "B2",
 "clue": "To get something, often with effort.",
-"ex": "You need to obtain permission first."
+"ex": "You need to obtain permission first.",
+"cat": "Genel"
 },
 {
 "en": "occur",
 "tr": "meydana gelmek",
 "level": "B2",
 "clue": "To happen.",
-"ex": "Accidents often occur at night."
+"ex": "Accidents often occur at night.",
+"cat": "Genel"
 },
 {
 "en": "outcome",
 "tr": "sonuç",
 "level": "B2",
 "clue": "The final result.",
-"ex": "We are happy with the outcome."
+"ex": "We are happy with the outcome.",
+"cat": "Genel"
 },
 {
 "en": "overcome",
 "tr": "üstesinden gelmek",
 "level": "B2",
 "clue": "To succeed in dealing with a problem.",
-"ex": "You can overcome your fear of heights."
+"ex": "You can overcome your fear of heights.",
+"cat": "Genel"
 },
 {
 "en": "participate",
 "tr": "katılmak",
 "level": "B2",
 "clue": "To take part in something.",
-"ex": "Fifty teams will participate in the exercise."
+"ex": "Fifty teams will participate in the exercise.",
+"cat": "Genel"
 },
 {
 "en": "perceive",
 "tr": "algılamak",
 "level": "B2",
 "clue": "To notice or understand something in a certain way.",
-"ex": "How do people perceive our work?"
+"ex": "How do people perceive our work?",
+"cat": "Genel"
 },
 {
 "en": "persuade",
 "tr": "ikna etmek",
 "level": "B2",
 "clue": "To make someone agree to do something.",
-"ex": "I tried to persuade him to come with us."
+"ex": "I tried to persuade him to come with us.",
+"cat": "Genel"
 },
 {
 "en": "potential",
 "tr": "olası, potansiyel",
 "level": "B2",
 "clue": "Possible in the future.",
-"ex": "We discussed potential risks."
+"ex": "We discussed potential risks.",
+"cat": "Genel"
 },
 {
 "en": "precise",
 "tr": "kesin, tam",
 "level": "B2",
 "clue": "Exact and accurate.",
-"ex": "Give me the precise location."
+"ex": "Give me the precise location.",
+"cat": "Genel"
 },
 {
 "en": "predict",
 "tr": "öngörmek, tahmin etmek",
 "level": "B2",
 "clue": "To say what will happen in the future.",
-"ex": "Nobody can predict earthquakes."
+"ex": "Nobody can predict earthquakes.",
+"cat": "Genel"
 },
 {
 "en": "priority",
 "tr": "öncelik",
 "level": "B2",
 "clue": "Something more important than other things.",
-"ex": "Safety is our top priority."
+"ex": "Safety is our top priority.",
+"cat": "Genel"
 },
 {
 "en": "procedure",
 "tr": "prosedür, usul",
 "level": "B2",
 "clue": "The official way of doing something.",
-"ex": "Follow the standard procedure."
+"ex": "Follow the standard procedure.",
+"cat": "Genel"
 },
 {
 "en": "promote",
 "tr": "terfi ettirmek, desteklemek",
 "level": "B2",
 "clue": "To move someone to a higher job, or to support something.",
-"ex": "They want to promote her to manager."
+"ex": "They want to promote her to manager.",
+"cat": "Genel"
 },
 {
 "en": "pursue",
 "tr": "peşinden gitmek, sürdürmek",
 "level": "B2",
 "clue": "To try to achieve something over a long time.",
-"ex": "He wants to pursue a career in medicine."
+"ex": "He wants to pursue a career in medicine.",
+"cat": "Genel"
 },
 {
 "en": "reinforce",
 "tr": "güçlendirmek",
 "level": "B2",
 "clue": "To make something stronger.",
-"ex": "They will reinforce the walls of the school."
+"ex": "They will reinforce the walls of the school.",
+"cat": "Genel"
 },
 {
 "en": "reluctant",
 "tr": "isteksiz",
 "level": "B2",
 "clue": "Not wanting to do something.",
-"ex": "He was reluctant to ask for help."
+"ex": "He was reluctant to ask for help.",
+"cat": "Genel"
 },
 {
 "en": "resolve",
 "tr": "çözmek",
 "level": "B2",
 "clue": "To find a solution to a problem.",
-"ex": "We need to resolve this issue quickly."
+"ex": "We need to resolve this issue quickly.",
+"cat": "Genel"
 },
 {
 "en": "resource",
 "tr": "kaynak",
 "level": "B2",
 "clue": "Something useful, like money, people or materials.",
-"ex": "We don't have enough resources."
+"ex": "We don't have enough resources.",
+"cat": "Genel"
 },
 {
 "en": "restore",
 "tr": "eski haline getirmek",
 "level": "B2",
 "clue": "To bring something back to how it was.",
-"ex": "They will restore power in a few hours."
+"ex": "They will restore power in a few hours.",
+"cat": "Genel"
 },
 {
 "en": "restrict",
 "tr": "kısıtlamak",
 "level": "B2",
 "clue": "To limit something.",
-"ex": "They restrict access to the area."
+"ex": "They restrict access to the area.",
+"cat": "Genel"
 },
 {
 "en": "retain",
 "tr": "elde tutmak, korumak",
 "level": "B2",
 "clue": "To keep something.",
-"ex": "The company wants to retain its best staff."
+"ex": "The company wants to retain its best staff.",
+"cat": "Genel"
 },
 {
 "en": "reveal",
 "tr": "ortaya çıkarmak",
 "level": "B2",
 "clue": "To show something that was hidden.",
-"ex": "The test will reveal the problem."
+"ex": "The test will reveal the problem.",
+"cat": "Genel"
 },
 {
 "en": "significant",
 "tr": "önemli, kayda değer",
 "level": "B2",
 "clue": "Large or important enough to notice.",
-"ex": "There was a significant increase in costs."
+"ex": "There was a significant increase in costs.",
+"cat": "Genel"
 },
 {
 "en": "sufficient",
 "tr": "yeterli",
 "level": "B2",
 "clue": "Enough.",
-"ex": "We have sufficient water for three days."
+"ex": "We have sufficient water for three days.",
+"cat": "Genel"
 },
 {
 "en": "sustain",
 "tr": "sürdürmek",
 "level": "B2",
 "clue": "To keep something going.",
-"ex": "We can't sustain this speed for long."
+"ex": "We can't sustain this speed for long.",
+"cat": "Genel"
 },
 {
 "en": "tendency",
 "tr": "eğilim",
 "level": "B2",
 "clue": "Something you usually do or that usually happens.",
-"ex": "He has a tendency to arrive late."
+"ex": "He has a tendency to arrive late.",
+"cat": "Genel"
 },
 {
 "en": "thorough",
 "tr": "titiz, eksiksiz",
 "level": "B2",
 "clue": "Careful and complete.",
-"ex": "The team did a thorough search."
+"ex": "The team did a thorough search.",
+"cat": "Genel"
 },
 {
 "en": "ultimately",
 "tr": "nihayetinde",
 "level": "B2",
 "clue": "In the end.",
-"ex": "Ultimately, it's your decision."
+"ex": "Ultimately, it's your decision.",
+"cat": "Genel"
 },
 {
 "en": "undergo",
 "tr": "geçirmek (değişim, ameliyat)",
 "level": "B2",
 "clue": "To experience something, often something difficult.",
-"ex": "The building will undergo repairs."
+"ex": "The building will undergo repairs.",
+"cat": "Genel"
 },
 {
 "en": "vulnerable",
 "tr": "savunmasız, kırılgan",
 "level": "B2",
 "clue": "Easy to hurt or harm.",
-"ex": "Old people are more vulnerable in heat waves."
+"ex": "Old people are more vulnerable in heat waves.",
+"cat": "Genel"
 },
 {
 "en": "widespread",
 "tr": "yaygın",
 "level": "B2",
 "clue": "Happening in many places.",
-"ex": "There was widespread damage after the storm."
+"ex": "There was widespread damage after the storm.",
+"cat": "Genel"
 },
 {
 "en": "withdraw",
 "tr": "(para) çekmek, geri çekilmek",
 "level": "B2",
 "clue": "To take money out of a bank, or to move back.",
-"ex": "I need to withdraw some cash."
+"ex": "I need to withdraw some cash.",
+"cat": "Genel"
 },
 {
 "en": "workload",
 "tr": "iş yükü",
 "level": "B2",
 "clue": "The amount of work you have to do.",
-"ex": "My workload is very heavy this month."
+"ex": "My workload is very heavy this month.",
+"cat": "Genel"
 }
 ]

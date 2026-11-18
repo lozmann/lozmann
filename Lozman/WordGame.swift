@@ -9,8 +9,11 @@ struct Word: Codable, Hashable {
     let en: String
     let tr: String
     let level: String
+    let cat: String?
     let clue: String
     let ex: String
+
+    var category: String { cat ?? "Genel" }
 }
 
 enum WordBank {
@@ -19,14 +22,36 @@ enum WordBank {
            let data = try? Data(contentsOf: url),
            let words = try? JSONDecoder().decode([Word].self, from: data),
            !words.isEmpty {
-            return words
+            return words.filter { $0.level != "A2" }
         }
-        return [Word(en: "goal", tr: "hedef", level: "B1", clue: "Something you want to achieve.", ex: "My goal is to speak English well.")]
+        return [Word(en: "goal", tr: "hedef", level: "B1", cat: "Genel", clue: "Something you want to achieve.", ex: "My goal is to speak English well.")]
     }()
 
-    static var a2: [Word] { all.filter { $0.level == "A2" } }
-    static var b1: [Word] { all.filter { $0.level == "B1" } }
-    static var b2: [Word] { all.filter { $0.level == "B2" } }
+    /// Categories in the order they appear in the file.
+    static let categories: [String] = {
+        var seen: [String] = []
+        for w in all where !seen.contains(w.category) { seen.append(w.category) }
+        return seen
+    }()
+
+    static func icon(for cat: String) -> String {
+        switch cat {
+        case "Su kurtarma": return "water.waves"
+        case "Arama kurtarma & AFAD": return "light.beacon.max.fill"
+        case "Meslekler": return "person.2.fill"
+        case "Günlük hayat": return "house.fill"
+        case "Sağlık": return "cross.case.fill"
+        case "İş & ofis": return "briefcase.fill"
+        case "Seyahat": return "airplane"
+        case "Duygular & karakter": return "face.smiling"
+        case "Doğa & hava": return "cloud.sun.fill"
+        case "Teknoloji": return "iphone"
+        case "Para & alışveriş": return "cart.fill"
+        case "Phrasal verbs": return "arrow.triangle.branch"
+        case "Sohbet kalıpları": return "bubble.left.and.bubble.right.fill"
+        default: return "book.fill"
+        }
+    }
 }
 
 // MARK: - Sound, haptics, speech
@@ -64,14 +89,17 @@ enum Sfx {
         }
     }
 
-    static func say(_ text: String) {
-        activate()
+    static func say(_ text: String, slow: Bool = false) {
+        try? AVAudioSession.sharedInstance().setCategory(.playback, options: [.duckOthers])
+        try? AVAudioSession.sharedInstance().setActive(true)
         speaker.stopSpeaking(at: .immediate)
         let u = AVSpeechUtterance(string: text)
         u.voice = AVSpeechSynthesisVoice(language: "en-US")
-        u.rate = 0.45
+        u.rate = slow ? 0.36 : 0.47
         speaker.speak(u)
     }
+
+    static func stopSpeaking() { speaker.stopSpeaking(at: .immediate) }
 
     static func success() { UINotificationFeedbackGenerator().notificationOccurred(.success) }
     static func failure() { UINotificationFeedbackGenerator().notificationOccurred(.error) }
@@ -91,31 +119,69 @@ struct GameProgress: Codable {
     var daily: [String: Int] = [:]
     var stats: [String: WordStat] = [:]
     var mistakes: [String] = []
+    /// Spaced repetition: box 1...6 and the day the word is due again.
+    var box: [String: Int] = [:]
+    var due: [String: String] = [:]
+    /// New words started per day in the daily review.
+    var introduced: [String: Int] = [:]
+    var spoken: [String: Int] = [:]
+
+    init() {}
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        xp = try c.decodeIfPresent(Int.self, forKey: .xp) ?? 0
+        bestCombo = try c.decodeIfPresent(Int.self, forKey: .bestCombo) ?? 0
+        daily = try c.decodeIfPresent([String: Int].self, forKey: .daily) ?? [:]
+        stats = try c.decodeIfPresent([String: WordStat].self, forKey: .stats) ?? [:]
+        mistakes = try c.decodeIfPresent([String].self, forKey: .mistakes) ?? []
+        box = try c.decodeIfPresent([String: Int].self, forKey: .box) ?? [:]
+        due = try c.decodeIfPresent([String: String].self, forKey: .due) ?? [:]
+        introduced = try c.decodeIfPresent([String: Int].self, forKey: .introduced) ?? [:]
+        spoken = try c.decodeIfPresent([String: Int].self, forKey: .spoken) ?? [:]
+    }
 }
 
 enum GameMode: String, CaseIterable, Identifiable {
-    case meaning = "İng → Tr"
+    case review = "Günün tekrarı"
+    case speak = "Söyle"
+    case build = "Cümle kur"
     case reverse = "Tr → İng"
-    case sentence = "Cümlede kullan"
+    case meaning = "İng → Tr"
+    case sentence = "Boşluk doldur"
     case riddle = "Bilmece"
     case mistakes = "Hatalarım"
     var id: String { rawValue }
     var icon: String {
         switch self {
-        case .meaning: return "character.book.closed"
+        case .review: return "repeat.circle.fill"
+        case .speak: return "mic.fill"
+        case .build: return "text.bubble.fill"
         case .reverse: return "arrow.left.arrow.right"
+        case .meaning: return "character.book.closed"
         case .sentence: return "text.quote"
         case .riddle: return "puzzlepiece"
         case .mistakes: return "arrow.counterclockwise"
         }
     }
+    var help: String {
+        switch self {
+        case .review: return "Unutmak üzere olduğun kelimeler ve günde 10 yeni kelime. Her gün 5 dakika."
+        case .speak: return "Türkçesini gör, İngilizcesini sesli söyle. Kelimeyi aklından çekip çıkarmak konuşmanın ta kendisi."
+        case .build: return "Kelimeyi kullanarak sesli bir cümle kur."
+        case .reverse: return "Türkçeden İngilizceye: konuşurken beynin bu yönde çalışır."
+        case .meaning: return "İngilizce kelimenin anlamını seç."
+        case .sentence: return "Cümledeki boşluğa doğru kelimeyi seç."
+        case .riddle: return "İngilizce tarifi oku, kelimeyi yaz."
+        case .mistakes: return "Yanlış yaptığın kelimeler."
+        }
+    }
 }
 
 enum GameLevel: String, CaseIterable, Identifiable {
-    case a2 = "A2"
     case b1 = "B1"
     case b2 = "B2"
-    case mixed = "Karışık"
+    case mixed = "B1 + B2"
     var id: String { rawValue }
 }
 
@@ -128,9 +194,13 @@ struct Reward: Equatable {
 @Observable
 final class WordGame {
     static let dailyGoal = 20
+    static let newPerDay = 10
+    static let intervals = [0, 1, 2, 4, 7, 15, 30]
+    static let allCategories = "Tümü"
 
     var level: GameLevel = .mixed
-    var mode: GameMode = .meaning
+    var mode: GameMode = .review
+    var category = WordGame.allCategories
     var current: Word = WordBank.all[0]
     var options: [Word] = []
     var picked: Word?
@@ -139,10 +209,18 @@ final class WordGame {
     var showTurkish = false
     var showSentence = false
     var riddleSolved: Bool?
+    var spoken: Bool?
+    var heard = ""
+    var speakHint = 0
+    var built: Bool?
+    var builtSentence = ""
+    var coachNote: String?
+    var coachBusy = false
     var combo = 0
     var progress = GameProgress()
     var reward: Reward?
     var confetti = 0
+    var empty = false
     private var recent: [String] = []
 
     private let url = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -154,6 +232,9 @@ final class WordGame {
             progress = p
         }
         progress.bestCombo = max(progress.bestCombo, UserDefaults.standard.integer(forKey: "wordBest"))
+        if let saved = UserDefaults.standard.string(forKey: "wordCategory"), WordBank.categories.contains(saved) {
+            category = saved
+        }
         next()
     }
 
@@ -189,26 +270,87 @@ final class WordGame {
         return n
     }
 
-    private var pool: [Word] {
-        if mode == .mistakes {
-            let set = Set(progress.mistakes)
-            return WordBank.all.filter { set.contains($0.en) }
+    var learnedCount: Int { progress.box.values.filter { $0 >= 4 }.count }
+
+    var answered: Bool {
+        switch mode {
+        case .speak: return spoken != nil
+        case .build: return built != nil
+        case .riddle: return riddleSolved != nil
+        default: return picked != nil
         }
-        let base: [Word]
+    }
+
+    var lastAnswerCorrect: Bool {
+        switch mode {
+        case .speak: return spoken == true
+        case .build: return built == true
+        case .riddle: return riddleSolved == true
+        default: return picked?.en == current.en
+        }
+    }
+
+    // MARK: Pools
+
+    private var filtered: [Word] {
+        var base: [Word]
         switch level {
-        case .a2: base = WordBank.a2
-        case .b1: base = WordBank.b1
-        case .b2: base = WordBank.b2
+        case .b1: base = WordBank.all.filter { $0.level == "B1" }
+        case .b2: base = WordBank.all.filter { $0.level == "B2" }
         case .mixed: base = WordBank.all
         }
-        if mode == .sentence { return base.filter { $0.ex.lowercased().contains($0.en.lowercased()) } }
+        if category != Self.allCategories { base = base.filter { $0.category == category } }
         return base
+    }
+
+    var dueWords: [Word] {
+        let today = Day.today
+        return filtered.filter { w in
+            guard let d = progress.due[w.en] else { return false }
+            return d <= today
+        }
+    }
+
+    var newLeftToday: Int { max(0, Self.newPerDay - (progress.introduced[Day.today] ?? 0)) }
+
+    private var newWords: [Word] { filtered.filter { progress.box[$0.en] == nil } }
+
+    var reviewLeft: Int { dueWords.count + min(newLeftToday, newWords.count) }
+
+    private var pool: [Word] {
+        switch mode {
+        case .mistakes:
+            let set = Set(progress.mistakes)
+            return WordBank.all.filter { set.contains($0.en) }
+        case .review:
+            let due = dueWords
+            if !due.isEmpty { return due }
+            return newLeftToday > 0 ? Array(newWords.prefix(40)) : []
+        case .sentence:
+            return filtered.filter { $0.ex.lowercased().contains($0.en.lowercased()) }
+        default:
+            return filtered
+        }
     }
 
     var mistakesEmpty: Bool { mode == .mistakes && progress.mistakes.isEmpty }
 
     func next() {
         let p = pool
+        empty = p.isEmpty
+        picked = nil
+        guess = ""
+        lettersShown = 1
+        showTurkish = false
+        showSentence = false
+        riddleSolved = nil
+        spoken = nil
+        heard = ""
+        speakHint = 0
+        built = nil
+        builtSentence = ""
+        coachNote = nil
+        coachBusy = false
         guard !p.isEmpty else { return }
         // Words you got wrong before come up a little more often.
         let fresh = p.filter { !recent.contains($0.en) }
@@ -218,30 +360,38 @@ final class WordGame {
         }
         current = weighted.randomElement() ?? p[0]
         recent.append(current.en)
-        if recent.count > 20 { recent.removeFirst() }
-        let distractorPool = WordBank.all.filter { $0.en != current.en && $0.level == current.level && $0.tr != current.tr }
-        options = (Array(distractorPool.shuffled().prefix(3)) + [current]).shuffled()
-        picked = nil
-        guess = ""
-        lettersShown = 1
-        showTurkish = false
-        showSentence = false
-        riddleSolved = nil
+        if recent.count > min(25, max(1, p.count - 1)) { recent.removeFirst() }
+        // Wrong options from the same topic make you think harder.
+        let sameCat = WordBank.all.filter { $0.en != current.en && $0.category == current.category && $0.tr != current.tr }
+        let sameLevel = WordBank.all.filter { $0.en != current.en && $0.level == current.level && $0.tr != current.tr }
+        let distractors = sameCat.count >= 3 ? sameCat : sameLevel
+        options = (Array(distractors.shuffled().prefix(3)) + [current]).shuffled()
     }
 
-    private func record(_ correct: Bool) {
+    // MARK: Scoring
+
+    private func record(_ correct: Bool, xp base: Int = 10) {
         var stat = progress.stats[current.en] ?? WordStat()
+        let today = Day.today
+        if progress.box[current.en] == nil && mode == .review {
+            progress.introduced[today, default: 0] += 1
+        }
+        let oldBox = progress.box[current.en] ?? 0
+        let newBox = correct ? min(6, oldBox + 1) : 1
+        progress.box[current.en] = newBox
+        progress.due[current.en] = correct ? Day.add(today, Self.intervals[newBox]) : today
+
         if correct {
             stat.right += 1
             combo += 1
             let levelBefore = playerLevel
             let todayBefore = todayCount
             let bonus = combo >= 10 ? 15 : (combo >= 5 ? 10 : (combo >= 3 ? 5 : 0))
-            let gained = 10 + bonus
+            let gained = base + bonus
             progress.xp += gained
-            progress.daily[Day.today] = todayBefore + 1
+            progress.daily[today] = todayBefore + 1
             progress.bestCombo = max(progress.bestCombo, combo)
-            if mode == .mistakes { progress.mistakes.removeAll { $0 == current.en } }
+            progress.mistakes.removeAll { $0 == current.en && mode == .mistakes }
 
             if playerLevel > levelBefore {
                 reward = Reward(text: "Seviye \(playerLevel)!", big: true)
@@ -249,6 +399,10 @@ final class WordGame {
                 Sfx.play("levelup")
             } else if todayBefore + 1 == Self.dailyGoal {
                 reward = Reward(text: "Günlük hedef tamam!", big: true)
+                confetti += 1
+                Sfx.play("levelup")
+            } else if mode == .review && reviewLeft == 0 {
+                reward = Reward(text: "Günün tekrarı bitti!", big: true)
                 confetti += 1
                 Sfx.play("levelup")
             } else if combo > 0 && combo % 5 == 0 {
@@ -283,7 +437,7 @@ final class WordGame {
         guard riddleSolved == nil else { return false }
         let g = guess.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         guard !g.isEmpty else { return false }
-        if g == current.en.lowercased() {
+        if g == current.en.lowercased() || SpeechListener.normalize(g) == SpeechListener.normalize(current.en) {
             riddleSolved = true
             record(true)
             return true
@@ -303,12 +457,88 @@ final class WordGame {
         if lettersShown < letters - 1 { lettersShown += 1 }
     }
 
+    // MARK: Speaking
+
+    /// Checks what the microphone heard against the target word.
+    func checkSpoken(_ text: String) {
+        guard spoken == nil else { return }
+        heard = text
+        guard !text.trimmingCharacters(in: .whitespaces).isEmpty else { return }
+        if SpeechListener.heard(current.en, in: text) {
+            spoken = true
+            progress.spoken[current.en, default: 0] += 1
+            record(true, xp: speakHint == 0 ? 15 : 10)
+            Sfx.say(current.en)
+        } else {
+            Sfx.bump()
+        }
+    }
+
+    func revealSpoken() {
+        guard spoken == nil else { return }
+        spoken = false
+        record(false)
+        Sfx.say(current.en)
+    }
+
+    /// "Cümle kur": a spoken or typed sentence that uses the word.
+    func checkBuilt(_ text: String) {
+        guard built == nil else { return }
+        let clean = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        builtSentence = clean
+        guard !clean.isEmpty else { return }
+        let words = clean.split(separator: " ").count
+        if SpeechListener.heard(current.en, in: clean) && words >= 4 {
+            built = true
+            progress.spoken[current.en, default: 0] += 1
+            record(true, xp: 20)
+        } else {
+            Sfx.bump()
+        }
+    }
+
+    func skipBuilt() {
+        guard built == nil else { return }
+        built = false
+        record(false)
+    }
+
+    /// Asks the AI to correct the sentence, if a key is set.
+    @MainActor
+    func askCoach() async {
+        guard !builtSentence.isEmpty, !coachBusy else { return }
+        coachBusy = true
+        defer { coachBusy = false }
+        let system = """
+        You are an English teacher for a Turkish B1 learner. The student had to make a sentence with the word "\(current.en)". \
+        Reply in at most 3 short lines: 1) The corrected sentence in natural English (or "Perfect!" if it is already correct). \
+        2) One very short explanation in Turkish. 3) One more natural example with the word. No other text.
+        """
+        do {
+            coachNote = try await CoachAI.reply(system: system, history: [ChatMessage(fromUser: true, text: builtSentence)]) { [weak self] t in
+                self?.coachNote = t
+            }
+        } catch {
+            coachNote = error.localizedDescription
+        }
+    }
+
     var pattern: String {
         var shown = 0
         return current.en.map { c -> String in
             if c == " " { return "  " }
             shown += 1
             return shown <= lettersShown ? String(c).uppercased() : "_"
+        }.joined(separator: " ")
+    }
+
+    var speakPattern: String {
+        var shown = 0
+        return current.en.map { c -> String in
+            if c == " " { return "  " }
+            if !c.isLetter { return String(c) }
+            shown += 1
+            return shown <= speakHint ? String(c).uppercased() : "_"
         }.joined(separator: " ")
     }
 
@@ -321,393 +551,6 @@ final class WordGame {
         var end = current.ex.index(start, offsetBy: key.count)
         while end < current.ex.endIndex, current.ex[end].isLetter { end = current.ex.index(after: end) }
         return current.ex.replacingCharacters(in: start..<end, with: "_____")
-    }
-}
-
-// MARK: - Views
-
-struct WordGameView: View {
-    @State private var game = WordGame()
-    @State private var soundOn = Sfx.soundOn
-    @FocusState private var answerFocused: Bool
-
-    var body: some View {
-        ScrollView {
-            VStack(spacing: 16) {
-                header
-
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 8) {
-                        ForEach(GameMode.allCases) { m in
-                            Button {
-                                game.mode = m
-                            } label: {
-                                Label(m.rawValue, systemImage: m.icon)
-                                    .font(.subheadline.weight(game.mode == m ? .semibold : .regular))
-                                    .padding(.horizontal, 12)
-                                    .padding(.vertical, 8)
-                                    .background(game.mode == m ? Color.loz : Color(.secondarySystemBackground), in: Capsule())
-                                    .foregroundStyle(game.mode == m ? Color.white : Color.primary)
-                            }
-                            .buttonStyle(.plain)
-                        }
-                    }
-                }
-
-                if game.mode != .mistakes {
-                    Picker("Seviye", selection: $game.level) {
-                        ForEach(GameLevel.allCases) { Text($0.rawValue).tag($0) }
-                    }
-                    .pickerStyle(.segmented)
-                }
-
-                if game.mistakesEmpty {
-                    VStack(spacing: 8) {
-                        Image(systemName: "checkmark.seal.fill").font(.largeTitle).foregroundStyle(.green)
-                        Text("Hata listen boş").font(.headline)
-                        Text("Yanlış yaptığın kelimeler burada birikir. Doğru bildiğinde listeden çıkar.")
-                            .font(.callout)
-                            .foregroundStyle(.secondary)
-                            .multilineTextAlignment(.center)
-                    }
-                    .padding(30)
-                } else {
-                    switch game.mode {
-                    case .meaning, .mistakes: choiceCard(reverse: false)
-                    case .reverse: choiceCard(reverse: true)
-                    case .sentence: sentenceCard
-                    case .riddle: riddleCard
-                    }
-                }
-            }
-            .padding()
-        }
-        .overlay(alignment: .top) { rewardBanner }
-        .overlay { ConfettiView(trigger: game.confetti).allowsHitTesting(false) }
-        .navigationTitle("Kelime oyunu")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            ToolbarItem(placement: .primaryAction) {
-                Button {
-                    soundOn.toggle()
-                    Sfx.soundOn = soundOn
-                } label: {
-                    Image(systemName: soundOn ? "speaker.wave.2.fill" : "speaker.slash.fill")
-                }
-                .accessibilityLabel(soundOn ? "Sesi kapat" : "Sesi aç")
-            }
-        }
-        .onChange(of: game.level) { _, _ in game.combo = 0; game.next() }
-        .onChange(of: game.mode) { _, _ in game.combo = 0; game.next() }
-    }
-
-    // Level, XP, daily goal, streaks
-    private var header: some View {
-        VStack(spacing: 12) {
-            HStack(spacing: 14) {
-                ZStack {
-                    Circle().stroke(Color.loz.opacity(0.18), lineWidth: 7)
-                    Circle()
-                        .trim(from: 0, to: min(1, Double(game.todayCount) / Double(WordGame.dailyGoal)))
-                        .stroke(Color.loz, style: StrokeStyle(lineWidth: 7, lineCap: .round))
-                        .rotationEffect(.degrees(-90))
-                        .animation(.snappy, value: game.todayCount)
-                    VStack(spacing: 0) {
-                        Text("\(game.todayCount)").font(.headline.monospacedDigit())
-                        Text("/\(WordGame.dailyGoal)").font(.caption2).foregroundStyle(.secondary)
-                    }
-                }
-                .frame(width: 62, height: 62)
-                .accessibilityLabel("Bugün \(game.todayCount) doğru, hedef \(WordGame.dailyGoal)")
-
-                VStack(alignment: .leading, spacing: 6) {
-                    HStack {
-                        Text("Seviye \(game.playerLevel)").font(.headline)
-                        Spacer()
-                        Text("\(game.progress.xp) XP").font(.subheadline.monospacedDigit()).foregroundStyle(.secondary)
-                    }
-                    ProgressView(value: game.levelProgress).tint(.loz)
-                        .animation(.snappy, value: game.progress.xp)
-                    Text("Sonraki seviyeye \(game.xpToNext) XP")
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                }
-            }
-            HStack(spacing: 10) {
-                chip(icon: "flame.fill", value: "\(game.combo)", label: "Kombo", tint: game.combo >= 3 ? .orange : .secondary)
-                chip(icon: "calendar", value: "\(game.dayStreak)", label: "Gün serisi", tint: .loz)
-                chip(icon: "trophy.fill", value: "\(game.progress.bestCombo)", label: "En iyi kombo", tint: .yellow)
-            }
-        }
-        .padding()
-        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 18))
-    }
-
-    private func chip(icon: String, value: String, label: String, tint: Color) -> some View {
-        VStack(spacing: 2) {
-            HStack(spacing: 4) {
-                Image(systemName: icon).foregroundStyle(tint)
-                Text(value).font(.headline.monospacedDigit())
-            }
-            Text(label).font(.caption2).foregroundStyle(.secondary)
-        }
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 8)
-        .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 12))
-    }
-
-    private var levelBadge: some View {
-        HStack(spacing: 8) {
-            Text(game.current.level)
-                .font(.caption.weight(.bold))
-                .padding(.horizontal, 8)
-                .padding(.vertical, 3)
-                .background(Color.loz.opacity(0.15), in: Capsule())
-                .foregroundStyle(Color.loz)
-            if game.mode == .mistakes {
-                Text("\(game.progress.mistakes.count) hatalı kelime")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
-        }
-    }
-
-    private func speakButton(_ text: String) -> some View {
-        Button {
-            Sfx.say(text)
-        } label: {
-            Image(systemName: "speaker.wave.2.circle.fill")
-                .font(.title)
-                .foregroundStyle(Color.loz)
-        }
-        .buttonStyle(.plain)
-        .accessibilityLabel("Telaffuzu dinle")
-    }
-
-    private func choiceCard(reverse: Bool) -> some View {
-        VStack(spacing: 16) {
-            levelBadge
-            HStack(spacing: 10) {
-                Text(reverse ? game.current.tr : game.current.en)
-                    .font(.system(size: 34, weight: .bold, design: .rounded))
-                    .multilineTextAlignment(.center)
-                    .minimumScaleFactor(0.6)
-                if !reverse { speakButton(game.current.en) }
-            }
-            if !reverse {
-                Text(game.current.clue)
-                    .font(.callout)
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.center)
-            }
-            VStack(spacing: 10) {
-                ForEach(game.options, id: \.self) { option in
-                    Button {
-                        withAnimation(.snappy) { game.pick(option) }
-                        if reverse && option.en == game.current.en { Sfx.say(option.en) }
-                    } label: {
-                        HStack {
-                            Text(reverse ? option.en : option.tr)
-                                .multilineTextAlignment(.leading)
-                            Spacer()
-                            if let picked = game.picked {
-                                if option.en == game.current.en {
-                                    Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
-                                } else if option.en == picked.en {
-                                    Image(systemName: "xmark.circle.fill").foregroundStyle(.red)
-                                }
-                            }
-                        }
-                        .padding()
-                        .background(optionColor(option), in: RoundedRectangle(cornerRadius: 12))
-                        .scaleEffect(game.picked?.en == option.en && option.en == game.current.en ? 1.03 : 1)
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(game.picked != nil)
-                }
-            }
-            if let picked = game.picked {
-                answerFooter(correct: picked.en == game.current.en)
-            }
-        }
-        .padding()
-        .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 18))
-        .overlay(RoundedRectangle(cornerRadius: 18).strokeBorder(Color.primary.opacity(0.08)))
-    }
-
-    private func answerFooter(correct: Bool) -> some View {
-        VStack(spacing: 10) {
-            Text(correct ? "Doğru!" : "Doğrusu: \(game.current.en) = \(game.current.tr)")
-                .font(.headline)
-                .foregroundStyle(correct ? Color.green : Color.red)
-            HStack(alignment: .top, spacing: 8) {
-                Image(systemName: "quote.opening").foregroundStyle(.secondary)
-                Text(game.current.ex).italic()
-                Spacer(minLength: 0)
-                Button {
-                    Sfx.say(game.current.ex)
-                } label: {
-                    Image(systemName: "speaker.wave.2")
-                }
-                .accessibilityLabel("Cümleyi dinle")
-            }
-            .font(.callout)
-            .padding(12)
-            .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))
-            nextButton
-        }
-    }
-
-    private func optionColor(_ option: Word) -> Color {
-        guard let picked = game.picked else { return Color(.secondarySystemBackground) }
-        if option.en == game.current.en { return Color.green.opacity(0.18) }
-        if option.en == picked.en { return Color.red.opacity(0.18) }
-        return Color(.secondarySystemBackground)
-    }
-
-    private var sentenceCard: some View {
-        VStack(spacing: 16) {
-            levelBadge
-            Text("Boşluğa hangi kelime gelir?")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-            Text(game.picked == nil ? game.hiddenSentence : game.current.ex)
-                .font(.title3.weight(.semibold))
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 4)
-            VStack(spacing: 10) {
-                ForEach(game.options, id: \.self) { option in
-                    Button {
-                        withAnimation(.snappy) { game.pick(option) }
-                        if option.en == game.current.en { Sfx.say(game.current.ex) }
-                    } label: {
-                        HStack {
-                            Text(option.en).font(.body.weight(.medium))
-                            if game.picked != nil {
-                                Text("· \(option.tr)").foregroundStyle(.secondary)
-                            }
-                            Spacer()
-                            if let picked = game.picked {
-                                if option.en == game.current.en {
-                                    Image(systemName: "checkmark.circle.fill").foregroundStyle(.green)
-                                } else if option.en == picked.en {
-                                    Image(systemName: "xmark.circle.fill").foregroundStyle(.red)
-                                }
-                            }
-                        }
-                        .padding()
-                        .background(optionColor(option), in: RoundedRectangle(cornerRadius: 12))
-                    }
-                    .buttonStyle(.plain)
-                    .disabled(game.picked != nil)
-                }
-            }
-            if let picked = game.picked {
-                Text(picked.en == game.current.en ? "Doğru!" : "Doğrusu: \(game.current.en) = \(game.current.tr)")
-                    .font(.headline)
-                    .foregroundStyle(picked.en == game.current.en ? Color.green : Color.red)
-                nextButton
-            }
-        }
-        .padding()
-        .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 18))
-        .overlay(RoundedRectangle(cornerRadius: 18).strokeBorder(Color.primary.opacity(0.08)))
-    }
-
-    private var riddleCard: some View {
-        VStack(spacing: 14) {
-            levelBadge
-            Text(game.current.clue)
-                .font(.title3.weight(.semibold))
-                .multilineTextAlignment(.center)
-            Text(game.riddleSolved == nil ? game.pattern : game.current.en.uppercased())
-                .font(.system(size: 24, weight: .bold, design: .monospaced))
-                .foregroundStyle(game.riddleSolved == false ? Color.red : Color.loz)
-                .multilineTextAlignment(.center)
-            Text("\(game.current.en.filter { $0 != " " }.count) harf")
-                .font(.caption)
-                .foregroundStyle(.secondary)
-            if game.showSentence && game.riddleSolved == nil {
-                Text(game.hiddenSentence)
-                    .font(.callout)
-                    .italic()
-                    .multilineTextAlignment(.center)
-            }
-            if game.showTurkish && game.riddleSolved == nil {
-                Text("Türkçesi: \(game.current.tr)").foregroundStyle(.secondary)
-            }
-            if game.riddleSolved == nil {
-                TextField("Cevabını yaz", text: $game.guess)
-                    .textInputAutocapitalization(.never)
-                    .autocorrectionDisabled()
-                    .focused($answerFocused)
-                    .submitLabel(.done)
-                    .onSubmit {
-                        if !game.check() { answerFocused = true }
-                    }
-                    .padding()
-                    .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 12))
-                Button {
-                    if !game.check() { answerFocused = true }
-                } label: {
-                    Text("Kontrol et").frame(maxWidth: .infinity)
-                }
-                .buttonStyle(.borderedProminent)
-                HStack(spacing: 8) {
-                    Button("Harf ver") { game.hintLetter() }
-                    Button("Cümle") { game.showSentence = true }.disabled(game.showSentence)
-                    Button("Türkçesi") { game.showTurkish = true }.disabled(game.showTurkish)
-                }
-                .buttonStyle(.bordered)
-                .font(.subheadline)
-                Button("Pes et", role: .destructive) { game.giveUp() }
-                    .font(.footnote)
-            } else {
-                Text("\(game.current.en) = \(game.current.tr)")
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-                answerFooter(correct: game.riddleSolved == true)
-                    .onAppear { if game.riddleSolved == true { Sfx.say(game.current.en) } }
-            }
-        }
-        .padding()
-        .background(Color(.systemBackground), in: RoundedRectangle(cornerRadius: 18))
-        .overlay(RoundedRectangle(cornerRadius: 18).strokeBorder(Color.primary.opacity(0.08)))
-    }
-
-    private var nextButton: some View {
-        Button {
-            withAnimation(.snappy) {
-                game.reward = nil
-                game.next()
-            }
-            if game.mode == .riddle { answerFocused = true }
-        } label: {
-            Text("Sonraki kelime").frame(maxWidth: .infinity)
-        }
-        .buttonStyle(.borderedProminent)
-    }
-
-    @ViewBuilder
-    private var rewardBanner: some View {
-        if let r = game.reward {
-            Text(r.text)
-                .font(r.big ? .title3.weight(.heavy) : .headline)
-                .foregroundStyle(.white)
-                .padding(.horizontal, 18)
-                .padding(.vertical, 10)
-                .background(r.big ? Color.loz : Color.green, in: Capsule())
-                .shadow(color: .black.opacity(0.15), radius: 8, y: 4)
-                .padding(.top, 6)
-                .transition(.move(edge: .top).combined(with: .opacity))
-                .id(r.id)
-                .task(id: r.id) {
-                    try? await Task.sleep(nanoseconds: r.big ? 2_200_000_000 : 1_100_000_000)
-                    withAnimation(.easeOut) {
-                        if game.reward?.id == r.id { game.reward = nil }
-                    }
-                }
-        }
     }
 }
 

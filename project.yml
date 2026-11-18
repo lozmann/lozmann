@@ -18,6 +18,8 @@ targets:
         CFBundleDevelopmentRegion: tr
         UIBackgroundModes: [fetch, processing]
         BGTaskSchedulerPermittedIdentifiers: [com.lozmann.lozman.refresh]
+        NSMicrophoneUsageDescription: İngilizce konuşma alıştırmalarında söylediklerini duymak için mikrofon kullanılır.
+        NSSpeechRecognitionUsageDescription: Söylediğin İngilizce kelime ve cümleleri kontrol etmek için konuşma tanıma kullanılır.
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.lozmann.lozman

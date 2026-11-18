@@ -132,12 +132,19 @@ struct MoreView: View {
                         Label("Gündem", systemImage: "newspaper.fill")
                     }
                 }
-                Section("Oyunlar") {
+                Section("İngilizce") {
                     NavigationLink {
-                        WordGameView()
+                        EnglishHubView()
                     } label: {
-                        Label("İngilizce kelime oyunu", systemImage: "character.book.closed.fill")
+                        Label("İngilizce merkezi", systemImage: "character.book.closed.fill")
                     }
+                    NavigationLink {
+                        SpeakCoachView()
+                    } label: {
+                        Label("Konuşma koçu", systemImage: "person.wave.2.fill")
+                    }
+                }
+                Section("Oyunlar") {
                     NavigationLink {
                         SlitherView()
                     } label: {
